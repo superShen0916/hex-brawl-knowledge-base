@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T07:32:35.922Z",
+  "generatedAt": "2026-04-14T07:34:30.804Z",
   "entries": [
     {
       "id": "derived-akshan-passive-onhit",
@@ -23001,6 +23001,264 @@
           "source_confidence": 0.72,
           "patch_hint": "26.3+",
           "evidence_summary": "Flash 2 在 Augments 目录里被归为 Silver 海克斯。"
+        }
+      ]
+    },
+    {
+      "id": "derived-jeweled-gauntlet-augment-effect",
+      "question": "Jeweled Gauntlet 这个海克斯是干嘛的",
+      "aliases": [
+        "Jeweled Gauntlet 有什么效果",
+        "Jeweled Gauntlet 海克斯效果",
+        "Jeweled Gauntlet 值得拿吗"
+      ],
+      "answer_short": "高置信结论：让技能可以暴击，并额外提供暴击率；如果同时拥有 Vulnerability，则按更高暴击伤害来源来决定暴击掷骰。",
+      "answer_detail": "Jeweled Gauntlet 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Jeweled Gauntlet"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "技能暴击",
+          "暴击率",
+          "法术爆发"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Jeweled Gauntlet Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/jeweled-gauntlet/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Jeweled Gauntlet 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ]
+    },
+    {
+      "id": "derived-giant-slayer-augment-effect",
+      "question": "Giant Slayer 这个海克斯是干嘛的",
+      "aliases": [
+        "Giant Slayer 有什么效果",
+        "Giant Slayer 海克斯效果",
+        "Giant Slayer 值得拿吗"
+      ],
+      "answer_short": "高置信结论：把体型缩小并提升移速，同时对体型比你更大的敌人造成额外伤害。",
+      "answer_detail": "Giant Slayer 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Giant Slayer"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "体型",
+          "移速",
+          "额外伤害"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Giant Slayer Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/giant-slayer/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Giant Slayer 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ]
+    },
+    {
+      "id": "derived-vulnerability-augment-effect",
+      "question": "Vulnerability 这个海克斯是干嘛的",
+      "aliases": [
+        "Vulnerability 有什么效果",
+        "Vulnerability 海克斯效果",
+        "Vulnerability 值得拿吗"
+      ],
+      "answer_short": "高置信结论：让装备伤害和持续伤害也能暴击，并提供暴击率，适合依赖 DoT 或装备伤害的英雄。",
+      "answer_detail": "Vulnerability 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Vulnerability"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "持续伤害",
+          "装备伤害",
+          "暴击"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Vulnerability Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/vulnerability/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Vulnerability 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ]
+    },
+    {
+      "id": "derived-ultimate-revolution-augment-effect",
+      "question": "Ultimate Revolution 这个海克斯是干嘛的",
+      "aliases": [
+        "Ultimate Revolution 有什么效果",
+        "Ultimate Revolution 海克斯效果",
+        "Ultimate Revolution 值得拿吗"
+      ],
+      "answer_short": "高置信结论：每次施放大招后，在效果开始或结束后立刻重置大招冷却，但有单独内置冷却并且死亡会重置。",
+      "answer_detail": "Ultimate Revolution 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Ultimate Revolution"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "大招重置",
+          "爆发",
+          "节奏"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Ultimate Revolution Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/ultimate-revolution/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Ultimate Revolution 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ]
+    },
+    {
+      "id": "derived-hextech-soul-augment-effect",
+      "question": "Hextech Soul 这个海克斯是干嘛的",
+      "aliases": [
+        "Hextech Soul 有什么效果",
+        "Hextech Soul 海克斯效果",
+        "Hextech Soul 值得拿吗"
+      ],
+      "answer_short": "高置信结论：给予海克斯龙魂；如果已经拥有海克斯龙魂，则改为给你另一个龙魂。",
+      "answer_detail": "Hextech Soul 当前记录为 Silver 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Hextech Soul"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "龙魂",
+          "团队增益",
+          "追加属性"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Hextech Soul Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/hextech-soul/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Hextech Soul 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ]
+    },
+    {
+      "id": "derived-upgrade-sheen-augment-effect",
+      "question": "Upgrade Sheen 这个海克斯是干嘛的",
+      "aliases": [
+        "Upgrade Sheen 有什么效果",
+        "Upgrade Sheen 海克斯效果",
+        "Upgrade Sheen 值得拿吗"
+      ],
+      "answer_short": "高置信结论：强化所有法术刃装备，使其额外造成目标最大生命值相关的物理伤害，并按自身最大生命值回复，同时额外给 250 金币。",
+      "answer_detail": "Upgrade Sheen 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "status": "high_confidence",
+      "confidence": 0.79,
+      "patch_range": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Upgrade Sheen"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "法术刃",
+          "最大生命值伤害",
+          "回复"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Upgrade Sheen Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/upgrade-sheen/",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Upgrade Sheen 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
         }
       ]
     }

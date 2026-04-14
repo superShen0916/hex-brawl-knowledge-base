@@ -1,6 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { abilityMechanics } from '../data/source/ability-mechanics.mjs';
+import { augmentDetails } from '../data/source/augment-details.mjs';
 import { validateEntry } from './lib/validate-entry.mjs';
 
 const attackEffectsSource = {
@@ -287,6 +288,44 @@ function makeAugmentRarityEntry(augment) {
   };
 }
 
+function makeAugmentEffectEntry(detail) {
+  return {
+    id: `derived-${detail.key}-augment-effect`,
+    question: `${detail.name} 这个海克斯是干嘛的`,
+    aliases: [
+      `${detail.name} 有什么效果`,
+      `${detail.name} 海克斯效果`,
+      `${detail.name} 值得拿吗`
+    ],
+    answer_short: `高置信结论：${detail.summary}`,
+    answer_detail: `${detail.name} 当前记录为 ${detail.rarity} 海克斯，初次出现于 ${detail.introduced}。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。`,
+    status: 'high_confidence',
+    confidence: 0.79,
+    patch_range: detail.introduced,
+    conditions: [
+      '这是效果摘要，不是完整机制全文。',
+      '如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。'
+    ],
+    entities: {
+      augments: [detail.name],
+      rarities: [detail.rarity],
+      mechanics: detail.tags
+    },
+    sources: [
+      {
+        source_type: 'guide',
+        title: `${detail.name} Augment Guide - ARAM Mayhem`,
+        url: detail.sourceUrl,
+        publisher: 'ARAM Mayhem',
+        retrieved_at: '2026-04-14',
+        source_confidence: 0.74,
+        evidence_summary: `${detail.name} 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。`,
+        patch_hint: detail.introduced
+      }
+    ]
+  };
+}
+
 export function buildDerivedEntries({
   augmentCatalogFile = join(process.cwd(), 'data/generated/augment-catalog.json'),
   outputFile = join(process.cwd(), 'data/generated/derived-entries.json'),
@@ -319,6 +358,10 @@ export function buildDerivedEntries({
   for (const augment of augmentCatalog.catalog ?? []) {
     entries.push(makeAugmentDirectoryEntry(augment));
     entries.push(makeAugmentRarityEntry(augment));
+  }
+
+  for (const detail of augmentDetails) {
+    entries.push(makeAugmentEffectEntry(detail));
   }
 
   const validationErrors = entries.flatMap((entry) => validateEntry(entry, `${entry.id}.generated`));
