@@ -223,5 +223,131 @@ export const augmentDetails = [
     summary: '提供 75/50 额外攻击距离，是最基础的一档范围海克斯。',
     tags: ['攻击距离', '射程', '拉扯'],
     sourceUrl: 'https://arammayhem.com/augments/scoped-weapons'
+  },
+  {
+    key: 'vampirism',
+    name: 'Vampirism',
+    rarity: 'Gold',
+    introduced: '26.1',
+    summary: '把队友治疗和生命回复都关掉，换来 30% 全能吸血，是最泛用的续航型金海克斯之一。',
+    tags: ['全能吸血', '续航', '自疗'],
+    sourceUrl: 'https://arammayhem.com/augments/vampirism'
+  },
+  {
+    key: 'phenomenal-evil',
+    name: 'Phenomenal Evil',
+    rarity: 'Gold',
+    introduced: '26.3',
+    summary: '技能伤害命中英雄会永久叠层，每层给 1 点法强；如果它是你的第二个海克斯，还会直接起步 40 层。',
+    tags: ['法强成长', '永久叠层', '技能命中'],
+    sourceUrl: 'https://arammayhem.com/augments/phenomenal-evil'
+  },
+  {
+    key: 'executioner',
+    name: 'Executioner',
+    rarity: 'Gold',
+    introduced: '26.1',
+    summary: '对低于 30% 最大生命值的敌人增伤 10%，击杀或助攻后还会重置所有基础技能冷却。',
+    tags: ['斩杀', '基础技能重置', '收割'],
+    sourceUrl: 'https://arammayhem.com/augments/executioner'
+  },
+  {
+    key: 'get-excited',
+    name: 'Get Excited!',
+    rarity: 'Gold',
+    introduced: '26.1',
+    summary: '参与击杀后获得 100% 额外移速和 15% 总攻速，持续 4 秒，适合追击和连收人头。',
+    tags: ['击杀加速', '攻速', '追击'],
+    sourceUrl: 'https://arammayhem.com/augments/get-excited'
+  },
+  {
+    key: 'deft',
+    name: 'Deft',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '直接提供 60% 额外攻速，是最朴素但非常通用的攻速海克斯。',
+    tags: ['攻速', '面板成长', '普攻'],
+    sourceUrl: 'https://arammayhem.com/augments/deft'
+  },
+  {
+    key: 'goredrink',
+    name: 'Goredrink',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '直接提供 15% 全能吸血，适合频繁换血和持续作战英雄。',
+    tags: ['全能吸血', '续航', '换血'],
+    sourceUrl: 'https://arammayhem.com/augments/goredrink'
+  },
+  {
+    key: 'upgrade-collector',
+    name: 'Upgrade Collector',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '升级收集者，让斩杀线每次击杀提高 0.5%，上限到目标最大生命值的 12.5%，并把击杀金币再多加 25，同时立刻给你 250 金币。',
+    tags: ['收集者升级', '斩杀', '经济'],
+    sourceUrl: 'https://arammayhem.com/augments/upgrade-collector'
+  },
+  {
+    key: 'zealot',
+    name: 'Zealot',
+    rarity: 'Silver',
+    introduced: '26.3',
+    summary: '提供基础攻速和暴击率，并且这两项都能按法强继续放大，适合 AP 普攻型英雄。',
+    tags: ['攻速', '暴击', 'AP 联动'],
+    sourceUrl: 'https://arammayhem.com/augments/zealot'
+  },
+  {
+    key: 'light-em-up',
+    name: 'Light \'em Up!',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '普攻会叠烟花层数，叠满第 4 下时一次性发出 4 枚带 on-hit 的烟花，偏向连点型普攻收益。',
+    tags: ['攻击特效', '连点', '额外伤害'],
+    sourceUrl: 'https://arammayhem.com/augments/light-em-up'
+  },
+  {
+    key: 'shadow-runner',
+    name: 'Shadow Runner',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '冲刺、闪现或脱离隐身后会获得 2 秒 300 额外移速，适合高机动英雄反复拉扯。',
+    tags: ['移速', '位移联动', '拉扯'],
+    sourceUrl: 'https://arammayhem.com/augments/shadow-runner'
+  },
+  {
+    key: 'swift-and-safe',
+    name: 'Swift and Safe',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '冲刺或闪现后会获得一个持续 2 秒的护盾，并带 5 秒内置冷却，适合贴脸或切入型英雄。',
+    tags: ['护盾', '位移联动', '生存'],
+    sourceUrl: 'https://arammayhem.com/augments/swift-and-safe'
+  },
+  {
+    key: 'upgrade-zhonyas',
+    name: 'Upgrade Zhonya\'s',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '升级中娅相关装备，让金身期间可以移动，并把中娅主动冷却压到 45 秒。',
+    tags: ['中娅升级', '金身', '生存'],
+    sourceUrl: 'https://arammayhem.com/augments/upgrade-zhonyas'
+  },
+  {
+    key: 'adapt',
+    name: 'ADAPt',
+    rarity: 'Silver',
+    introduced: '26.1',
+    summary: '把全部额外攻击力按比例转成法强，并额外再提高 15% 法强，适合 AD 转法伤玩法。',
+    tags: ['属性转换', '法强', 'AD 转 AP'],
+    sourceUrl: 'https://arammayhem.com/augments/adapt'
+  },
+  {
+    key: 'speed-demon',
+    name: 'Speed Demon',
+    rarity: 'Silver',
+    introduced: '26.3',
+    summary: '技能命中敌方英雄时会获得快速衰减的爆发移速，适合持续风筝和频繁 poke。',
+    tags: ['移速', '技能命中', '风筝'],
+    sourceUrl: 'https://arammayhem.com/augments/speed-demon'
   }
 ];

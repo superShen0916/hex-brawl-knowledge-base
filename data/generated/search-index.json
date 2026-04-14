@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T08:00:19.806Z",
+  "generatedAt": "2026-04-14T08:43:11.262Z",
   "entries": [
     {
       "id": "camille-q-spellblade-true-damage",
@@ -34045,6 +34045,831 @@
         "攻击距离",
         "射程",
         "拉扯"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-vampirism-augment-effect",
+      "kind": "derived",
+      "question": "Vampirism 这个海克斯是干嘛的",
+      "normalizedQuestion": "vampirism 这个海克斯是干嘛的",
+      "aliases": [
+        "Vampirism 有什么效果",
+        "Vampirism 海克斯效果",
+        "Vampirism 值得拿吗"
+      ],
+      "answerShort": "高置信结论：把队友治疗和生命回复都关掉，换来 30% 全能吸血，是最泛用的续航型金海克斯之一。",
+      "answerDetail": "Vampirism 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Vampirism"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "全能吸血",
+          "续航",
+          "自疗"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Vampirism Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/vampirism",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Vampirism 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "vampirism",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "全能吸血",
+        "续航",
+        "自疗"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-phenomenal-evil-augment-effect",
+      "kind": "derived",
+      "question": "Phenomenal Evil 这个海克斯是干嘛的",
+      "normalizedQuestion": "phenomenal evil 这个海克斯是干嘛的",
+      "aliases": [
+        "Phenomenal Evil 有什么效果",
+        "Phenomenal Evil 海克斯效果",
+        "Phenomenal Evil 值得拿吗"
+      ],
+      "answerShort": "高置信结论：技能伤害命中英雄会永久叠层，每层给 1 点法强；如果它是你的第二个海克斯，还会直接起步 40 层。",
+      "answerDetail": "Phenomenal Evil 当前记录为 Gold 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Phenomenal Evil"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "法强成长",
+          "永久叠层",
+          "技能命中"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Phenomenal Evil Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/phenomenal-evil",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Phenomenal Evil 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "phenomenal",
+        "evil",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "法强成长",
+        "永久叠层",
+        "技能命中"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-executioner-augment-effect",
+      "kind": "derived",
+      "question": "Executioner 这个海克斯是干嘛的",
+      "normalizedQuestion": "executioner 这个海克斯是干嘛的",
+      "aliases": [
+        "Executioner 有什么效果",
+        "Executioner 海克斯效果",
+        "Executioner 值得拿吗"
+      ],
+      "answerShort": "高置信结论：对低于 30% 最大生命值的敌人增伤 10%，击杀或助攻后还会重置所有基础技能冷却。",
+      "answerDetail": "Executioner 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Executioner"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "斩杀",
+          "基础技能重置",
+          "收割"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Executioner Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/executioner",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Executioner 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "executioner",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "斩杀",
+        "基础技能重置",
+        "收割"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-get-excited-augment-effect",
+      "kind": "derived",
+      "question": "Get Excited! 这个海克斯是干嘛的",
+      "normalizedQuestion": "get excited 这个海克斯是干嘛的",
+      "aliases": [
+        "Get Excited! 有什么效果",
+        "Get Excited! 海克斯效果",
+        "Get Excited! 值得拿吗"
+      ],
+      "answerShort": "高置信结论：参与击杀后获得 100% 额外移速和 15% 总攻速，持续 4 秒，适合追击和连收人头。",
+      "answerDetail": "Get Excited! 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Get Excited!"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "击杀加速",
+          "攻速",
+          "追击"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Get Excited! Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/get-excited",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Get Excited! 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "get",
+        "excited",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "击杀加速",
+        "攻速",
+        "追击"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-deft-augment-effect",
+      "kind": "derived",
+      "question": "Deft 这个海克斯是干嘛的",
+      "normalizedQuestion": "deft 这个海克斯是干嘛的",
+      "aliases": [
+        "Deft 有什么效果",
+        "Deft 海克斯效果",
+        "Deft 值得拿吗"
+      ],
+      "answerShort": "高置信结论：直接提供 60% 额外攻速，是最朴素但非常通用的攻速海克斯。",
+      "answerDetail": "Deft 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Deft"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "攻速",
+          "面板成长",
+          "普攻"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Deft Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/deft",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Deft 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "deft",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "攻速",
+        "面板成长",
+        "普攻"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-goredrink-augment-effect",
+      "kind": "derived",
+      "question": "Goredrink 这个海克斯是干嘛的",
+      "normalizedQuestion": "goredrink 这个海克斯是干嘛的",
+      "aliases": [
+        "Goredrink 有什么效果",
+        "Goredrink 海克斯效果",
+        "Goredrink 值得拿吗"
+      ],
+      "answerShort": "高置信结论：直接提供 15% 全能吸血，适合频繁换血和持续作战英雄。",
+      "answerDetail": "Goredrink 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Goredrink"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "全能吸血",
+          "续航",
+          "换血"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Goredrink Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/goredrink",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Goredrink 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "goredrink",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "全能吸血",
+        "续航",
+        "换血"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-upgrade-collector-augment-effect",
+      "kind": "derived",
+      "question": "Upgrade Collector 这个海克斯是干嘛的",
+      "normalizedQuestion": "upgrade collector 这个海克斯是干嘛的",
+      "aliases": [
+        "Upgrade Collector 有什么效果",
+        "Upgrade Collector 海克斯效果",
+        "Upgrade Collector 值得拿吗"
+      ],
+      "answerShort": "高置信结论：升级收集者，让斩杀线每次击杀提高 0.5%，上限到目标最大生命值的 12.5%，并把击杀金币再多加 25，同时立刻给你 250 金币。",
+      "answerDetail": "Upgrade Collector 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Upgrade Collector"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "收集者升级",
+          "斩杀",
+          "经济"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Upgrade Collector Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/upgrade-collector",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Upgrade Collector 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "upgrade",
+        "collector",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "收集者升级",
+        "斩杀",
+        "经济"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-zealot-augment-effect",
+      "kind": "derived",
+      "question": "Zealot 这个海克斯是干嘛的",
+      "normalizedQuestion": "zealot 这个海克斯是干嘛的",
+      "aliases": [
+        "Zealot 有什么效果",
+        "Zealot 海克斯效果",
+        "Zealot 值得拿吗"
+      ],
+      "answerShort": "高置信结论：提供基础攻速和暴击率，并且这两项都能按法强继续放大，适合 AP 普攻型英雄。",
+      "answerDetail": "Zealot 当前记录为 Silver 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Zealot"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "攻速",
+          "暴击",
+          "AP 联动"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Zealot Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/zealot",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Zealot 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "zealot",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "攻速",
+        "暴击",
+        "ap",
+        "联动"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-light-em-up-augment-effect",
+      "kind": "derived",
+      "question": "Light 'em Up! 这个海克斯是干嘛的",
+      "normalizedQuestion": "light 'em up 这个海克斯是干嘛的",
+      "aliases": [
+        "Light 'em Up! 有什么效果",
+        "Light 'em Up! 海克斯效果",
+        "Light 'em Up! 值得拿吗"
+      ],
+      "answerShort": "高置信结论：普攻会叠烟花层数，叠满第 4 下时一次性发出 4 枚带 on-hit 的烟花，偏向连点型普攻收益。",
+      "answerDetail": "Light 'em Up! 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Light 'em Up!"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "连点",
+          "额外伤害"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Light 'em Up! Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/light-em-up",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Light 'em Up! 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "light",
+        "'em",
+        "up",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "攻击特效",
+        "连点",
+        "额外伤害"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-shadow-runner-augment-effect",
+      "kind": "derived",
+      "question": "Shadow Runner 这个海克斯是干嘛的",
+      "normalizedQuestion": "shadow runner 这个海克斯是干嘛的",
+      "aliases": [
+        "Shadow Runner 有什么效果",
+        "Shadow Runner 海克斯效果",
+        "Shadow Runner 值得拿吗"
+      ],
+      "answerShort": "高置信结论：冲刺、闪现或脱离隐身后会获得 2 秒 300 额外移速，适合高机动英雄反复拉扯。",
+      "answerDetail": "Shadow Runner 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Shadow Runner"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "移速",
+          "位移联动",
+          "拉扯"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Shadow Runner Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/shadow-runner",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Shadow Runner 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "shadow",
+        "runner",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "移速",
+        "位移联动",
+        "拉扯"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-swift-and-safe-augment-effect",
+      "kind": "derived",
+      "question": "Swift and Safe 这个海克斯是干嘛的",
+      "normalizedQuestion": "swift and safe 这个海克斯是干嘛的",
+      "aliases": [
+        "Swift and Safe 有什么效果",
+        "Swift and Safe 海克斯效果",
+        "Swift and Safe 值得拿吗"
+      ],
+      "answerShort": "高置信结论：冲刺或闪现后会获得一个持续 2 秒的护盾，并带 5 秒内置冷却，适合贴脸或切入型英雄。",
+      "answerDetail": "Swift and Safe 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Swift and Safe"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "护盾",
+          "位移联动",
+          "生存"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Swift and Safe Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/swift-and-safe",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Swift and Safe 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "swift",
+        "and",
+        "safe",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "护盾",
+        "位移联动",
+        "生存"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-upgrade-zhonyas-augment-effect",
+      "kind": "derived",
+      "question": "Upgrade Zhonya's 这个海克斯是干嘛的",
+      "normalizedQuestion": "upgrade zhonya's 这个海克斯是干嘛的",
+      "aliases": [
+        "Upgrade Zhonya's 有什么效果",
+        "Upgrade Zhonya's 海克斯效果",
+        "Upgrade Zhonya's 值得拿吗"
+      ],
+      "answerShort": "高置信结论：升级中娅相关装备，让金身期间可以移动，并把中娅主动冷却压到 45 秒。",
+      "answerDetail": "Upgrade Zhonya's 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Upgrade Zhonya's"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "中娅升级",
+          "金身",
+          "生存"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Upgrade Zhonya's Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/upgrade-zhonyas",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Upgrade Zhonya's 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "upgrade",
+        "zhonya's",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "中娅升级",
+        "金身",
+        "生存"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-adapt-augment-effect",
+      "kind": "derived",
+      "question": "ADAPt 这个海克斯是干嘛的",
+      "normalizedQuestion": "adapt 这个海克斯是干嘛的",
+      "aliases": [
+        "ADAPt 有什么效果",
+        "ADAPt 海克斯效果",
+        "ADAPt 值得拿吗"
+      ],
+      "answerShort": "高置信结论：把全部额外攻击力按比例转成法强，并额外再提高 15% 法强，适合 AD 转法伤玩法。",
+      "answerDetail": "ADAPt 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "ADAPt"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "属性转换",
+          "法强",
+          "AD 转 AP"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "ADAPt Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/adapt",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "ADAPt 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "adapt",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "属性转换",
+        "法强",
+        "ad",
+        "转",
+        "ap"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-speed-demon-augment-effect",
+      "kind": "derived",
+      "question": "Speed Demon 这个海克斯是干嘛的",
+      "normalizedQuestion": "speed demon 这个海克斯是干嘛的",
+      "aliases": [
+        "Speed Demon 有什么效果",
+        "Speed Demon 海克斯效果",
+        "Speed Demon 值得拿吗"
+      ],
+      "answerShort": "高置信结论：技能命中敌方英雄时会获得快速衰减的爆发移速，适合持续风筝和频繁 poke。",
+      "answerDetail": "Speed Demon 当前记录为 Silver 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Speed Demon"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "移速",
+          "技能命中",
+          "风筝"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Speed Demon Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/speed-demon",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Speed Demon 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "speed",
+        "demon",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "移速",
+        "技能命中",
+        "风筝"
       ],
       "sourceCount": 1
     }
