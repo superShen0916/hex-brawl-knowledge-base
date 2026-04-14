@@ -1,0 +1,1004 @@
+{
+  "generatedAt": "2026-04-14T03:07:20.748Z",
+  "entries": [
+    {
+      "id": "ezreal-q-onhit",
+      "question": "伊泽瑞尔 Q 能不能触发攻击特效",
+      "normalizedQuestion": "伊泽瑞尔 q 触发 攻击特效",
+      "aliases": [
+        "EZ Q 能吃 on-hit 吗",
+        "伊泽瑞尔 Q 会不会触发攻击特效",
+        "ez q 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。伊泽瑞尔 Q 会触发 on-hit 和 on-attack，通常可以直接把它理解成一发带攻击特效的技能弹道。",
+      "answerDetail": "Mystic Shot 的公开资料明确把它列为会施加 on-hit 和 on-attack 的技能，因此像法术刃、吸蓝刀一类依赖攻击路径的机制通常都能被 Q 带出。之所以很多人会混淆，是因为它同时也是技能，不是单纯普攻拷贝。",
+      "confidence": 0.89,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "默认按当前常规技能机制理解，海克斯大乱斗未见单独改写该基础逻辑。",
+        "若某海克斯要求近战/远程或限定普攻本体，应再看该海克斯原文。"
+      ],
+      "entities": {
+        "champions": [
+          "伊泽瑞尔"
+        ],
+        "skills": [
+          "Q",
+          "秘术射击"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Ezreal - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Ezreal",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "Mystic Shot 的技能页写有会施加 on-hit 与 on-attack 效果，可作为主来源。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表把 Mystic Shot 列为可以触发攻击特效的技能例子，适合交叉验证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "伊泽瑞尔",
+        "q",
+        "触发",
+        "攻击特效",
+        "能吃",
+        "秘术射击",
+        "on-attack"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "ezreal-q-spell-effects",
+      "question": "伊泽瑞尔 Q 算技能伤害还是普攻",
+      "normalizedQuestion": "伊泽瑞尔 q 算技能伤害还是普攻",
+      "aliases": [
+        "EZ Q 算不算法术效果",
+        "伊泽瑞尔 Q 会不会触发法术效果",
+        "ez q 是技能还是普攻"
+      ],
+      "answerShort": "高置信结论：两边都沾。Q 会触发攻击特效，但公开资料也把它视为会触发法术效果的技能伤害路径。",
+      "answerDetail": "Mystic Shot 最容易误判的点就在这里：它不是纯普攻，也不是普通技能弹道。公开资料一方面明确写有 on-hit/on-attack，另一方面又说明它会以额外 0 点技能伤害的形式触发 spell effects，所以很多海克斯需要分别判断“攻击触发”和“技能触发”两条链路。",
+      "confidence": 0.88,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "遇到文本要求“仅普攻”或“仅技能伤害”时，优先看该效果是否接受伊泽瑞尔 Q 这种混合判定。",
+        "海克斯大乱斗里多数增强仍沿用这条基础判定。"
+      ],
+      "entities": {
+        "champions": [
+          "伊泽瑞尔"
+        ],
+        "skills": [
+          "Q",
+          "秘术射击"
+        ],
+        "mechanics": [
+          "法术效果",
+          "spell effects",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Template: WR Data Ezreal/Mystic Shot - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Template:WR_Data_Ezreal/Mystic_Shot",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.78,
+          "evidence_summary": "条目说明 Mystic Shot 会触发 on-hit/on-attack，同时 notes 中提到它以 0 点额外 spell damage 触发法术效果。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表把 Mystic Shot 同时归类在攻击特效技能列表中，说明它不是普通纯技能伤害。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "伊泽瑞尔",
+        "q",
+        "算技能伤害还是普攻",
+        "算不算法术效果",
+        "触发法术效果",
+        "是技能还是普攻",
+        "秘术射击",
+        "法术效果",
+        "spell",
+        "effects",
+        "攻击特效"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "fizz-q-onhit",
+      "question": "菲兹 Q 能不能触发攻击特效",
+      "normalizedQuestion": "菲兹 q 触发 攻击特效",
+      "aliases": [
+        "小鱼人 Q 会不会触发攻击特效",
+        "菲兹 q 吃不吃 on-hit",
+        "小鱼人 q 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。菲兹 Q 会施加 on-hit，而且技能本体仍是 spell damage，因此常见攻击特效和法术效果都会和它发生关系。",
+      "answerDetail": "Urchin Strike 的技能词条同时给出了两层信息：一是命中时会施加 on-hit，二是它的伤害分类仍属于 spell damage。对海克斯大乱斗来说，这意味着它是典型的‘攻击特效 + 技能效果’混合交互技能。",
+      "confidence": 0.86,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "如果海克斯文本限制仅平A本体，不能仅凭 on-hit 就推断 100% 生效。",
+        "若问题是‘能不能触发’，当前高置信答案是可以。"
+      ],
+      "entities": {
+        "champions": [
+          "菲兹"
+        ],
+        "skills": [
+          "Q",
+          "淘气打击"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "法术效果",
+          "spell damage"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Fizz - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Fizz",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "Urchin Strike 条目写有造成法术伤害并施加 on-hit effects，是主来源。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表将 Urchin Strike 列为会触发攻击特效的技能，可用于交叉验证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "菲兹",
+        "q",
+        "触发",
+        "攻击特效",
+        "淘气打击",
+        "法术效果",
+        "spell",
+        "damage"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "gangplank-barrel-spellblade",
+      "question": "船长桶子会不会把法术刃一起炸出去",
+      "normalizedQuestion": "普朗克桶子触发把法术刃一起炸出去",
+      "aliases": [
+        "普朗克桶子能不能带 Spellblade 伤害",
+        "船长桶子会不会继承咒刃",
+        "船长 Q 桶子 法术刃"
+      ],
+      "answerShort": "高置信结论：会带出去，但不会再被桶子的暴击额外放大。引爆桶子的那次 Spellblade 伤害会并入爆炸。",
+      "answerDetail": "Gangplank 页面有很细的注记：如果引爆火药桶的那发攻击带有 Spellblade，爆炸会把这段伤害一并转移出去；但这类额外伤害不是桶子基础伤害本体，因此不会再享受桶子暴击伤害的额外放大。",
+      "confidence": 0.87,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "这里说的是引爆桶子的那发攻击本身带有 Spellblade。",
+        "若问题改成“所有 on-hit 都能完整吃到桶子的暴击放大”，答案应更保守。"
+      ],
+      "entities": {
+        "champions": [
+          "普朗克"
+        ],
+        "skills": [
+          "Q",
+          "E",
+          "枪火谈判",
+          "火药桶"
+        ],
+        "mechanics": [
+          "法术刃",
+          "Spellblade",
+          "桶子",
+          "暴击"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Gangplank - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Gangplank",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "evidence_summary": "火药桶说明的注记写有带 Spellblade 的攻击引爆桶时，爆炸会带上该伤害，但这部分不会享受额外暴击放大。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "普朗克桶子触发把法术刃一起炸出去",
+        "普朗克桶子触发带",
+        "法术刃",
+        "伤害",
+        "普朗克桶子触发继承法术刃",
+        "普朗克",
+        "q",
+        "桶子",
+        "e",
+        "枪火谈判",
+        "火药桶",
+        "暴击"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "gangplank-q-onhit",
+      "question": "普朗克 Q 能不能触发攻击特效",
+      "normalizedQuestion": "普朗克 q 触发 攻击特效",
+      "aliases": [
+        "船长 Q 能不能触发攻击特效",
+        "船长 Q 吃不吃 on-hit",
+        "普朗克 q 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。普朗克 Q 会施加 on-hit 和 on-attack，而且按远程攻击路径处理。",
+      "answerDetail": "Parrrley 的公开说明非常明确：它是技能施放，但命中后会带出攻击特效与 on-attack，并按远程攻击处理。对海克斯大乱斗来说，这意味着很多依赖攻击触发的强化都能被船长 Q 激活，但近战/远程分支要按远程看。",
+      "confidence": 0.9,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "与近战专属加成、远程削弱有关的海克斯，优先按远程攻击路径理解。",
+        "如果交互对象要求的是普攻命中而不是施法本身，通常以 Q 命中时的攻击判定为准。"
+      ],
+      "entities": {
+        "champions": [
+          "普朗克"
+        ],
+        "skills": [
+          "Q",
+          "枪火谈判"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack",
+          "远程攻击"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Gangplank - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Gangplank",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.85,
+          "evidence_summary": "Parrrley 的技能页写有施加 on-hit 与 on-attack，且按 ranged basic attack 处理。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表将 Parrrley 列为会带攻击特效和 on-attack 的技能例子。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "普朗克",
+        "q",
+        "触发",
+        "攻击特效",
+        "枪火谈判",
+        "on-attack",
+        "远程攻击"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "katarina-dagger-spellblade",
+      "question": "卡特捡匕首那圈伤害能不能触发法术刃",
+      "normalizedQuestion": "卡特琳娜捡匕首那圈伤害触发法术刃",
+      "aliases": [
+        "卡特匕首圈能不能触发咒刃",
+        "卡特被动捡刀会不会吃 Spellblade",
+        "卡特 voracity 法术刃"
+      ],
+      "answerShort": "高置信结论：通常能吃到一次。卡特捡匕首触发的 Voracity 会施加 on-hit，单次型 on-hit 如法术刃一般只会在最近目标上消耗一次。",
+      "answerDetail": "当前公开资料把 Voracity 列为会施加攻击特效的效果。基于这一点，可以高置信推断单次消耗型 on-hit 例如 Spellblade 能在捡刀那圈命中里被吃掉，但不应把它理解成对多个目标或多段范围重复结算。",
+      "confidence": 0.78,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "这是基于攻击特效规则页和技能词条的合并推断，不是官方直接逐字写明的结论。",
+        "若出现与单次消耗型 on-hit 叠层机制相关的特殊海克斯，应优先实测。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "被动",
+          "贪婪"
+        ],
+        "mechanics": [
+          "法术刃",
+          "Spellblade",
+          "攻击特效",
+          "匕首"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.79,
+          "evidence_summary": "攻击特效总表把 Voracity 列入会施加攻击特效的技能/效果，可支持捡刀伤害能触发单次型 on-hit 的高置信推断。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Katarina - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Katarina",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Katarina 技能条目提供了 Voracity 的命中语境，可与攻击特效规则页配合判断其触发方式。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜捡匕首那圈伤害触发法术刃",
+        "卡特琳娜匕首圈触发法术刃",
+        "卡特琳娜被动捡刀触发吃",
+        "法术刃",
+        "卡特琳娜",
+        "voracity",
+        "卡特琳娜琳娜",
+        "被动",
+        "贪婪",
+        "攻击特效",
+        "匕首"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "katarina-e-onhit",
+      "question": "卡特 E 能不能触发攻击特效",
+      "normalizedQuestion": "卡特琳娜 e 触发 攻击特效",
+      "aliases": [
+        "卡特琳娜 E 吃不吃 on-hit",
+        "卡特 E 会不会触发攻击特效",
+        "卡特 shunpo 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。卡特 E 会对最近敌人施加 on-hit，因此能带出单次命中类攻击特效。",
+      "answerDetail": "公开资料对 Shunpo 的描述是，落点时会对最近敌人造成伤害并施加 on-hit effects。这意味着像单次触发型攻击特效、法术刃等通常都能在这个着陆伤害点被消耗或触发，但它不是持续多段命中。",
+      "confidence": 0.85,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "E 的 on-hit 是落点那一下，不是整段位移过程持续触发。",
+        "若问题涉及多个目标，通常以最近敌人的命中对象为准。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "E",
+          "瞬步"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Katarina - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Katarina",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.78,
+          "evidence_summary": "Katarina 条目与技能描述可交叉到 Shunpo 对最近敌人施加 on-hit 的结论。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.78,
+          "evidence_summary": "攻击特效总表把 Shunpo 列进会施加攻击特效的技能集合，可作为交叉印证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜",
+        "e",
+        "触发",
+        "攻击特效",
+        "卡特琳娜琳娜",
+        "shunpo",
+        "瞬步"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "katarina-r-onhit",
+      "question": "卡特 R 能不能触发攻击特效",
+      "normalizedQuestion": "卡特琳娜 r 触发 攻击特效",
+      "aliases": [
+        "卡特琳娜 R 吃不吃 on-hit",
+        "卡特 R 会不会触发攻击特效",
+        "卡特大招 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。卡特 R 的每把飞刀都会施加 on-hit 和 on-attack，但要按技能自己的比例结算，不能当成满额普攻连点。",
+      "answerDetail": "Death Lotus 在公开资料里被明确标成每把飞刀都施加 on-hit 与 on-attack，因此它和很多命中类海克斯、装备会有强联动。但这类联动通常受技能内部的 on-hit 比例限制，所以判断强弱时不能只看“能不能触发”，还要看“按多少比例触发”。",
+      "confidence": 0.88,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "适合回答“能不能触发”，不直接等于“收益一定极高”。",
+        "若海克斯或装备文本限制单次命中次数，应额外看频率上限。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "R",
+          "死亡莲华"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Katarina - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Katarina",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "Katarina 技能条目写有 Death Lotus 的飞刀会施加 on-hit 与 on-attack，可作为主结论来源。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表也把 Death Lotus 归入相关技能列表，适合交叉验证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜",
+        "r",
+        "触发",
+        "攻击特效",
+        "卡特琳娜琳娜",
+        "卡特琳娜大招",
+        "死亡莲华",
+        "on-attack"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "nasus-q-spell-damage",
+      "question": "内瑟斯 Q 算普攻还是技能伤害",
+      "normalizedQuestion": "内瑟斯 q 算普攻还是技能伤害",
+      "aliases": [
+        "狗头 Q 算不算技能伤害",
+        "内瑟斯 q 是普攻还是技能",
+        "狗头 q 会不会触发技能效果"
+      ],
+      "answerShort": "高置信结论：它是强化下一次平A的技能，但伤害分类仍是 spell damage；同时能吃到整段生命偷取。",
+      "answerDetail": "Siphoning Strike 很容易被口头说成‘就是一发普攻’，但公开资料把它归在 spell damage，并补充说明整段伤害都能享受 life steal，还会触发 Tear 的 Manaflow。对海克斯大乱斗来说，这意味着它既有普攻载体，又保留明显的技能伤害特征。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "若具体海克斯只看普攻命中路径，仍要结合它是否接受技能强化普攻判断。",
+        "这里回答的是基础伤害分类，不等于所有装备交互都完全一致。"
+      ],
+      "entities": {
+        "champions": [
+          "内瑟斯"
+        ],
+        "skills": [
+          "Q",
+          "汲魂痛击"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "spell damage",
+          "生命偷取",
+          "强化普攻"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Nasus - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Nasus",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.82,
+          "evidence_summary": "Siphoning Strike 条目将其伤害归类为 spell damage，并特别写到整段伤害都适用 life steal，也会触发 Tear Manaflow。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.78,
+          "evidence_summary": "攻击特效技能总表把 Siphoning Strike 归在强化普攻技能集合，有助于解释它的混合判定。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "内瑟斯",
+        "q",
+        "算普攻还是技能伤害",
+        "算不算技能伤害",
+        "是普攻还是技能",
+        "触发技能效果",
+        "汲魂痛击",
+        "技能伤害",
+        "spell",
+        "damage",
+        "生命偷取",
+        "强化普攻"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "samira-passive-onhit-once",
+      "question": "莎弥拉被动追击控住目标那一下能不能触发攻击特效",
+      "normalizedQuestion": "莎弥拉被动追击控住目标那一下触发 攻击特效",
+      "aliases": [
+        "莎弥拉被动突脸会不会触发 on-hit",
+        "莎弥拉被动那一刀能不能吃攻击特效",
+        "samira passive on-hit"
+      ],
+      "answerShort": "高置信结论：能，但只算一次。莎弥拉被动追击的强化攻击会触发一次 on-hit，不会在同一目标上短时间无限重复。",
+      "answerDetail": "Samira 的词条写到，被动追击控制目标时触发的强化攻击会施加 on-hit effects only once，而且同一目标在短时间内不能反复吃这一下。对海克斯大乱斗来说，这更像‘一次强化普攻’而不是连续多段命中。",
+      "confidence": 0.81,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "该结论针对被动追击触发的强化攻击，不等同于整套连招的所有伤害。",
+        "如果问题改成 R 或普攻本体，需要另看对应技能条目。"
+      ],
+      "entities": {
+        "champions": [
+          "莎弥拉"
+        ],
+        "skills": [
+          "被动",
+          "悍勇本色"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "单次触发"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Samira - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Samira",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "Samira 条目写有被动追击的强化攻击 applies on-hit effects only once，且同一目标有短时间限制。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "莎弥拉被动追击控住目标那一下触发",
+        "攻击特效",
+        "莎弥拉被动突脸触发",
+        "莎弥拉被动那一刀触发吃攻击特效",
+        "samira",
+        "passive",
+        "莎弥拉",
+        "被动",
+        "悍勇本色",
+        "单次触发"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "urgot-w-onhit",
+      "question": "厄加特 W 能不能触发攻击特效",
+      "normalizedQuestion": "厄加特 w 触发 攻击特效",
+      "aliases": [
+        "螃蟹 W 吃不吃 on-hit",
+        "厄加特 W 会不会触发攻击特效",
+        "厄加特 W 能吃攻击特效吗"
+      ],
+      "answerShort": "高置信结论：能触发。厄加特 W 的扫射会触发 on-hit 和 on-attack，但 on-hit 伤害会按技能自带比例缩放。",
+      "answerDetail": "当前公开资料把厄加特 W 的子弹视为基本攻击路径，因此能带出攻击特效；但它不是完整普攻拷贝，on-hit 伤害会被 W 的结算规则下调，所以不能简单等同于一次完整普攻。",
+      "confidence": 0.89,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "海克斯大乱斗当前未见单独改写该技能的基础结算。",
+        "如果某个海克斯或装备文本单独改写 on-hit 比例，应优先按该文本理解。"
+      ],
+      "entities": {
+        "champions": [
+          "厄加特"
+        ],
+        "skills": [
+          "W",
+          "净除"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Urgot - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Urgot",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.86,
+          "evidence_summary": "Purge 被描述为自动攻击，并明确写到每次攻击会施加 on-hit 和 on-attack，且 on-hit 伤害有额外缩放。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.79,
+          "evidence_summary": "攻击特效总表将 Purge 列为会触发攻击特效的技能例子，可作为交叉印证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄加特",
+        "w",
+        "触发",
+        "攻击特效",
+        "能吃攻击特效吗",
+        "净除",
+        "on-attack"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "urgot-w-spellblade",
+      "question": "厄加特 W 开启或手动关闭能不能触发法术刃",
+      "normalizedQuestion": "厄加特 w 开启或手动关闭触发法术刃",
+      "aliases": [
+        "螃蟹 W 能不能触发咒刃",
+        "厄加特 W 会不会触发 Spellblade",
+        "厄加特 W 开关算不算施法"
+      ],
+      "answerShort": "高置信结论：可以。W 的初次开启和手动关闭都算技能施放，能触发法术刃这类 on-cast 效果。",
+      "answerDetail": "公开资料明确提到，厄加特 W 的初次施放和手动再按一次结束都属于 ability activation，因此像 Spellblade 这类依赖施法触发的效果可以被激活。自然持续时间结束通常不应额外理解成一次新的主动施法。",
+      "confidence": 0.87,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "这里说的是施法触发类效果，不等于 W 的每一发子弹都重新触发法术刃。",
+        "若海克斯文本要求的是命中触发而非施法触发，应分开判断。"
+      ],
+      "entities": {
+        "champions": [
+          "厄加特"
+        ],
+        "skills": [
+          "W",
+          "净除"
+        ],
+        "mechanics": [
+          "法术刃",
+          "Spellblade",
+          "on-cast"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Urgot - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Urgot",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.86,
+          "evidence_summary": "Purge 的说明里直接写到初始施放和手动 recast 都算 ability activation，可用于 Spellblade 这类 on-cast 效果。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄加特",
+        "w",
+        "开启或手动关闭触发法术刃",
+        "触发法术刃",
+        "触发",
+        "法术刃",
+        "开关算不算施法",
+        "净除",
+        "on-cast"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "warwick-r-onhit",
+      "question": "沃里克 R 会不会多次触发攻击特效",
+      "normalizedQuestion": "沃里克 r 触发多次触发 攻击特效",
+      "aliases": [
+        "狼人 R 会不会触发三次 on-hit",
+        "狼人大招 攻击特效次数",
+        "沃里克 r 攻击特效"
+      ],
+      "answerShort": "高置信结论：会。沃里克 R 会以 100% 效率施加 3 次 on-hit，同时也会触发 on-attack。",
+      "answerDetail": "Infinite Duress 的公开资料写得很直接：压制期间会造成 3 次伤害，每次都按 100% 效率施加 on-hit，并触发 on-attack。这类技能在海克斯大乱斗里通常是攻击特效强化的高联动对象。",
+      "confidence": 0.9,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "如果问题进一步细化为“能不能超过 3 次”，默认仍按技能写明的 3 次判断。",
+        "若装备或海克斯要求的是‘首次命中’而非每次命中，需要单独看文本上限。"
+      ],
+      "entities": {
+        "champions": [
+          "沃里克"
+        ],
+        "skills": [
+          "R",
+          "无尽束缚"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack",
+          "多段命中"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Warwick - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Warwick",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "evidence_summary": "Infinite Duress 的说明写有以 100% 效率施加 3 次 on-hit，并触发 on-attack。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "攻击特效技能总表将 Infinite Duress 列为多次施加攻击特效的技能例子。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "沃里克",
+        "r",
+        "触发多次触发",
+        "攻击特效",
+        "触发三次",
+        "沃里克大招",
+        "攻击特效次数",
+        "无尽束缚",
+        "on-attack",
+        "多段命中"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "yasuo-q-first-target-onhit",
+      "question": "亚索 Q 会不会触发攻击特效",
+      "normalizedQuestion": "亚索 q 触发 攻击特效",
+      "aliases": [
+        "亚索 q 吃不吃 on-hit",
+        "亚索 q 会不会触发攻击特效",
+        "yasuo q 攻击特效"
+      ],
+      "answerShort": "高置信结论：会，但只对第一个命中的目标施加 on-hit 和 on-attack。",
+      "answerDetail": "Steel Tempest 的公开资料明确写到：它会对第一个命中的目标施加 on-hit 和 on-attack。这个细节很重要，因为很多人会把 Q 当成整条直线都带完整攻击特效，实际不是这样。",
+      "confidence": 0.88,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "只回答攻击特效路径，不等于后续范围伤害完全按普攻处理。",
+        "如果问题涉及旋风或 EQ 圈，需再看具体命中段落。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "Q",
+          "斩钢闪"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack",
+          "首个目标"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Yasuo - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Yasuo",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "Steel Tempest 说明写有对第一个命中的目标施加 on-hit 和 on-attack，是核心依据。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.79,
+          "evidence_summary": "攻击特效技能总表将 Steel Tempest 列为会带攻击特效的技能，并强调存在命中目标限制。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "亚索",
+        "q",
+        "触发",
+        "攻击特效",
+        "yasuo",
+        "斩钢闪",
+        "on-attack",
+        "首个目标"
+      ],
+      "sourceCount": 2
+    },
+    {
+      "id": "yone-q-first-target-onhit",
+      "question": "永恩 Q 会不会触发攻击特效",
+      "normalizedQuestion": "永恩 q 触发 攻击特效",
+      "aliases": [
+        "永恩 q 吃不吃 on-hit",
+        "永恩 q 会不会触发攻击特效",
+        "yone q 攻击特效"
+      ],
+      "answerShort": "高置信结论：会，但和亚索 Q 一样，on-hit / on-attack 只落在第一个命中的目标上。",
+      "answerDetail": "Mortal Steel 的公开说明与亚索 Q 很接近：技能会对首个命中目标施加 on-hit 和 on-attack。因此如果你在海克斯大乱斗里关心的是命中一串人时谁能吃到攻击特效，默认只看第一个吃线的目标。",
+      "confidence": 0.88,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "第三段位移与旋风的范围效果仍要按技能本身文本理解。",
+        "这里回答的是 on-hit 施加对象，不是所有伤害段的完整分类。"
+      ],
+      "entities": {
+        "champions": [
+          "永恩"
+        ],
+        "skills": [
+          "Q",
+          "错玉切"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "on-attack",
+          "首个目标"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Yone - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Yone",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "Mortal Steel 条目写有会对首个命中目标施加 on-hit 与 on-attack，可作为主依据。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Attack effects / Abilities - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.79,
+          "evidence_summary": "攻击特效技能总表将 Mortal Steel 列为会带攻击特效的技能并注明命中目标限制。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "永恩",
+        "q",
+        "触发",
+        "攻击特效",
+        "yone",
+        "错玉切",
+        "on-attack",
+        "首个目标"
+      ],
+      "sourceCount": 2
+    }
+  ]
+}

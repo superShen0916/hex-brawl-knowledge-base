@@ -1,0 +1,45 @@
+{
+  "id": "ezreal-q-spell-effects",
+  "question": "伊泽瑞尔 Q 算技能伤害还是普攻",
+  "aliases": [
+    "EZ Q 算不算法术效果",
+    "伊泽瑞尔 Q 会不会触发法术效果",
+    "ez q 是技能还是普攻"
+  ],
+  "answer_short": "高置信结论：两边都沾。Q 会触发攻击特效，但公开资料也把它视为会触发法术效果的技能伤害路径。",
+  "answer_detail": "Mystic Shot 最容易误判的点就在这里：它不是纯普攻，也不是普通技能弹道。公开资料一方面明确写有 on-hit/on-attack，另一方面又说明它会以额外 0 点技能伤害的形式触发 spell effects，所以很多海克斯需要分别判断“攻击触发”和“技能触发”两条链路。",
+  "status": "high_confidence",
+  "confidence": 0.88,
+  "patch_range": "通用机制",
+  "conditions": [
+    "遇到文本要求“仅普攻”或“仅技能伤害”时，优先看该效果是否接受伊泽瑞尔 Q 这种混合判定。",
+    "海克斯大乱斗里多数增强仍沿用这条基础判定。"
+  ],
+  "entities": {
+    "champions": ["伊泽瑞尔"],
+    "skills": ["Q", "秘术射击"],
+    "mechanics": ["法术效果", "spell effects", "攻击特效"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Template: WR Data Ezreal/Mystic Shot - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Template:WR_Data_Ezreal/Mystic_Shot",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.78,
+      "evidence_summary": "条目说明 Mystic Shot 会触发 on-hit/on-attack，同时 notes 中提到它以 0 点额外 spell damage 触发法术效果。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects / Abilities - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "攻击特效技能总表把 Mystic Shot 同时归类在攻击特效技能列表中，说明它不是普通纯技能伤害。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

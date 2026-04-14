@@ -1,0 +1,45 @@
+{
+  "id": "katarina-r-onhit",
+  "question": "卡特 R 能不能触发攻击特效",
+  "aliases": [
+    "卡特琳娜 R 吃不吃 on-hit",
+    "卡特 R 会不会触发攻击特效",
+    "卡特大招 攻击特效"
+  ],
+  "answer_short": "高置信结论：能。卡特 R 的每把飞刀都会施加 on-hit 和 on-attack，但要按技能自己的比例结算，不能当成满额普攻连点。",
+  "answer_detail": "Death Lotus 在公开资料里被明确标成每把飞刀都施加 on-hit 与 on-attack，因此它和很多命中类海克斯、装备会有强联动。但这类联动通常受技能内部的 on-hit 比例限制，所以判断强弱时不能只看“能不能触发”，还要看“按多少比例触发”。",
+  "status": "high_confidence",
+  "confidence": 0.88,
+  "patch_range": "通用机制",
+  "conditions": [
+    "适合回答“能不能触发”，不直接等于“收益一定极高”。",
+    "若海克斯或装备文本限制单次命中次数，应额外看频率上限。"
+  ],
+  "entities": {
+    "champions": ["卡特琳娜"],
+    "skills": ["R", "死亡莲华"],
+    "mechanics": ["攻击特效", "on-hit", "on-attack"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Katarina - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Katarina",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "Katarina 技能条目写有 Death Lotus 的飞刀会施加 on-hit 与 on-attack，可作为主结论来源。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects / Abilities - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "攻击特效技能总表也把 Death Lotus 归入相关技能列表，适合交叉验证。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "fizz-q-onhit",
+  "question": "菲兹 Q 能不能触发攻击特效",
+  "aliases": [
+    "小鱼人 Q 会不会触发攻击特效",
+    "菲兹 q 吃不吃 on-hit",
+    "小鱼人 q 攻击特效"
+  ],
+  "answer_short": "高置信结论：能。菲兹 Q 会施加 on-hit，而且技能本体仍是 spell damage，因此常见攻击特效和法术效果都会和它发生关系。",
+  "answer_detail": "Urchin Strike 的技能词条同时给出了两层信息：一是命中时会施加 on-hit，二是它的伤害分类仍属于 spell damage。对海克斯大乱斗来说，这意味着它是典型的‘攻击特效 + 技能效果’混合交互技能。",
+  "status": "high_confidence",
+  "confidence": 0.86,
+  "patch_range": "通用机制",
+  "conditions": [
+    "如果海克斯文本限制仅平A本体，不能仅凭 on-hit 就推断 100% 生效。",
+    "若问题是‘能不能触发’，当前高置信答案是可以。"
+  ],
+  "entities": {
+    "champions": ["菲兹"],
+    "skills": ["Q", "淘气打击"],
+    "mechanics": ["攻击特效", "on-hit", "法术效果", "spell damage"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Fizz - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Fizz",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.83,
+      "evidence_summary": "Urchin Strike 条目写有造成法术伤害并施加 on-hit effects，是主来源。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects / Abilities - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "攻击特效技能总表将 Urchin Strike 列为会触发攻击特效的技能，可用于交叉验证。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

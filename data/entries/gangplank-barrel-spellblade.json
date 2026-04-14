@@ -1,0 +1,35 @@
+{
+  "id": "gangplank-barrel-spellblade",
+  "question": "船长桶子会不会把法术刃一起炸出去",
+  "aliases": [
+    "普朗克桶子能不能带 Spellblade 伤害",
+    "船长桶子会不会继承咒刃",
+    "船长 Q 桶子 法术刃"
+  ],
+  "answer_short": "高置信结论：会带出去，但不会再被桶子的暴击额外放大。引爆桶子的那次 Spellblade 伤害会并入爆炸。",
+  "answer_detail": "Gangplank 页面有很细的注记：如果引爆火药桶的那发攻击带有 Spellblade，爆炸会把这段伤害一并转移出去；但这类额外伤害不是桶子基础伤害本体，因此不会再享受桶子暴击伤害的额外放大。",
+  "status": "high_confidence",
+  "confidence": 0.87,
+  "patch_range": "通用机制",
+  "conditions": [
+    "这里说的是引爆桶子的那发攻击本身带有 Spellblade。",
+    "若问题改成“所有 on-hit 都能完整吃到桶子的暴击放大”，答案应更保守。"
+  ],
+  "entities": {
+    "champions": ["普朗克"],
+    "skills": ["Q", "E", "枪火谈判", "火药桶"],
+    "mechanics": ["法术刃", "Spellblade", "桶子", "暴击"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Gangplank - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Gangplank",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.84,
+      "evidence_summary": "火药桶说明的注记写有带 Spellblade 的攻击引爆桶时，爆炸会带上该伤害，但这部分不会享受额外暴击放大。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

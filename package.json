@@ -1,0 +1,12 @@
+{
+  "name": "hex-brawl-knowledge-base",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build:index": "node scripts/build-search-index.mjs",
+    "build": "npm run build:index",
+    "serve": "python3 -m http.server 4173"
+  }
+}

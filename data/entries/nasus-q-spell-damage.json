@@ -1,0 +1,45 @@
+{
+  "id": "nasus-q-spell-damage",
+  "question": "内瑟斯 Q 算普攻还是技能伤害",
+  "aliases": [
+    "狗头 Q 算不算技能伤害",
+    "内瑟斯 q 是普攻还是技能",
+    "狗头 q 会不会触发技能效果"
+  ],
+  "answer_short": "高置信结论：它是强化下一次平A的技能，但伤害分类仍是 spell damage；同时能吃到整段生命偷取。",
+  "answer_detail": "Siphoning Strike 很容易被口头说成‘就是一发普攻’，但公开资料把它归在 spell damage，并补充说明整段伤害都能享受 life steal，还会触发 Tear 的 Manaflow。对海克斯大乱斗来说，这意味着它既有普攻载体，又保留明显的技能伤害特征。",
+  "status": "high_confidence",
+  "confidence": 0.84,
+  "patch_range": "通用机制",
+  "conditions": [
+    "若具体海克斯只看普攻命中路径，仍要结合它是否接受技能强化普攻判断。",
+    "这里回答的是基础伤害分类，不等于所有装备交互都完全一致。"
+  ],
+  "entities": {
+    "champions": ["内瑟斯"],
+    "skills": ["Q", "汲魂痛击"],
+    "mechanics": ["技能伤害", "spell damage", "生命偷取", "强化普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Nasus - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Nasus",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.82,
+      "evidence_summary": "Siphoning Strike 条目将其伤害归类为 spell damage，并特别写到整段伤害都适用 life steal，也会触发 Tear Manaflow。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects / Abilities - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.78,
+      "evidence_summary": "攻击特效技能总表把 Siphoning Strike 归在强化普攻技能集合，有助于解释它的混合判定。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

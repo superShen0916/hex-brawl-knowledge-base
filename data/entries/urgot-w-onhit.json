@@ -1,0 +1,45 @@
+{
+  "id": "urgot-w-onhit",
+  "question": "厄加特 W 能不能触发攻击特效",
+  "aliases": [
+    "螃蟹 W 吃不吃 on-hit",
+    "厄加特 W 会不会触发攻击特效",
+    "厄加特 W 能吃攻击特效吗"
+  ],
+  "answer_short": "高置信结论：能触发。厄加特 W 的扫射会触发 on-hit 和 on-attack，但 on-hit 伤害会按技能自带比例缩放。",
+  "answer_detail": "当前公开资料把厄加特 W 的子弹视为基本攻击路径，因此能带出攻击特效；但它不是完整普攻拷贝，on-hit 伤害会被 W 的结算规则下调，所以不能简单等同于一次完整普攻。",
+  "status": "high_confidence",
+  "confidence": 0.89,
+  "patch_range": "通用机制",
+  "conditions": [
+    "海克斯大乱斗当前未见单独改写该技能的基础结算。",
+    "如果某个海克斯或装备文本单独改写 on-hit 比例，应优先按该文本理解。"
+  ],
+  "entities": {
+    "champions": ["厄加特"],
+    "skills": ["W", "净除"],
+    "mechanics": ["攻击特效", "on-hit", "on-attack"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Urgot - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Urgot",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.86,
+      "evidence_summary": "Purge 被描述为自动攻击，并明确写到每次攻击会施加 on-hit 和 on-attack，且 on-hit 伤害有额外缩放。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.79,
+      "evidence_summary": "攻击特效总表将 Purge 列为会触发攻击特效的技能例子，可作为交叉印证。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

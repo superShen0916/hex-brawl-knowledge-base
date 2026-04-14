@@ -1,0 +1,35 @@
+{
+  "id": "urgot-w-spellblade",
+  "question": "厄加特 W 开启或手动关闭能不能触发法术刃",
+  "aliases": [
+    "螃蟹 W 能不能触发咒刃",
+    "厄加特 W 会不会触发 Spellblade",
+    "厄加特 W 开关算不算施法"
+  ],
+  "answer_short": "高置信结论：可以。W 的初次开启和手动关闭都算技能施放，能触发法术刃这类 on-cast 效果。",
+  "answer_detail": "公开资料明确提到，厄加特 W 的初次施放和手动再按一次结束都属于 ability activation，因此像 Spellblade 这类依赖施法触发的效果可以被激活。自然持续时间结束通常不应额外理解成一次新的主动施法。",
+  "status": "high_confidence",
+  "confidence": 0.87,
+  "patch_range": "通用机制",
+  "conditions": [
+    "这里说的是施法触发类效果，不等于 W 的每一发子弹都重新触发法术刃。",
+    "若海克斯文本要求的是命中触发而非施法触发，应分开判断。"
+  ],
+  "entities": {
+    "champions": ["厄加特"],
+    "skills": ["W", "净除"],
+    "mechanics": ["法术刃", "Spellblade", "on-cast"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Urgot - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Urgot",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.86,
+      "evidence_summary": "Purge 的说明里直接写到初始施放和手动 recast 都算 ability activation，可用于 Spellblade 这类 on-cast 效果。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

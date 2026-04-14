@@ -1,0 +1,45 @@
+{
+  "id": "ezreal-q-onhit",
+  "question": "伊泽瑞尔 Q 能不能触发攻击特效",
+  "aliases": [
+    "EZ Q 能吃 on-hit 吗",
+    "伊泽瑞尔 Q 会不会触发攻击特效",
+    "ez q 攻击特效"
+  ],
+  "answer_short": "高置信结论：能。伊泽瑞尔 Q 会触发 on-hit 和 on-attack，通常可以直接把它理解成一发带攻击特效的技能弹道。",
+  "answer_detail": "Mystic Shot 的公开资料明确把它列为会施加 on-hit 和 on-attack 的技能，因此像法术刃、吸蓝刀一类依赖攻击路径的机制通常都能被 Q 带出。之所以很多人会混淆，是因为它同时也是技能，不是单纯普攻拷贝。",
+  "status": "high_confidence",
+  "confidence": 0.89,
+  "patch_range": "通用机制",
+  "conditions": [
+    "默认按当前常规技能机制理解，海克斯大乱斗未见单独改写该基础逻辑。",
+    "若某海克斯要求近战/远程或限定普攻本体，应再看该海克斯原文。"
+  ],
+  "entities": {
+    "champions": ["伊泽瑞尔"],
+    "skills": ["Q", "秘术射击"],
+    "mechanics": ["攻击特效", "on-hit", "on-attack"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Ezreal - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Ezreal",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.83,
+      "evidence_summary": "Mystic Shot 的技能页写有会施加 on-hit 与 on-attack 效果，可作为主来源。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Attack effects / Abilities - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "攻击特效技能总表把 Mystic Shot 列为可以触发攻击特效的技能例子，适合交叉验证。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

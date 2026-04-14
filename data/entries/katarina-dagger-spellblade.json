@@ -1,0 +1,45 @@
+{
+  "id": "katarina-dagger-spellblade",
+  "question": "卡特捡匕首那圈伤害能不能触发法术刃",
+  "aliases": [
+    "卡特匕首圈能不能触发咒刃",
+    "卡特被动捡刀会不会吃 Spellblade",
+    "卡特 voracity 法术刃"
+  ],
+  "answer_short": "高置信结论：通常能吃到一次。卡特捡匕首触发的 Voracity 会施加 on-hit，单次型 on-hit 如法术刃一般只会在最近目标上消耗一次。",
+  "answer_detail": "当前公开资料把 Voracity 列为会施加攻击特效的效果。基于这一点，可以高置信推断单次消耗型 on-hit 例如 Spellblade 能在捡刀那圈命中里被吃掉，但不应把它理解成对多个目标或多段范围重复结算。",
+  "status": "high_confidence",
+  "confidence": 0.78,
+  "patch_range": "通用机制",
+  "conditions": [
+    "这是基于攻击特效规则页和技能词条的合并推断，不是官方直接逐字写明的结论。",
+    "若出现与单次消耗型 on-hit 叠层机制相关的特殊海克斯，应优先实测。"
+  ],
+  "entities": {
+    "champions": ["卡特琳娜"],
+    "skills": ["被动", "贪婪"],
+    "mechanics": ["法术刃", "Spellblade", "攻击特效", "匕首"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Attack effects - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.79,
+      "evidence_summary": "攻击特效总表把 Voracity 列入会施加攻击特效的技能/效果，可支持捡刀伤害能触发单次型 on-hit 的高置信推断。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Katarina - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Katarina",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.74,
+      "evidence_summary": "Katarina 技能条目提供了 Voracity 的命中语境，可与攻击特效规则页配合判断其触发方式。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}
