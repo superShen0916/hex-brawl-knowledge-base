@@ -6,6 +6,7 @@ const expectedPaths = [
   '.gitignore',
   'README.md',
   'package.json',
+  'index.html',
   'site/index.html',
   'site/styles.css',
   'site/app.js',
