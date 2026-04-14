@@ -21,6 +21,7 @@ test('buildDerivedEntries emits several hundred searchable knowledge records', (
   assert.equal(entries.some((entry) => entry.id === 'derived-hextech-soul-augment-directory'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-hextech-soul-augment-rarity'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-upgrade-sheen-augment-effect'), true);
+  assert.equal(entries.some((entry) => entry.id === 'derived-firebrand-augment-effect'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-jax-w-damage-classification'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-urgot-w-scaling-note'), true);
 

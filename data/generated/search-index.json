@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T07:34:31.745Z",
+  "generatedAt": "2026-04-14T08:00:19.806Z",
   "entries": [
     {
       "id": "camille-q-spellblade-true-damage",
@@ -32577,6 +32577,64 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-stats-augment-effect",
+      "kind": "derived",
+      "question": "Stats! 这个海克斯是干嘛的",
+      "normalizedQuestion": "stats 这个海克斯是干嘛的",
+      "aliases": [
+        "Stats! 有什么效果",
+        "Stats! 海克斯效果",
+        "Stats! 值得拿吗"
+      ],
+      "answerShort": "高置信结论：直接给你 3 个属性铁砧，属于最纯粹的数值补强型海克斯。",
+      "answerDetail": "Stats! 当前记录为 Silver 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Stats!"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "属性铁砧",
+          "面板成长",
+          "数值补强"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Stats! Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/stats",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Stats! 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "stats",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "属性铁砧",
+        "面板成长",
+        "数值补强"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-jeweled-gauntlet-augment-effect",
       "kind": "derived",
       "question": "Jeweled Gauntlet 这个海克斯是干嘛的",
@@ -32753,6 +32811,65 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-dual-wield-augment-effect",
+      "kind": "derived",
+      "question": "Dual Wield 这个海克斯是干嘛的",
+      "normalizedQuestion": "dual wield 这个海克斯是干嘛的",
+      "aliases": [
+        "Dual Wield 有什么效果",
+        "Dual Wield 海克斯效果",
+        "Dual Wield 值得拿吗"
+      ],
+      "answerShort": "高置信结论：普攻会延迟射出一枚副弹，造成原次攻击部分伤害并以 40% 效率附带攻击特效，同时提升总攻速。",
+      "answerDetail": "Dual Wield 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Dual Wield"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "额外弹体",
+          "攻击特效",
+          "攻速"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Dual Wield Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/dual-wield",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Dual Wield 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "dual",
+        "wield",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "prismatic",
+        "额外弹体",
+        "攻击特效",
+        "攻速"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-ultimate-revolution-augment-effect",
       "kind": "derived",
       "question": "Ultimate Revolution 这个海克斯是干嘛的",
@@ -32808,6 +32925,65 @@
         "大招重置",
         "爆发",
         "节奏"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-stats-on-stats-on-stats-augment-effect",
+      "kind": "derived",
+      "question": "Stats on Stats on Stats! 这个海克斯是干嘛的",
+      "normalizedQuestion": "stats on stats on stats 这个海克斯是干嘛的",
+      "aliases": [
+        "Stats on Stats on Stats! 有什么效果",
+        "Stats on Stats on Stats! 海克斯效果",
+        "Stats on Stats on Stats! 值得拿吗"
+      ],
+      "answerShort": "高置信结论：给 5 个属性铁砧，并提高金色与棱彩铁砧出现概率；下次海克斯选择时每个槽位还会额外获得一次刷新。",
+      "answerDetail": "Stats on Stats on Stats! 当前记录为 Prismatic 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Stats on Stats on Stats!"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "属性铁砧",
+          "刷新",
+          "成长"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Stats on Stats on Stats! Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/stats-on-stats-on-stats",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Stats on Stats on Stats! 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "stats",
+        "on",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "prismatic",
+        "属性铁砧",
+        "刷新",
+        "成长"
       ],
       "sourceCount": 1
     },
@@ -32871,6 +33047,833 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-glass-cannon-augment-effect",
+      "kind": "derived",
+      "question": "Glass Cannon 这个海克斯是干嘛的",
+      "normalizedQuestion": "glass cannon 这个海克斯是干嘛的",
+      "aliases": [
+        "Glass Cannon 有什么效果",
+        "Glass Cannon 海克斯效果",
+        "Glass Cannon 值得拿吗"
+      ],
+      "answerShort": "高置信结论：把生命阈值锁在最大生命值的 70%，换来按你造成伤害前减伤数值额外附加 15% 真实伤害。",
+      "answerDetail": "Glass Cannon 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Glass Cannon"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "真实伤害",
+          "高风险高回报",
+          "爆发"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Glass Cannon Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/glass-cannon",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Glass Cannon 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "glass",
+        "cannon",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "prismatic",
+        "真实伤害",
+        "高风险高回报",
+        "爆发"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-ominous-pact-augment-effect",
+      "kind": "derived",
+      "question": "Ominous Pact 这个海克斯是干嘛的",
+      "normalizedQuestion": "ominous pact 这个海克斯是干嘛的",
+      "aliases": [
+        "Ominous Pact 有什么效果",
+        "Ominous Pact 海克斯效果",
+        "Ominous Pact 值得拿吗"
+      ],
+      "answerShort": "高置信结论：技能改为消耗当前生命值施放，换来随已损失生命提高的法强、移速和全能吸血。",
+      "answerDetail": "Ominous Pact 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Ominous Pact"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "生命换伤害",
+          "法强",
+          "全能吸血"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Ominous Pact Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/ominous-pact",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Ominous Pact 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "ominous",
+        "pact",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "prismatic",
+        "生命换伤害",
+        "法强",
+        "全能吸血"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-scopiest-weapons-augment-effect",
+      "kind": "derived",
+      "question": "Scopiest Weapons 这个海克斯是干嘛的",
+      "normalizedQuestion": "scopiest weapons 这个海克斯是干嘛的",
+      "aliases": [
+        "Scopiest Weapons 有什么效果",
+        "Scopiest Weapons 海克斯效果",
+        "Scopiest Weapons 值得拿吗"
+      ],
+      "answerShort": "高置信结论：提供 250/150 额外攻击距离，是三档范围海克斯里加成最高的一档。",
+      "answerDetail": "Scopiest Weapons 当前记录为 Prismatic 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Scopiest Weapons"
+        ],
+        "rarities": [
+          "Prismatic"
+        ],
+        "mechanics": [
+          "攻击距离",
+          "射程",
+          "拉扯"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Scopiest Weapons Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/scopiest-weapons",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Scopiest Weapons 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "scopiest",
+        "weapons",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "prismatic",
+        "攻击距离",
+        "射程",
+        "拉扯"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-stats-on-stats-augment-effect",
+      "kind": "derived",
+      "question": "Stats on Stats! 这个海克斯是干嘛的",
+      "normalizedQuestion": "stats on stats 这个海克斯是干嘛的",
+      "aliases": [
+        "Stats on Stats! 有什么效果",
+        "Stats on Stats! 海克斯效果",
+        "Stats on Stats! 值得拿吗"
+      ],
+      "answerShort": "高置信结论：给 4 个属性铁砧，并提高金色与棱彩铁砧出现概率，适合稳定补面板。",
+      "answerDetail": "Stats on Stats! 当前记录为 Gold 海克斯，初次出现于 26.3。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.3",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Stats on Stats!"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "属性铁砧",
+          "面板成长",
+          "数值补强"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Stats on Stats! Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/stats-on-stats",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Stats on Stats! 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.3"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "stats",
+        "on",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "属性铁砧",
+        "面板成长",
+        "数值补强"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-magic-missile-augment-effect",
+      "kind": "derived",
+      "question": "Magic Missile 这个海克斯是干嘛的",
+      "normalizedQuestion": "magic missile 这个海克斯是干嘛的",
+      "aliases": [
+        "Magic Missile 有什么效果",
+        "Magic Missile 海克斯效果",
+        "Magic Missile 值得拿吗"
+      ],
+      "answerShort": "高置信结论：技能在近距离命中英雄时会额外发射 3 枚飞弹，按目标最大生命值造成真实伤害；同一次施法有内置冷却。",
+      "answerDetail": "Magic Missile 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Magic Missile"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "技能命中",
+          "真实伤害",
+          "斩坦"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Magic Missile Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/magic-missile",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Magic Missile 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "magic",
+        "missile",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "技能命中",
+        "真实伤害",
+        "斩坦"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-scopier-weapons-augment-effect",
+      "kind": "derived",
+      "question": "Scopier Weapons 这个海克斯是干嘛的",
+      "normalizedQuestion": "scopier weapons 这个海克斯是干嘛的",
+      "aliases": [
+        "Scopier Weapons 有什么效果",
+        "Scopier Weapons 海克斯效果",
+        "Scopier Weapons 值得拿吗"
+      ],
+      "answerShort": "高置信结论：提供 200/100 额外攻击距离，能显著拉长普攻和部分按攻击距离结算的技能起手。",
+      "answerDetail": "Scopier Weapons 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Scopier Weapons"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "攻击距离",
+          "射程",
+          "拉扯"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Scopier Weapons Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/scopier-weapons",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Scopier Weapons 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "scopier",
+        "weapons",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "攻击距离",
+        "射程",
+        "拉扯"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-from-beginning-to-end-augment-effect",
+      "kind": "derived",
+      "question": "From Beginning To End 这个海克斯是干嘛的",
+      "normalizedQuestion": "from beginning to end 这个海克斯是干嘛的",
+      "aliases": [
+        "From Beginning To End 有什么效果",
+        "From Beginning To End 海克斯效果",
+        "From Beginning To End 值得拿吗"
+      ],
+      "answerShort": "高置信结论：直接给予黑暗收割和先攻两枚基石符文，适合爆发和远程消耗英雄。",
+      "answerDetail": "From Beginning To End 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "From Beginning To End"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "基石符文",
+          "爆发",
+          "消耗"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "From Beginning To End Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/from-beginning-to-end",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "From Beginning To End 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "from",
+        "beginning",
+        "to",
+        "end",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "基石符文",
+        "爆发",
+        "消耗"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-twice-thrice-augment-effect",
+      "kind": "derived",
+      "question": "Twice Thrice 这个海克斯是干嘛的",
+      "normalizedQuestion": "twice thrice 这个海克斯是干嘛的",
+      "aliases": [
+        "Twice Thrice 有什么效果",
+        "Twice Thrice 海克斯效果",
+        "Twice Thrice 值得拿吗"
+      ],
+      "answerShort": "高置信结论：普攻会先叠层，叠到第 3 下时把攻击特效再以 150% 效率额外结算一次。",
+      "answerDetail": "Twice Thrice 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Twice Thrice"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "连击",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Twice Thrice Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/twice-thrice",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Twice Thrice 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "twice",
+        "thrice",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "攻击特效",
+        "连击"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-marksmage-augment-effect",
+      "kind": "derived",
+      "question": "Marksmage 这个海克斯是干嘛的",
+      "normalizedQuestion": "marksmage 这个海克斯是干嘛的",
+      "aliases": [
+        "Marksmage 有什么效果",
+        "Marksmage 海克斯效果",
+        "Marksmage 值得拿吗"
+      ],
+      "answerShort": "高置信结论：让普攻额外造成等于 75% AP 的物理伤害，适合会持续点人的 AP 英雄。",
+      "answerDetail": "Marksmage 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Marksmage"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "AP 转伤害",
+          "普攻增伤",
+          "混伤"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Marksmage Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/marksmage",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Marksmage 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "marksmage",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "ap",
+        "转伤害",
+        "普攻增伤",
+        "混伤"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-ethereal-weapon-augment-effect",
+      "kind": "derived",
+      "question": "Ethereal Weapon 这个海克斯是干嘛的",
+      "normalizedQuestion": "ethereal weapon 这个海克斯是干嘛的",
+      "aliases": [
+        "Ethereal Weapon 有什么效果",
+        "Ethereal Weapon 海克斯效果",
+        "Ethereal Weapon 值得拿吗"
+      ],
+      "answerShort": "高置信结论：让技能也能触发攻击特效，并带每目标 1 秒内置冷却，适合本来就吃 on-hit 的技能型英雄。",
+      "answerDetail": "Ethereal Weapon 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Ethereal Weapon"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "技能触发",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Ethereal Weapon Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/ethereal-weapon",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Ethereal Weapon 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "ethereal",
+        "weapon",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "攻击特效",
+        "技能触发"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-slow-and-steady-augment-effect",
+      "kind": "derived",
+      "question": "Slow And Steady 这个海克斯是干嘛的",
+      "normalizedQuestion": "slow and steady 这个海克斯是干嘛的",
+      "aliases": [
+        "Slow And Steady 有什么效果",
+        "Slow And Steady 海克斯效果",
+        "Slow And Steady 值得拿吗"
+      ],
+      "answerShort": "高置信结论：把基础攻速锁到 0.625，不再吃攻速增益，但给 25 额外攻击力，并把额外攻速按 1:1 转成攻击力。",
+      "answerDetail": "Slow And Steady 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Slow And Steady"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "攻速锁定",
+          "攻击力",
+          "面板转换"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Slow And Steady Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/slow-and-steady",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Slow And Steady 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "slow",
+        "and",
+        "steady",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "攻速锁定",
+        "攻击力",
+        "面板转换"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-firebrand-augment-effect",
+      "kind": "derived",
+      "question": "Firebrand 这个海克斯是干嘛的",
+      "normalizedQuestion": "firebrand 这个海克斯是干嘛的",
+      "aliases": [
+        "Firebrand 有什么效果",
+        "Firebrand 海克斯效果",
+        "Firebrand 值得拿吗"
+      ],
+      "answerShort": "高置信结论：让普攻附带可无限叠加的灼烧，按目标最大生命值持续造成魔法伤害。",
+      "answerDetail": "Firebrand 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Firebrand"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "灼烧",
+          "最大生命值伤害",
+          "普攻挂 DoT"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Firebrand Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/firebrand",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Firebrand 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "firebrand",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "灼烧",
+        "最大生命值伤害",
+        "普攻挂",
+        "dot"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-divine-intervention-augment-effect",
+      "kind": "derived",
+      "question": "Divine Intervention 这个海克斯是干嘛的",
+      "normalizedQuestion": "divine intervention 这个海克斯是干嘛的",
+      "aliases": [
+        "Divine Intervention 有什么效果",
+        "Divine Intervention 海克斯效果",
+        "Divine Intervention 值得拿吗"
+      ],
+      "answerShort": "高置信结论：自动施放宇宙之辉，延迟后让自己和附近队友短暂无敌，并带独立冷却。",
+      "answerDetail": "Divine Intervention 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Divine Intervention"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "无敌",
+          "团队保护",
+          "自动施法"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Divine Intervention Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/divine-intervention",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Divine Intervention 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "divine",
+        "intervention",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "无敌",
+        "团队保护",
+        "自动施法"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-ok-boomerang-augment-effect",
+      "kind": "derived",
+      "question": "Ok Boomerang 这个海克斯是干嘛的",
+      "normalizedQuestion": "ok boomerang 这个海克斯是干嘛的",
+      "aliases": [
+        "Ok Boomerang 有什么效果",
+        "Ok Boomerang 海克斯效果",
+        "Ok Boomerang 值得拿吗"
+      ],
+      "answerShort": "高置信结论：会自动向最近的敌方英雄投出回旋镖，造成自适应伤害，并带 10 秒冷却。",
+      "answerDetail": "Ok Boomerang 当前记录为 Gold 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Ok Boomerang"
+        ],
+        "rarities": [
+          "Gold"
+        ],
+        "mechanics": [
+          "自动施法",
+          "消耗",
+          "自适应伤害"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Ok Boomerang Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/ok-boomerang",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Ok Boomerang 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "ok",
+        "boomerang",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "gold",
+        "自动施法",
+        "消耗",
+        "自适应伤害"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-upgrade-sheen-augment-effect",
       "kind": "derived",
       "question": "Upgrade Sheen 这个海克斯是干嘛的",
@@ -32925,6 +33928,123 @@
         "gold",
         "最大生命值伤害",
         "回复"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-typhoon-augment-effect",
+      "kind": "derived",
+      "question": "Typhoon 这个海克斯是干嘛的",
+      "normalizedQuestion": "typhoon 这个海克斯是干嘛的",
+      "aliases": [
+        "Typhoon 有什么效果",
+        "Typhoon 海克斯效果",
+        "Typhoon 值得拿吗"
+      ],
+      "answerShort": "高置信结论：普攻会向额外目标发射一支 bolt，造成 30% AD 物理伤害并附带攻击特效。",
+      "answerDetail": "Typhoon 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Typhoon"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "额外目标",
+          "攻击特效",
+          "清线"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Typhoon Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/typhoon",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Typhoon 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "typhoon",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "额外目标",
+        "攻击特效",
+        "清线"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-scoped-weapons-augment-effect",
+      "kind": "derived",
+      "question": "Scoped Weapons 这个海克斯是干嘛的",
+      "normalizedQuestion": "scoped weapons 这个海克斯是干嘛的",
+      "aliases": [
+        "Scoped Weapons 有什么效果",
+        "Scoped Weapons 海克斯效果",
+        "Scoped Weapons 值得拿吗"
+      ],
+      "answerShort": "高置信结论：提供 75/50 额外攻击距离，是最基础的一档范围海克斯。",
+      "answerDetail": "Scoped Weapons 当前记录为 Silver 海克斯，初次出现于 26.1。这个条目先用结构化摘要回答“它大概干什么”，方便在搜名字时快速理解方向。",
+      "confidence": 0.79,
+      "status": "high_confidence",
+      "patchRange": "26.1",
+      "conditions": [
+        "这是效果摘要，不是完整机制全文。",
+        "如果需要更细的数值、内置冷却或联动示例，还需要继续补专门词条。"
+      ],
+      "entities": {
+        "augments": [
+          "Scoped Weapons"
+        ],
+        "rarities": [
+          "Silver"
+        ],
+        "mechanics": [
+          "攻击距离",
+          "射程",
+          "拉扯"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "guide",
+          "title": "Scoped Weapons Augment Guide - ARAM Mayhem",
+          "url": "https://arammayhem.com/augments/scoped-weapons",
+          "publisher": "ARAM Mayhem",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.74,
+          "evidence_summary": "Scoped Weapons 的公开页面提供了海克斯效果说明与加入版本，当前条目按摘要方式改写收录。",
+          "patch_hint": "26.1"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "scoped",
+        "weapons",
+        "这个海克斯是干嘛的",
+        "有什么效果",
+        "海克斯效果",
+        "值得拿吗",
+        "silver",
+        "攻击距离",
+        "射程",
+        "拉扯"
       ],
       "sourceCount": 1
     }
