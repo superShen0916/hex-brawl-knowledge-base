@@ -2,6 +2,10 @@
 
 Search-first static knowledge site for Hex Brawl interaction Q&A.
 
+## Handoff
+
+- [Current handoff note](/Users/shenpeng.sp0916/go/src/personal/hex_brawl/docs/handoff-2026-04-14.md)
+
 ## Commands
 
 - `npm test`
