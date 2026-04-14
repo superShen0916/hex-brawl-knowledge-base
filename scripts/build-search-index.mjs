@@ -1,6 +1,7 @@
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { extractTokens, normalizeQuestion } from './lib/normalize.mjs';
+import { validateEntries } from './validate-data.mjs';
 
 function collectTokens(entry) {
   const tokenSources = [
@@ -16,6 +17,7 @@ export function buildSearchIndex({
   entriesDir = join(process.cwd(), 'data/entries'),
   outputFile = join(process.cwd(), 'data/generated/search-index.json'),
 } = {}) {
+  validateEntries({ entriesDir });
   const files = readdirSync(entriesDir).filter((file) => file.endsWith('.json'));
 
   const entries = files.map((file) => {

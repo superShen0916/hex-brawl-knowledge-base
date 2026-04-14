@@ -5,6 +5,7 @@ Search-first static knowledge site for Hex Brawl interaction Q&A.
 ## Commands
 
 - `npm test`
+- `npm run validate:data`
 - `npm run build`
 - `npm run serve`
 

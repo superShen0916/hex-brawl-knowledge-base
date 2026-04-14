@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
+    "validate:data": "node scripts/validate-data.mjs",
     "build:index": "node scripts/build-search-index.mjs",
-    "build": "npm run build:index",
+    "build": "npm run validate:data && npm run build:index",
     "serve": "python3 -m http.server 4173"
   }
 }

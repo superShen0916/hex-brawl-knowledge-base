@@ -18,11 +18,24 @@ test('buildSearchIndex emits ranked search data from entry JSON', () => {
       question: '厄加特 W 能不能触发攻击特效',
       aliases: ['螃蟹 W 吃不吃 on-hit'],
       answer_short: '大多数情况下会触发攻击特效。',
+      answer_detail: '用于测试索引生成的最小合法样例。',
       confidence: 0.86,
       status: 'high_confidence',
       patch_range: '26.7',
+      conditions: ['测试条件'],
       entities: { champions: ['厄加特'], skills: ['W'], mechanics: ['攻击特效'] },
-      sources: [],
+      sources: [
+        {
+          source_type: 'wiki',
+          title: 'Urgot - League of Legends Wiki',
+          url: 'https://wiki.leagueoflegends.com/en-us/Urgot',
+          publisher: 'League of Legends Wiki',
+          retrieved_at: '2026-04-14',
+          source_confidence: 0.8,
+          evidence_summary: '测试来源。',
+          patch_hint: '26.7'
+        }
+      ],
     })
   );
 
