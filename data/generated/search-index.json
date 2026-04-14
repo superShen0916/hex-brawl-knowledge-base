@@ -1,6 +1,80 @@
 {
-  "generatedAt": "2026-04-14T03:16:29.711Z",
+  "generatedAt": "2026-04-14T03:17:53.277Z",
   "entries": [
+    {
+      "id": "camille-q-spellblade-true-damage",
+      "question": "卡蜜尔二段 Q 会不会把法术刃一起转成真实伤害",
+      "normalizedQuestion": "卡蜜尔二段 q 触发把法术刃一起转成真实伤害",
+      "aliases": [
+        "青钢影二段 q 能不能把咒刃转真伤",
+        "卡蜜尔 q2 spellblade true damage",
+        "卡蜜尔 二段q 法术刃"
+      ],
+      "answerShort": "高置信结论：会，法术刃是特例。卡蜜尔二段 Q 的真伤转换会把 Spellblade 一并算进去，但其他普通 on-hit 不会一起参与这段真伤转换。",
+      "answerDetail": "Precision Protocol 的公开注记里专门强调了这一点：二段 Q 的真伤转换对 Spellblade 有特殊处理，会把这类伤害并入真伤转换；但其他 on-hit 效果并不会跟着进入这段真伤换算。这个问题非常适合做知识库条目，因为玩家直觉上很容易把所有 on-hit 都当成同一种处理。",
+      "confidence": 0.9,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "这里说的是二段 Q 延迟满足后的真伤转换，不是一段 Q。",
+        "法术刃是被公开点名的特例，不能直接外推到所有 on-hit。"
+      ],
+      "entities": {
+        "champions": [
+          "卡蜜尔"
+        ],
+        "skills": [
+          "Q",
+          "精准礼仪"
+        ],
+        "mechanics": [
+          "法术刃",
+          "Spellblade",
+          "真实伤害",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Camille - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Camille",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.88,
+          "evidence_summary": "Precision Protocol 条目明确写到二段 Q 的真伤转换会特殊计算 Spellblade，但其他 on-hit 不参与这一转换。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "True damage - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/True_damage",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.76,
+          "evidence_summary": "真实伤害规则页把 Precision Protocol 列为典型真伤转化技能，可辅助理解其伤害组成。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡蜜尔二段",
+        "q",
+        "触发把法术刃一起转成真实伤害",
+        "青钢影二段",
+        "触发把法术刃转真伤",
+        "卡蜜尔",
+        "q2",
+        "法术刃",
+        "true",
+        "damage",
+        "二段",
+        "精准礼仪",
+        "真实伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 2
+    },
     {
       "id": "ezreal-q-onhit",
       "question": "伊泽瑞尔 Q 能不能触发攻击特效",
@@ -540,6 +614,75 @@
       "sourceCount": 2
     },
     {
+      "id": "master-yi-q-onhit",
+      "question": "剑圣 Q 能不能触发攻击特效",
+      "normalizedQuestion": "剑圣 q 触发 攻击特效",
+      "aliases": [
+        "易大师 q 吃不吃 on-hit",
+        "剑圣阿尔法突袭会不会触发攻击特效",
+        "Master Yi Q 攻击特效"
+      ],
+      "answerShort": "高置信结论：能。剑圣 Q 会施加攻击特效，但首段和重复命中的 on-hit 效率不一样，后续重复命中会更低。",
+      "answerDetail": "Alpha Strike 的公开说明明确写到：落点伤害会施加 on-hit，主命中按较高比例结算；若同一目标被后续重复命中，则仍会触发 on-hit，但伤害效率进一步降低。所以它适合回答“能不能触发”，但不适合直接理解成每跳都等于完整平A。",
+      "confidence": 0.88,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "主目标和同目标重复命中的 on-hit 比例不同，评估收益时要分开看。",
+        "Alpha Strike 自身不会因为施加 on-hit 而触发双重打击叠层或自身冷却缩减。"
+      ],
+      "entities": {
+        "champions": [
+          "易大师"
+        ],
+        "skills": [
+          "Q",
+          "阿尔法突袭"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit",
+          "多段命中"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Master Yi - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Master_Yi",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.85,
+          "evidence_summary": "Alpha Strike 条目写有落点伤害施加 on-hit，主命中和同目标重复命中的 on-hit 比例不同，并说明不会触发自身相关附带机制。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Template:Data Master Yi/Alpha Strike - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Template:Data_Master_Yi/Alpha_Strike",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "数据模板把 Alpha Strike 的 on-hit 比例和重复命中衰减写得更细，可用于补充说明。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "剑圣",
+        "q",
+        "触发",
+        "攻击特效",
+        "易大师",
+        "剑圣阿尔法突袭触发",
+        "master",
+        "yi",
+        "阿尔法突袭",
+        "多段命中"
+      ],
+      "sourceCount": 2
+    },
+    {
       "id": "nasus-q-spell-damage",
       "question": "内瑟斯 Q 算普攻还是技能伤害",
       "normalizedQuestion": "内瑟斯 q 算普攻还是技能伤害",
@@ -669,6 +812,80 @@
         "单次触发"
       ],
       "sourceCount": 1
+    },
+    {
+      "id": "twisted-fate-w-spell-damage",
+      "question": "崔斯特 W 算强化普攻还是技能伤害",
+      "normalizedQuestion": "崔斯特 w 算强化普攻还是技能伤害",
+      "aliases": [
+        "卡牌 W 是普攻还是技能",
+        "卡牌大师 Pick a Card 算技能伤害吗",
+        "崔斯特 w 技能伤害"
+      ],
+      "answerShort": "高置信结论：它是强化下一次普攻的技能，但伤害分类仍是 spell damage。也就是说，载体是普攻，伤害身份更接近技能。",
+      "answerDetail": "Pick a Card 的公开词条很清楚：重选卡牌后，下一次基础攻击会被强化，造成修改后的魔法伤害并附带不同卡牌效果；同时它的伤害分类仍被标在 spell damage。对海克斯大乱斗来说，这种‘强化普攻载体 + 技能伤害身份’的混合技能，正是很多交互误判的来源。",
+      "confidence": 0.86,
+      "status": "high_confidence",
+      "patchRange": "通用机制",
+      "conditions": [
+        "问题如果继续细分到‘是否吃某个只认平A的海克斯’，还需要结合该海克斯文本判断。",
+        "这里的结论重点是基础攻击载体与 spell damage 分类同时成立。"
+      ],
+      "entities": {
+        "champions": [
+          "崔斯特"
+        ],
+        "skills": [
+          "W",
+          "选牌"
+        ],
+        "mechanics": [
+          "强化普攻",
+          "技能伤害",
+          "spell damage"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Twisted Fate - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "evidence_summary": "Pick a Card 条目写有会强化下一次基础攻击并附加不同效果，同时技能整体伤害分类是 spell damage。",
+          "patch_hint": "当前通用机制"
+        },
+        {
+          "source_type": "wiki",
+          "title": "Template:Data Twisted Fate/Pick a Card - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twisted_Fate/Pick_a_Card",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.8,
+          "evidence_summary": "数据模板补充了 Pick a Card 的 cast、recast 和 spell damage 分类信息，可作为结构化佐证。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "崔斯特",
+        "w",
+        "算强化普攻还是技能伤害",
+        "卡牌",
+        "是普攻还是技能",
+        "卡牌大师",
+        "pick",
+        "a",
+        "card",
+        "算技能伤害吗",
+        "技能伤害",
+        "选牌",
+        "强化普攻",
+        "spell",
+        "damage"
+      ],
+      "sourceCount": 2
     },
     {
       "id": "urgot-w-onhit",

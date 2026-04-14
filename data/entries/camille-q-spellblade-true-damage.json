@@ -1,0 +1,45 @@
+{
+  "id": "camille-q-spellblade-true-damage",
+  "question": "卡蜜尔二段 Q 会不会把法术刃一起转成真实伤害",
+  "aliases": [
+    "青钢影二段 q 能不能把咒刃转真伤",
+    "卡蜜尔 q2 spellblade true damage",
+    "卡蜜尔 二段q 法术刃"
+  ],
+  "answer_short": "高置信结论：会，法术刃是特例。卡蜜尔二段 Q 的真伤转换会把 Spellblade 一并算进去，但其他普通 on-hit 不会一起参与这段真伤转换。",
+  "answer_detail": "Precision Protocol 的公开注记里专门强调了这一点：二段 Q 的真伤转换对 Spellblade 有特殊处理，会把这类伤害并入真伤转换；但其他 on-hit 效果并不会跟着进入这段真伤换算。这个问题非常适合做知识库条目，因为玩家直觉上很容易把所有 on-hit 都当成同一种处理。",
+  "status": "high_confidence",
+  "confidence": 0.9,
+  "patch_range": "通用机制",
+  "conditions": [
+    "这里说的是二段 Q 延迟满足后的真伤转换，不是一段 Q。",
+    "法术刃是被公开点名的特例，不能直接外推到所有 on-hit。"
+  ],
+  "entities": {
+    "champions": ["卡蜜尔"],
+    "skills": ["Q", "精准礼仪"],
+    "mechanics": ["法术刃", "Spellblade", "真实伤害", "攻击特效"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Camille - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Camille",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.88,
+      "evidence_summary": "Precision Protocol 条目明确写到二段 Q 的真伤转换会特殊计算 Spellblade，但其他 on-hit 不参与这一转换。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "True damage - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/True_damage",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.76,
+      "evidence_summary": "真实伤害规则页把 Precision Protocol 列为典型真伤转化技能，可辅助理解其伤害组成。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

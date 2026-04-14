@@ -1,0 +1,45 @@
+{
+  "id": "twisted-fate-w-spell-damage",
+  "question": "崔斯特 W 算强化普攻还是技能伤害",
+  "aliases": [
+    "卡牌 W 是普攻还是技能",
+    "卡牌大师 Pick a Card 算技能伤害吗",
+    "崔斯特 w 技能伤害"
+  ],
+  "answer_short": "高置信结论：它是强化下一次普攻的技能，但伤害分类仍是 spell damage。也就是说，载体是普攻，伤害身份更接近技能。",
+  "answer_detail": "Pick a Card 的公开词条很清楚：重选卡牌后，下一次基础攻击会被强化，造成修改后的魔法伤害并附带不同卡牌效果；同时它的伤害分类仍被标在 spell damage。对海克斯大乱斗来说，这种‘强化普攻载体 + 技能伤害身份’的混合技能，正是很多交互误判的来源。",
+  "status": "high_confidence",
+  "confidence": 0.86,
+  "patch_range": "通用机制",
+  "conditions": [
+    "问题如果继续细分到‘是否吃某个只认平A的海克斯’，还需要结合该海克斯文本判断。",
+    "这里的结论重点是基础攻击载体与 spell damage 分类同时成立。"
+  ],
+  "entities": {
+    "champions": ["崔斯特"],
+    "skills": ["W", "选牌"],
+    "mechanics": ["强化普攻", "技能伤害", "spell damage"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Twisted Fate - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.84,
+      "evidence_summary": "Pick a Card 条目写有会强化下一次基础攻击并附加不同效果，同时技能整体伤害分类是 spell damage。",
+      "patch_hint": "当前通用机制"
+    },
+    {
+      "source_type": "wiki",
+      "title": "Template:Data Twisted Fate/Pick a Card - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twisted_Fate/Pick_a_Card",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.8,
+      "evidence_summary": "数据模板补充了 Pick a Card 的 cast、recast 和 spell damage 分类信息，可作为结构化佐证。",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}
