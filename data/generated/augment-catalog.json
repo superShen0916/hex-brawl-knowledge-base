@@ -1,0 +1,1176 @@
+{
+  "generatedAt": "2026-04-14T04:51:13.353Z",
+  "sourceFile": "/Users/shenpeng.sp0916/go/src/personal/hex_brawl/data/source/augments-26.3.txt",
+  "catalog": [
+    {
+      "id": "jeweled-gauntlet",
+      "name": "Jeweled Gauntlet",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "giant-slayer",
+      "name": "Giant Slayer",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "eureka",
+      "name": "Eureka",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "infinite-recursion",
+      "name": "Infinite Recursion",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "goliath",
+      "name": "Goliath",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "stats-on-stats-on-stats",
+      "name": "Stats on Stats on Stats!",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "red-envelopes",
+      "name": "Red Envelopes",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "transmute-chaos",
+      "name": "Transmute: Chaos",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "dual-wield",
+      "name": "Dual Wield",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "dropkick",
+      "name": "Dropkick",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "infernal-conduit",
+      "name": "Infernal Conduit",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "clown-college",
+      "name": "Clown College",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "tap-dancer",
+      "name": "Tap Dancer",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "mystic-punch",
+      "name": "Mystic Punch",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "void-rift",
+      "name": "Void Rift",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "scopiest-weapons",
+      "name": "Scopiest Weapons",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "fan-the-hammer",
+      "name": "Fan The Hammer",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "final-form",
+      "name": "Final Form",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "heads-up-cupcake",
+      "name": "Heads Up Cupcake!",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "quest-wooglet-s-witchcap",
+      "name": "Quest: Wooglet's Witchcap",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "slow-cooker",
+      "name": "Slow Cooker",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "symphony-of-war",
+      "name": "Symphony of War",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "dashing",
+      "name": "Dashing",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "biggest-snowball-ever",
+      "name": "Biggest Snowball Ever",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "master-of-duality",
+      "name": "Master of Duality",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "draw-your-sword",
+      "name": "Draw Your Sword",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "cruelty",
+      "name": "Cruelty",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "void-immolation",
+      "name": "Void Immolation",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "quantum-computing",
+      "name": "Quantum Computing",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "blade-waltz",
+      "name": "Blade Waltz",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "back-to-basics",
+      "name": "Back To Basics",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "goldrend",
+      "name": "Goldrend",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "gash",
+      "name": "Gash",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "mad-scientist",
+      "name": "Mad Scientist",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "protein-shake",
+      "name": "Protein Shake",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "cerberus",
+      "name": "Cerberus",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ultimate-revolution",
+      "name": "Ultimate Revolution",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "courage-of-the-colossus",
+      "name": "Courage of the Colossus",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ultimate-awakening",
+      "name": "Ultimate Awakening",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "circle-of-death",
+      "name": "Circle of Death",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "prom-queen",
+      "name": "Prom Queen",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ominous-pact",
+      "name": "Ominous Pact",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "triggered-inferno",
+      "name": "Triggered Inferno",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "holy-snowball",
+      "name": "Holy Snowball",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "glass-cannon",
+      "name": "Glass Cannon",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "omni-soul",
+      "name": "Omni Soul",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "fey-magic",
+      "name": "Fey Magic",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "windspeaker-s-blessing",
+      "name": "Windspeaker's Blessing",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "trueshotprodigy",
+      "name": "TrueshotProdigy",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "cant-touch-this",
+      "name": "Cant Touch This",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "feel-the-burn",
+      "name": "Feel the Burn",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "bounce-of-the-poro-king",
+      "name": "Bounce of the Poro King",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "quest-urf-s-champion",
+      "name": "Quest: Urf's Champion",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "king-me",
+      "name": "King Me",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "devil-on-your-shoulder",
+      "name": "Devil on Your Shoulder",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "droppybara",
+      "name": "Droppybara",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "empowered-by-the-faithful",
+      "name": "Empowered By The Faithful",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-mikael-s-blessing",
+      "name": "Upgrade Mikael's Blessing",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "orbitallaser",
+      "name": "OrbitalLaser",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "stuck-in-here-with-me",
+      "name": "Stuck In Here With Me",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "i-m-a-baby-kitty-where-is-mama",
+      "name": "I'm a Baby Kitty Where is Mama",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "laser-heal",
+      "name": "Laser Heal",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "hand-of-baron",
+      "name": "Hand of Baron",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "empyrean-promise",
+      "name": "Empyrean Promise",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "pandorasbox",
+      "name": "PandorasBox",
+      "rarity": "Prismatic",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "vampirism",
+      "name": "Vampirism",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "phenomenal-evil",
+      "name": "Phenomenal Evil",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "executioner",
+      "name": "Executioner",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "transmute-prismatic",
+      "name": "Transmute: Prismatic",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "stats-on-stats",
+      "name": "Stats on Stats!",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "tank-engine",
+      "name": "Tank Engine",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "magic-missile",
+      "name": "Magic Missile",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "shrink-engine",
+      "name": "Shrink Engine",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-hubris",
+      "name": "Upgrade Hubris",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "quest-steel-your-heart",
+      "name": "Quest: Steel Your Heart",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "grandma-s-chili-oil",
+      "name": "Grandma's Chili Oil",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "scopier-weapons",
+      "name": "Scopier Weapons",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "critical-missile",
+      "name": "Critical Missile",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "thread-the-needle",
+      "name": "Thread the Needle",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "from-beginning-to-end",
+      "name": "From Beginning To End",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "soul-eater",
+      "name": "Soul Eater",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "donation",
+      "name": "Donation",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "sonata",
+      "name": "Sonata",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "critical-healing",
+      "name": "Critical Healing",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "celestial-body",
+      "name": "Celestial Body",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "get-excited",
+      "name": "Get Excited!",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "lightning-strikes",
+      "name": "Lightning Strikes",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "poro-blaster",
+      "name": "Poro Blaster",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "spiritual-purification",
+      "name": "Spiritual Purification",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "overflow",
+      "name": "Overflow",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "final-city-transit",
+      "name": "Final City Transit",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-infinity-edge",
+      "name": "Upgrade Infinity Edge",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "it-s-killing-time",
+      "name": "It's Killing Time",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "twice-thrice",
+      "name": "Twice Thrice",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "critical-rhythm",
+      "name": "Critical Rhythm",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "perseverance",
+      "name": "Perseverance",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "apex-inventor",
+      "name": "Apex Inventor",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "marksmage",
+      "name": "Marksmage",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "vulnerability",
+      "name": "Vulnerability",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "skilled-sniper",
+      "name": "Skilled Sniper",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "cheating",
+      "name": "Cheating",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "rabble-rousing",
+      "name": "Rabble Rousing",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ethereal-weapon",
+      "name": "Ethereal Weapon",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "bread-and-butter",
+      "name": "Bread And Butter",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "snowball-upgrade",
+      "name": "Snowball Upgrade",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "soul-siphon",
+      "name": "Soul Siphon",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "slow-and-steady",
+      "name": "Slow And Steady",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "nightstalking",
+      "name": "Nightstalking",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "snowball-roulette",
+      "name": "Snowball Roulette",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "firebrand",
+      "name": "Firebrand",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "bread-and-cheese",
+      "name": "Bread and Cheese",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "shrink-ray",
+      "name": "Shrink Ray",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "divine-intervention",
+      "name": "Divine Intervention",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "it-s-critical",
+      "name": "It's Critical",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "double-tap",
+      "name": "Double Tap",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "pinball",
+      "name": "Pinball",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-sheen",
+      "name": "Upgrade Sheen",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "bread-and-jam",
+      "name": "Bread And Jam",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "keystone-conjurer",
+      "name": "Keystone Conjurer",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "outlaw-s-grit",
+      "name": "Outlaw's Grit",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "big-brain",
+      "name": "Big Brain",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ok-boomerang",
+      "name": "Ok Boomerang",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "demon-s-dance",
+      "name": "Demon's Dance",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "impassable",
+      "name": "Impassable",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "restless-restoration",
+      "name": "Restless Restoration",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "growth-spurt",
+      "name": "Growth Spurt",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "with-haste",
+      "name": "With Haste",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "dawnbringer-s-resolve",
+      "name": "Dawnbringer's Resolve",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "all-for-you",
+      "name": "All For You",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "holy-fire",
+      "name": "Holy Fire",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "searing-dawn",
+      "name": "Searing Dawn",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "minionmancer",
+      "name": "Minionmancer",
+      "rarity": "Gold",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "slap-around",
+      "name": "Slap Around",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "stats",
+      "name": "Stats!",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "goredrink",
+      "name": "Goredrink",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-collector",
+      "name": "Upgrade Collector",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "adapt",
+      "name": "ADAPt",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "deft",
+      "name": "Deft",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "weighted-popoffs",
+      "name": "Weighted Popoffs",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "speed-demon",
+      "name": "Speed Demon",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "witchful-thinking",
+      "name": "Witchful Thinking",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "heavy-hitter",
+      "name": "Heavy Hitter",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ice-cold",
+      "name": "Ice Cold",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "typhoon",
+      "name": "Typhoon",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "mind-to-matter",
+      "name": "Mind to Matter",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "dive-bomber",
+      "name": "Dive Bomber",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "escapade",
+      "name": "escAPADe",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "infernal-soul",
+      "name": "Infernal Soul",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "self-destruct",
+      "name": "Self Destruct",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "scoped-weapons",
+      "name": "Scoped Weapons",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "twin-fire",
+      "name": "Twin Fire",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "light-em-up",
+      "name": "Light 'em Up!",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "zealot",
+      "name": "Zealot",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "firefox",
+      "name": "FireFox",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "shadow-runner",
+      "name": "Shadow Runner",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "hat-on-a-hat",
+      "name": "Hat on a Hat",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "escape-plan",
+      "name": "Escape Plan",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-immolate",
+      "name": "Upgrade Immolate",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "the-brutalizer",
+      "name": "The Brutalizer",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-zhonya-s",
+      "name": "Upgrade Zhonya's",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "stackosaurusrex",
+      "name": "StackosaurusRex",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "first-aid-kit",
+      "name": "First-Aid Kit",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ocean-soul",
+      "name": "Ocean Soul",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "frost-wraith",
+      "name": "Frost Wraith",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "buff-buddies",
+      "name": "Buff Buddies",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "blunt-force",
+      "name": "Blunt Force",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "swift-and-safe",
+      "name": "Swift and Safe",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "leg-day",
+      "name": "Leg Day",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "erosion",
+      "name": "Erosion",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "homeguard",
+      "name": "Homeguard",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "guilty-pleasure",
+      "name": "Guilty Pleasure",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "ultimate-unstoppable",
+      "name": "Ultimate Unstoppable",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "tank-it-or-leave-it",
+      "name": "Tank It Or Leave It",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "kill-secured",
+      "name": "Kill Secured",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "hextech-soul",
+      "name": "Hextech Soul",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-thornmail",
+      "name": "Upgrade Thornmail",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "adamant",
+      "name": "Adamant",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "wind-beneath-blade",
+      "name": "Wind Beneath Blade",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "mountainsoul",
+      "name": "MountainSoul",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "crit-n-cast",
+      "name": "Crit 'n Cast",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "tormentor",
+      "name": "Tormentor",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "purist-caster",
+      "name": "Purist - Caster",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "juiced",
+      "name": "Juiced",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "mighty-shield",
+      "name": "Mighty Shield",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "spin-to-win",
+      "name": "Spin To Win",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "don-t-blink",
+      "name": "Don't Blink",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "sonic-boom",
+      "name": "Sonic Boom",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "repulsor",
+      "name": "Repulsor",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "poltergeist",
+      "name": "Poltergeist",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "crack-open-that-egg",
+      "name": "Crack Open That Egg",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "spin-me-right-round",
+      "name": "Spin Me Right Round",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "upgrade-cutlass",
+      "name": "Upgrade Cutlass",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "flashbang",
+      "name": "Flashbang",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    },
+    {
+      "id": "flash-2",
+      "name": "Flash 2",
+      "rarity": "Silver",
+      "sourcePatch": "26.3+"
+    }
+  ]
+}

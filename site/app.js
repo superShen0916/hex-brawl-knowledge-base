@@ -4,6 +4,7 @@ const root = document.querySelector('#app');
 
 const state = {
   entries: [],
+  augmentCount: 0,
   query: '',
   selectedId: '',
   statusText: '正在加载知识索引...',
@@ -31,7 +32,7 @@ function escapeHtml(input) {
 
 function resultSummary(entries) {
   if (!state.query) {
-    return `已收录 ${entries.length} 条可搜索问答，默认按置信度排序。`;
+    return `已收录 ${state.entries.length} 条交互问答，已跟踪 ${state.augmentCount} 个海克斯，默认按置信度排序。`;
   }
 
   return `当前问题“${state.query}”命中 ${entries.length} 条记录。`;
@@ -215,6 +216,8 @@ function paint() {
             </form>
             <div class="hint-row">
               <span class="hint-pill">${escapeHtml(state.statusText)}</span>
+              <span class="hint-pill">交互问答 ${escapeHtml(String(state.entries.length))} 条</span>
+              <span class="hint-pill">海克斯目录 ${escapeHtml(String(state.augmentCount))} 个</span>
             </div>
             <div class="chip-row">
               ${suggestedQueries
@@ -265,16 +268,30 @@ function updateQuery(query, { pushHistory = true } = {}) {
 
 async function loadEntries() {
   try {
-    const response = await fetch(new URL('../data/generated/search-index.json', import.meta.url));
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
+    const [searchResponse, augmentResponse] = await Promise.all([
+      fetch(new URL('../data/generated/search-index.json', import.meta.url)),
+      fetch(new URL('../data/generated/augment-catalog.json', import.meta.url)),
+    ]);
+
+    if (!searchResponse.ok) {
+      throw new Error(`search index HTTP ${searchResponse.status}`);
     }
 
-    const payload = await response.json();
-    state.entries = payload.entries ?? [];
-    state.statusText = `索引构建于 ${new Date(payload.generatedAt).toLocaleString('zh-CN')}`;
+    if (!augmentResponse.ok) {
+      throw new Error(`augment catalog HTTP ${augmentResponse.status}`);
+    }
+
+    const [searchPayload, augmentPayload] = await Promise.all([
+      searchResponse.json(),
+      augmentResponse.json(),
+    ]);
+
+    state.entries = searchPayload.entries ?? [];
+    state.augmentCount = augmentPayload.catalog?.length ?? 0;
+    state.statusText = `索引构建于 ${new Date(searchPayload.generatedAt).toLocaleString('zh-CN')}`;
   } catch (error) {
     state.entries = [];
+    state.augmentCount = 0;
     state.statusText = `知识索引加载失败：${error instanceof Error ? error.message : '未知错误'}`;
   }
 
