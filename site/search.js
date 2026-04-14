@@ -11,8 +11,8 @@ function scoreEntry(query, entry) {
     score += 120;
   }
 
-  if (entry.question?.includes(query.trim())) {
-    score += 40;
+  if (entry.kind === 'manual') {
+    score += 20;
   }
 
   for (const token of queryTokens) {
@@ -21,15 +21,8 @@ function scoreEntry(query, entry) {
     }
   }
 
-  const aliasHit = (entry.aliases ?? []).some(
-    (alias) => normalizeQuestion(alias) === normalizedQuery
-  );
-
-  if (aliasHit) {
-    score += 60;
-  }
-
   score += Math.round((entry.confidence ?? 0) * 20);
+  score += (entry.sourceCount ?? 0) * 2;
 
   return score;
 }

@@ -39,8 +39,14 @@ test('buildSearchIndex emits ranked search data from entry JSON', () => {
     })
   );
 
+  writeFileSync(
+    join(fixtureDir, 'generated', 'derived-entries.json'),
+    JSON.stringify({ entries: [] })
+  );
+
   buildSearchIndex({
     entriesDir: join(fixtureDir, 'entries'),
+    derivedEntriesFile: join(fixtureDir, 'generated', 'derived-entries.json'),
     outputFile: join(fixtureDir, 'generated', 'search-index.json'),
   });
 

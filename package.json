@@ -7,8 +7,9 @@
     "test": "node --test",
     "validate:data": "node scripts/validate-data.mjs",
     "build:augments": "node scripts/build-augment-catalog.mjs",
+    "build:derived": "node scripts/build-derived-entries.mjs",
     "build:index": "node scripts/build-search-index.mjs",
-    "build": "npm run validate:data && npm run build:augments && npm run build:index",
+    "build": "npm run validate:data && npm run build:augments && npm run build:derived && npm run build:index",
     "serve": "python3 -m http.server 4173"
   }
 }
