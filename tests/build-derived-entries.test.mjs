@@ -20,6 +20,8 @@ test('buildDerivedEntries emits several hundred searchable knowledge records', (
   assert.equal(entries.some((entry) => entry.id === 'derived-jax-w-onhit'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-hextech-soul-augment-directory'), true);
   assert.equal(entries.some((entry) => entry.id === 'derived-hextech-soul-augment-rarity'), true);
+  assert.equal(entries.some((entry) => entry.id === 'derived-jax-w-damage-classification'), true);
+  assert.equal(entries.some((entry) => entry.id === 'derived-urgot-w-scaling-note'), true);
 
   const payload = JSON.parse(readFileSync(outputFile, 'utf8'));
   assert.equal(payload.entries.length, entries.length);

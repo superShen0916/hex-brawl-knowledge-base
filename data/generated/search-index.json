@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T07:23:04.258Z",
+  "generatedAt": "2026-04-14T07:32:37.605Z",
   "entries": [
     {
       "id": "camille-q-spellblade-true-damage",
@@ -1350,6 +1350,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-akshan-passive-scaling-note",
+      "kind": "derived",
+      "question": "阿克尚 被动 的攻击特效按多少比例结算",
+      "normalizedQuestion": "阿克尚 被动 的攻击特效按多少比例结算",
+      "aliases": [
+        "阿克尚 被动 攻击特效比例是多少",
+        "阿克尚 被动 on-hit 按多少算",
+        "阿克尚 被动 特效效率"
+      ],
+      "answerShort": "高置信结论：25% 攻击特效效率。阿克尚 被动（Dirty Fighting）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "阿克尚 被动 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“25% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "阿克尚"
+        ],
+        "skills": [
+          "被动",
+          "Dirty Fighting"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "阿克尚 的 Dirty Fighting 在规则页里带有“25% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "阿克尚",
+        "被动",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "dirty",
+        "fighting",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-akshan-e-onhit",
       "kind": "derived",
       "question": "阿克尚 E 能不能触发攻击特效",
@@ -1406,6 +1467,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-akshan-e-scaling-note",
+      "kind": "derived",
+      "question": "阿克尚 E 的攻击特效按多少比例结算",
+      "normalizedQuestion": "阿克尚 e 的攻击特效按多少比例结算",
+      "aliases": [
+        "阿克尚 E 攻击特效比例是多少",
+        "阿克尚 E on-hit 按多少算",
+        "阿克尚 E 特效效率"
+      ],
+      "answerShort": "高置信结论：25% 攻击特效效率。阿克尚 E（Heroic Swing）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "阿克尚 E 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“25% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "阿克尚"
+        ],
+        "skills": [
+          "E",
+          "Heroic Swing"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "阿克尚 的 Heroic Swing 在规则页里带有“25% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "阿克尚",
+        "e",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "heroic",
+        "swing",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-aphelios-q-severum-onhit",
       "kind": "derived",
       "question": "厄斐琉斯 Q 能不能触发攻击特效",
@@ -1457,6 +1579,66 @@
         "攻击特效",
         "aphelios",
         "onslaught"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-aphelios-q-severum-scaling-note",
+      "kind": "derived",
+      "question": "厄斐琉斯 Q 的攻击特效按多少比例结算",
+      "normalizedQuestion": "厄斐琉斯 q 的攻击特效按多少比例结算",
+      "aliases": [
+        "厄斐琉斯 Q 攻击特效比例是多少",
+        "厄斐琉斯 Q on-hit 按多少算",
+        "厄斐琉斯 Q 特效效率"
+      ],
+      "answerShort": "高置信结论：25% 攻击特效效率。厄斐琉斯 Q（Onslaught）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "厄斐琉斯 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“25% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "厄斐琉斯"
+        ],
+        "skills": [
+          "Q",
+          "Onslaught"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "厄斐琉斯 的 Onslaught 在规则页里带有“25% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄斐琉斯",
+        "q",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "onslaught",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -1685,6 +1867,66 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-azir-w-scaling-note",
+      "kind": "derived",
+      "question": "阿兹尔 W 的攻击特效按多少比例结算",
+      "normalizedQuestion": "阿兹尔 w 的攻击特效按多少比例结算",
+      "aliases": [
+        "阿兹尔 W 攻击特效比例是多少",
+        "阿兹尔 W on-hit 按多少算",
+        "阿兹尔 W 特效效率"
+      ],
+      "answerShort": "高置信结论：50% 攻击特效效率。阿兹尔 W（Arise!）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "阿兹尔 W 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“50% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "阿兹尔"
+        ],
+        "skills": [
+          "W",
+          "Arise!"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "阿兹尔 的 Arise! 在规则页里带有“50% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "阿兹尔",
+        "w",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "arise",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-belveth-q-onhit",
       "kind": "derived",
       "question": "卑尔维斯 Q 能不能触发攻击特效",
@@ -1739,6 +1981,67 @@
         "bel'veth",
         "void",
         "surge"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-belveth-q-scaling-note",
+      "kind": "derived",
+      "question": "卑尔维斯 Q 的攻击特效按多少比例结算",
+      "normalizedQuestion": "卑尔维斯 q 的攻击特效按多少比例结算",
+      "aliases": [
+        "卑尔维斯 Q 攻击特效比例是多少",
+        "卑尔维斯 Q on-hit 按多少算",
+        "卑尔维斯 Q 特效效率"
+      ],
+      "answerShort": "高置信结论：75% 攻击特效效率。卑尔维斯 Q（Void Surge）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "卑尔维斯 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“75% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "卑尔维斯"
+        ],
+        "skills": [
+          "Q",
+          "Void Surge"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卑尔维斯 的 Void Surge 在规则页里带有“75% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卑尔维斯",
+        "q",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "void",
+        "surge",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -1859,6 +2162,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-belveth-e-scaling-note",
+      "kind": "derived",
+      "question": "卑尔维斯 E 的攻击特效按多少比例结算",
+      "normalizedQuestion": "卑尔维斯 e 的攻击特效按多少比例结算",
+      "aliases": [
+        "卑尔维斯 E 攻击特效比例是多少",
+        "卑尔维斯 E on-hit 按多少算",
+        "卑尔维斯 E 特效效率"
+      ],
+      "answerShort": "高置信结论：攻击特效效率会变化。卑尔维斯 E（Royal Maelstrom）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "卑尔维斯 E 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“攻击特效效率会变化”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "卑尔维斯"
+        ],
+        "skills": [
+          "E",
+          "Royal Maelstrom"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卑尔维斯 的 Royal Maelstrom 在规则页里带有“攻击特效效率会变化”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卑尔维斯",
+        "e",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "royal",
+        "maelstrom",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-blitzcrank-e-onhit",
       "kind": "derived",
       "question": "布里茨 E 能不能触发攻击特效",
@@ -1974,6 +2338,68 @@
         "power",
         "fist",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-blitzcrank-e-damage-classification",
+      "kind": "derived",
+      "question": "布里茨 E 算技能伤害吗",
+      "normalizedQuestion": "布里茨 e 算技能伤害吗",
+      "aliases": [
+        "布里茨 E 是普攻还是技能",
+        "布里茨 E 算不算 ability damage",
+        "布里茨 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。布里茨 E（Power Fist）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "布里茨 E 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "布里茨"
+        ],
+        "skills": [
+          "E",
+          "Power Fist"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "布里茨 的 Power Fist 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "布里茨",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "power",
+        "fist",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -2213,6 +2639,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-camille-q-damage-classification",
+      "kind": "derived",
+      "question": "卡蜜尔 Q 算技能伤害吗",
+      "normalizedQuestion": "卡蜜尔 q 算技能伤害吗",
+      "aliases": [
+        "卡蜜尔 Q 是普攻还是技能",
+        "卡蜜尔 Q 算不算 ability damage",
+        "卡蜜尔 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。卡蜜尔 Q（Precision Protocol）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "卡蜜尔 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "卡蜜尔"
+        ],
+        "skills": [
+          "Q",
+          "Precision Protocol"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡蜜尔 的 Precision Protocol 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡蜜尔",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "precision",
+        "protocol",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-darius-w-onhit",
       "kind": "derived",
       "question": "德莱厄斯 W 能不能触发攻击特效",
@@ -2328,6 +2816,68 @@
         "crippling",
         "strike",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-darius-w-damage-classification",
+      "kind": "derived",
+      "question": "德莱厄斯 W 算技能伤害吗",
+      "normalizedQuestion": "德莱厄斯 w 算技能伤害吗",
+      "aliases": [
+        "德莱厄斯 W 是普攻还是技能",
+        "德莱厄斯 W 算不算 ability damage",
+        "德莱厄斯 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。德莱厄斯 W（Crippling Strike）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "德莱厄斯 W 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "德莱厄斯"
+        ],
+        "skills": [
+          "W",
+          "Crippling Strike"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "德莱厄斯 的 Crippling Strike 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "德莱厄斯",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "crippling",
+        "strike",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -2506,6 +3056,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-evelynn-e-damage-classification",
+      "kind": "derived",
+      "question": "伊芙琳 E 算技能伤害吗",
+      "normalizedQuestion": "伊芙琳 e 算技能伤害吗",
+      "aliases": [
+        "伊芙琳 E 是普攻还是技能",
+        "伊芙琳 E 算不算 ability damage",
+        "伊芙琳 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：算技能伤害。伊芙琳 E（Whiplash）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。",
+      "answerDetail": "伊芙琳 E 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "伊芙琳"
+        ],
+        "skills": [
+          "E",
+          "Whiplash"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "伊芙琳 的 Whiplash 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "伊芙琳",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "whiplash",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-evelynn-e-empowered-onhit",
       "kind": "derived",
       "question": "伊芙琳 强化 E 能不能触发攻击特效",
@@ -2621,6 +3232,69 @@
         "empowered",
         "whiplash",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-evelynn-e-empowered-damage-classification",
+      "kind": "derived",
+      "question": "伊芙琳 强化 E 算技能伤害吗",
+      "normalizedQuestion": "伊芙琳 强化 e 算技能伤害吗",
+      "aliases": [
+        "伊芙琳 强化 E 是普攻还是技能",
+        "伊芙琳 强化 E 算不算 ability damage",
+        "伊芙琳 强化 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：算技能伤害。伊芙琳 强化 E（Empowered Whiplash）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。",
+      "answerDetail": "伊芙琳 强化 E 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "伊芙琳"
+        ],
+        "skills": [
+          "强化 E",
+          "Empowered Whiplash"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "伊芙琳 的 Empowered Whiplash 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "伊芙琳",
+        "强化",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "empowered",
+        "whiplash",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -2803,6 +3477,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-ezreal-q-damage-classification",
+      "kind": "derived",
+      "question": "伊泽瑞尔 Q 算技能伤害吗",
+      "normalizedQuestion": "伊泽瑞尔 q 算技能伤害吗",
+      "aliases": [
+        "伊泽瑞尔 Q 是普攻还是技能",
+        "伊泽瑞尔 Q 算不算 ability damage",
+        "伊泽瑞尔 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。伊泽瑞尔 Q（Mystic Shot）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "伊泽瑞尔 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "伊泽瑞尔"
+        ],
+        "skills": [
+          "Q",
+          "Mystic Shot"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "伊泽瑞尔 的 Mystic Shot 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "伊泽瑞尔",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "mystic",
+        "shot",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-fiora-q-onhit",
       "kind": "derived",
       "question": "菲奥娜 Q 能不能触发攻击特效",
@@ -2914,6 +3650,67 @@
         "是普攻还是技能",
         "lunge",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-fiora-q-damage-classification",
+      "kind": "derived",
+      "question": "菲奥娜 Q 算技能伤害吗",
+      "normalizedQuestion": "菲奥娜 q 算技能伤害吗",
+      "aliases": [
+        "菲奥娜 Q 是普攻还是技能",
+        "菲奥娜 Q 算不算 ability damage",
+        "菲奥娜 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。菲奥娜 Q（Lunge）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "菲奥娜 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "菲奥娜"
+        ],
+        "skills": [
+          "Q",
+          "Lunge"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "菲奥娜 的 Lunge 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "菲奥娜",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "lunge",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -3033,6 +3830,68 @@
         "urchin",
         "strike",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-fizz-q-damage-classification",
+      "kind": "derived",
+      "question": "菲兹 Q 算技能伤害吗",
+      "normalizedQuestion": "菲兹 q 算技能伤害吗",
+      "aliases": [
+        "菲兹 Q 是普攻还是技能",
+        "菲兹 Q 算不算 ability damage",
+        "菲兹 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：混合判定。菲兹 Q（Urchin Strike）会施加攻击特效，但其中技能伤害部分仍按技能伤害处理。",
+      "answerDetail": "菲兹 Q 不是单纯的普攻复制体。规则页把它列在“会同时触发攻击特效和法术效果”的集合里，并特别提示其伤害中存在按技能伤害处理的部分，所以回答“到底算不算技能伤害”时更适合给出混合判定。",
+      "confidence": 0.8,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "菲兹"
+        ],
+        "skills": [
+          "Q",
+          "Urchin Strike"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "菲兹 的 Urchin Strike 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "菲兹",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "urchin",
+        "strike",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -3212,6 +4071,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-gangplank-q-damage-classification",
+      "kind": "derived",
+      "question": "普朗克 Q 算技能伤害吗",
+      "normalizedQuestion": "普朗克 q 算技能伤害吗",
+      "aliases": [
+        "普朗克 Q 是普攻还是技能",
+        "普朗克 Q 算不算 ability damage",
+        "普朗克 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。普朗克 Q（Parrrley）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "普朗克 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "普朗克"
+        ],
+        "skills": [
+          "Q",
+          "Parrrley"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "普朗克 的 Parrrley 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "普朗克",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "parrrley",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-garen-q-onhit",
       "kind": "derived",
       "question": "盖伦 Q 能不能触发攻击特效",
@@ -3325,6 +4245,68 @@
         "decisive",
         "strike",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-garen-q-damage-classification",
+      "kind": "derived",
+      "question": "盖伦 Q 算技能伤害吗",
+      "normalizedQuestion": "盖伦 q 算技能伤害吗",
+      "aliases": [
+        "盖伦 Q 是普攻还是技能",
+        "盖伦 Q 算不算 ability damage",
+        "盖伦 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。盖伦 Q（Decisive Strike）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "盖伦 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "盖伦"
+        ],
+        "skills": [
+          "Q",
+          "Decisive Strike"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "盖伦 的 Decisive Strike 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "盖伦",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "decisive",
+        "strike",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -3566,6 +4548,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-hecarim-e-damage-classification",
+      "kind": "derived",
+      "question": "赫卡里姆 E 算技能伤害吗",
+      "normalizedQuestion": "赫卡里姆 e 算技能伤害吗",
+      "aliases": [
+        "赫卡里姆 E 是普攻还是技能",
+        "赫卡里姆 E 算不算 ability damage",
+        "赫卡里姆 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。赫卡里姆 E（Devastating Charge）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "赫卡里姆 E 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "赫卡里姆"
+        ],
+        "skills": [
+          "E",
+          "Devastating Charge"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "赫卡里姆 的 Devastating Charge 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "赫卡里姆",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "devastating",
+        "charge",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-irelia-q-onhit",
       "kind": "derived",
       "question": "艾瑞莉娅 Q 能不能触发攻击特效",
@@ -3677,6 +4721,67 @@
         "是普攻还是技能",
         "bladesurge",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-irelia-q-damage-classification",
+      "kind": "derived",
+      "question": "艾瑞莉娅 Q 算技能伤害吗",
+      "normalizedQuestion": "艾瑞莉娅 q 算技能伤害吗",
+      "aliases": [
+        "艾瑞莉娅 Q 是普攻还是技能",
+        "艾瑞莉娅 Q 算不算 ability damage",
+        "艾瑞莉娅 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。艾瑞莉娅 Q（Bladesurge）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "艾瑞莉娅 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "艾瑞莉娅"
+        ],
+        "skills": [
+          "Q",
+          "Bladesurge"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "艾瑞莉娅 的 Bladesurge 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "艾瑞莉娅",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "bladesurge",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -3800,6 +4905,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-jax-w-damage-classification",
+      "kind": "derived",
+      "question": "贾克斯 W 算技能伤害吗",
+      "normalizedQuestion": "贾克斯 w 算技能伤害吗",
+      "aliases": [
+        "贾克斯 W 是普攻还是技能",
+        "贾克斯 W 算不算 ability damage",
+        "贾克斯 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。贾克斯 W（Empower）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "贾克斯 W 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "贾克斯"
+        ],
+        "skills": [
+          "W",
+          "Empower"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "贾克斯 的 Empower 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "贾克斯",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "empower",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-kassadin-w-onhit",
       "kind": "derived",
       "question": "卡萨丁 W 能不能触发攻击特效",
@@ -3913,6 +5079,68 @@
         "nether",
         "blade",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-kassadin-w-damage-classification",
+      "kind": "derived",
+      "question": "卡萨丁 W 算技能伤害吗",
+      "normalizedQuestion": "卡萨丁 w 算技能伤害吗",
+      "aliases": [
+        "卡萨丁 W 是普攻还是技能",
+        "卡萨丁 W 算不算 ability damage",
+        "卡萨丁 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。卡萨丁 W（Nether Blade）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "卡萨丁 W 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "卡萨丁"
+        ],
+        "skills": [
+          "W",
+          "Nether Blade"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡萨丁 的 Nether Blade 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡萨丁",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "nether",
+        "blade",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -4036,6 +5264,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-katarina-passive-damage-classification",
+      "kind": "derived",
+      "question": "卡特琳娜 被动 算技能伤害吗",
+      "normalizedQuestion": "卡特琳娜琳娜 被动 算技能伤害吗",
+      "aliases": [
+        "卡特琳娜 被动 是普攻还是技能",
+        "卡特琳娜 被动 算不算 ability damage",
+        "卡特琳娜 被动 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。卡特琳娜 被动（Voracity）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "卡特琳娜 被动 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "被动",
+          "Voracity"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Voracity 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "被动",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "voracity",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-katarina-w-onhit",
       "kind": "derived",
       "question": "卡特琳娜 W 能不能触发攻击特效",
@@ -4090,6 +5379,67 @@
         "卡特琳娜",
         "sinister",
         "steel"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-katarina-w-scaling-note",
+      "kind": "derived",
+      "question": "卡特琳娜 W 的攻击特效按多少比例结算",
+      "normalizedQuestion": "卡特琳娜琳娜 w 的攻击特效按多少比例结算",
+      "aliases": [
+        "卡特琳娜 W 攻击特效比例是多少",
+        "卡特琳娜 W on-hit 按多少算",
+        "卡特琳娜 W 特效效率"
+      ],
+      "answerShort": "高置信结论：30% 攻击特效效率。卡特琳娜 W（Sinister Steel）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "卡特琳娜 W 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“30% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "W",
+          "Sinister Steel"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Sinister Steel 在规则页里带有“30% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "w",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "sinister",
+        "steel",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -4208,6 +5558,127 @@
         "shunpo",
         "法术效果",
         "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-katarina-e-damage-classification",
+      "kind": "derived",
+      "question": "卡特琳娜 E 算技能伤害吗",
+      "normalizedQuestion": "卡特琳娜琳娜 e 算技能伤害吗",
+      "aliases": [
+        "卡特琳娜 E 是普攻还是技能",
+        "卡特琳娜 E 算不算 ability damage",
+        "卡特琳娜 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。卡特琳娜 E（Shunpo）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "卡特琳娜 E 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "E",
+          "Shunpo"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Shunpo 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "shunpo",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-katarina-e-scaling-note",
+      "kind": "derived",
+      "question": "卡特琳娜 E 的攻击特效按多少比例结算",
+      "normalizedQuestion": "卡特琳娜琳娜 e 的攻击特效按多少比例结算",
+      "aliases": [
+        "卡特琳娜 E 攻击特效比例是多少",
+        "卡特琳娜 E on-hit 按多少算",
+        "卡特琳娜 E 特效效率"
+      ],
+      "answerShort": "高置信结论：35% 攻击特效效率。卡特琳娜 E（Shunpo）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "卡特琳娜 E 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“35% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "E",
+          "Shunpo"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Shunpo 在规则页里带有“35% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "e",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "shunpo",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -4390,6 +5861,129 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-katarina-r-damage-classification",
+      "kind": "derived",
+      "question": "卡特琳娜 R 算技能伤害吗",
+      "normalizedQuestion": "卡特琳娜琳娜 r 算技能伤害吗",
+      "aliases": [
+        "卡特琳娜 R 是普攻还是技能",
+        "卡特琳娜 R 算不算 ability damage",
+        "卡特琳娜 R 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。卡特琳娜 R（Death Lotus）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "卡特琳娜 R 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "R",
+          "Death Lotus"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Death Lotus 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "r",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "death",
+        "lotus",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-katarina-r-scaling-note",
+      "kind": "derived",
+      "question": "卡特琳娜 R 的攻击特效按多少比例结算",
+      "normalizedQuestion": "卡特琳娜琳娜 r 的攻击特效按多少比例结算",
+      "aliases": [
+        "卡特琳娜 R 攻击特效比例是多少",
+        "卡特琳娜 R on-hit 按多少算",
+        "卡特琳娜 R 特效效率"
+      ],
+      "answerShort": "高置信结论：40% 攻击特效效率。卡特琳娜 R（Death Lotus）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "卡特琳娜 R 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“40% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "卡特琳娜"
+        ],
+        "skills": [
+          "R",
+          "Death Lotus"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "卡特琳娜 的 Death Lotus 在规则页里带有“40% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "卡特琳娜琳娜",
+        "r",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "death",
+        "lotus",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-kayle-e-onhit",
       "kind": "derived",
       "question": "凯尔 E 能不能触发攻击特效",
@@ -4503,6 +6097,68 @@
         "starfire",
         "法术刃",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-kayle-e-damage-classification",
+      "kind": "derived",
+      "question": "凯尔 E 算技能伤害吗",
+      "normalizedQuestion": "凯尔 e 算技能伤害吗",
+      "aliases": [
+        "凯尔 E 是普攻还是技能",
+        "凯尔 E 算不算 ability damage",
+        "凯尔 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。凯尔 E（Starfire Spellblade）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "凯尔 E 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "凯尔"
+        ],
+        "skills": [
+          "E",
+          "Starfire Spellblade"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "凯尔 的 Starfire Spellblade 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "凯尔",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "starfire",
+        "法术刃",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -4737,6 +6393,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-master-yi-passive-scaling-note",
+      "kind": "derived",
+      "question": "易大师 被动 的攻击特效按多少比例结算",
+      "normalizedQuestion": "易大师 被动 的攻击特效按多少比例结算",
+      "aliases": [
+        "易大师 被动 攻击特效比例是多少",
+        "易大师 被动 on-hit 按多少算",
+        "易大师 被动 特效效率"
+      ],
+      "answerShort": "高置信结论：75% / 18.75% 攻击特效效率。易大师 被动（Double Strike）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "易大师 被动 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“75% / 18.75% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "易大师"
+        ],
+        "skills": [
+          "被动",
+          "Double Strike"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "易大师 的 Double Strike 在规则页里带有“75% / 18.75% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "易大师",
+        "被动",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "double",
+        "strike",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-master-yi-q-onhit",
       "kind": "derived",
       "question": "易大师 Q 能不能触发攻击特效",
@@ -4854,6 +6571,129 @@
         "strike",
         "法术效果",
         "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-master-yi-q-damage-classification",
+      "kind": "derived",
+      "question": "易大师 Q 算技能伤害吗",
+      "normalizedQuestion": "易大师 q 算技能伤害吗",
+      "aliases": [
+        "易大师 Q 是普攻还是技能",
+        "易大师 Q 算不算 ability damage",
+        "易大师 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。易大师 Q（Alpha Strike）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "易大师 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "易大师"
+        ],
+        "skills": [
+          "Q",
+          "Alpha Strike"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "易大师 的 Alpha Strike 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "易大师",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "alpha",
+        "strike",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-master-yi-q-scaling-note",
+      "kind": "derived",
+      "question": "易大师 Q 的攻击特效按多少比例结算",
+      "normalizedQuestion": "易大师 q 的攻击特效按多少比例结算",
+      "aliases": [
+        "易大师 Q 攻击特效比例是多少",
+        "易大师 Q on-hit 按多少算",
+        "易大师 Q 特效效率"
+      ],
+      "answerShort": "高置信结论：75% / 18.75% 攻击特效效率。易大师 Q（Alpha Strike）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "易大师 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“75% / 18.75% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "易大师"
+        ],
+        "skills": [
+          "Q",
+          "Alpha Strike"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "易大师 的 Alpha Strike 在规则页里带有“75% / 18.75% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "易大师",
+        "q",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "alpha",
+        "strike",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -5037,6 +6877,129 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-miss-fortune-q-damage-classification",
+      "kind": "derived",
+      "question": "厄运小姐 Q 算技能伤害吗",
+      "normalizedQuestion": "厄运小姐 q 算技能伤害吗",
+      "aliases": [
+        "厄运小姐 Q 是普攻还是技能",
+        "厄运小姐 Q 算不算 ability damage",
+        "厄运小姐 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。厄运小姐 Q（Double Up）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "厄运小姐 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "厄运小姐"
+        ],
+        "skills": [
+          "Q",
+          "Double Up"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "厄运小姐 的 Double Up 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄运小姐",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "double",
+        "up",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-miss-fortune-q-scaling-note",
+      "kind": "derived",
+      "question": "厄运小姐 Q 的攻击特效按多少比例结算",
+      "normalizedQuestion": "厄运小姐 q 的攻击特效按多少比例结算",
+      "aliases": [
+        "厄运小姐 Q 攻击特效比例是多少",
+        "厄运小姐 Q on-hit 按多少算",
+        "厄运小姐 Q 特效效率"
+      ],
+      "answerShort": "高置信结论：on-attack 只对首个单位生效。厄运小姐 Q（Double Up）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "厄运小姐 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“on-attack 只对首个单位生效”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "厄运小姐"
+        ],
+        "skills": [
+          "Q",
+          "Double Up"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "厄运小姐 的 Double Up 在规则页里带有“on-attack 只对首个单位生效”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄运小姐",
+        "q",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "double",
+        "up",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-mundo-e-onhit",
       "kind": "derived",
       "question": "蒙多医生 E 能不能触发攻击特效",
@@ -5154,6 +7117,69 @@
         "force",
         "trauma",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-mundo-e-damage-classification",
+      "kind": "derived",
+      "question": "蒙多医生 E 算技能伤害吗",
+      "normalizedQuestion": "蒙多医生 e 算技能伤害吗",
+      "aliases": [
+        "蒙多医生 E 是普攻还是技能",
+        "蒙多医生 E 算不算 ability damage",
+        "蒙多医生 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。蒙多医生 E（Blunt Force Trauma）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "蒙多医生 E 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "蒙多医生"
+        ],
+        "skills": [
+          "E",
+          "Blunt Force Trauma"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "蒙多医生 的 Blunt Force Trauma 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "蒙多医生",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "blunt",
+        "force",
+        "trauma",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -5278,6 +7304,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-nasus-q-damage-classification",
+      "kind": "derived",
+      "question": "内瑟斯 Q 算技能伤害吗",
+      "normalizedQuestion": "内瑟斯 q 算技能伤害吗",
+      "aliases": [
+        "内瑟斯 Q 是普攻还是技能",
+        "内瑟斯 Q 算不算 ability damage",
+        "内瑟斯 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。内瑟斯 Q（Siphoning Strike）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "内瑟斯 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "内瑟斯"
+        ],
+        "skills": [
+          "Q",
+          "Siphoning Strike"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "内瑟斯 的 Siphoning Strike 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "内瑟斯",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "siphoning",
+        "strike",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-nidalee-q-cougar-onhit",
       "kind": "derived",
       "question": "奈德丽 美洲狮 Q 能不能触发攻击特效",
@@ -5393,6 +7481,68 @@
         "是普攻还是技能",
         "takedown",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-nidalee-q-cougar-damage-classification",
+      "kind": "derived",
+      "question": "奈德丽 美洲狮 Q 算技能伤害吗",
+      "normalizedQuestion": "奈德丽 美洲狮 q 算技能伤害吗",
+      "aliases": [
+        "奈德丽 美洲狮 Q 是普攻还是技能",
+        "奈德丽 美洲狮 Q 算不算 ability damage",
+        "奈德丽 美洲狮 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。奈德丽 美洲狮 Q（Takedown）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "奈德丽 美洲狮 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "奈德丽"
+        ],
+        "skills": [
+          "美洲狮 Q",
+          "Takedown"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "奈德丽 的 Takedown 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "奈德丽",
+        "美洲狮",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "takedown",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -5632,6 +7782,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-senna-q-damage-classification",
+      "kind": "derived",
+      "question": "赛娜 Q 算技能伤害吗",
+      "normalizedQuestion": "赛娜 q 算技能伤害吗",
+      "aliases": [
+        "赛娜 Q 是普攻还是技能",
+        "赛娜 Q 算不算 ability damage",
+        "赛娜 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。赛娜 Q（Piercing Darkness）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "赛娜 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "赛娜"
+        ],
+        "skills": [
+          "Q",
+          "Piercing Darkness"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "赛娜 的 Piercing Darkness 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "赛娜",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "piercing",
+        "darkness",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-shyvana-q-onhit",
       "kind": "derived",
       "question": "希瓦娜 Q 能不能触发攻击特效",
@@ -5805,6 +8017,68 @@
         "twin",
         "bite",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-shyvana-q-damage-classification",
+      "kind": "derived",
+      "question": "希瓦娜 Q 算技能伤害吗",
+      "normalizedQuestion": "希瓦娜 q 算技能伤害吗",
+      "aliases": [
+        "希瓦娜 Q 是普攻还是技能",
+        "希瓦娜 Q 算不算 ability damage",
+        "希瓦娜 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。希瓦娜 Q（Twin Bite）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "希瓦娜 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "希瓦娜"
+        ],
+        "skills": [
+          "Q",
+          "Twin Bite"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "希瓦娜 的 Twin Bite 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "希瓦娜",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "twin",
+        "bite",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -6044,6 +8318,67 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-trundle-q-damage-classification",
+      "kind": "derived",
+      "question": "特朗德尔 Q 算技能伤害吗",
+      "normalizedQuestion": "特朗德尔 q 算技能伤害吗",
+      "aliases": [
+        "特朗德尔 Q 是普攻还是技能",
+        "特朗德尔 Q 算不算 ability damage",
+        "特朗德尔 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。特朗德尔 Q（Chomp）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "特朗德尔 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "特朗德尔"
+        ],
+        "skills": [
+          "Q",
+          "Chomp"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "特朗德尔 的 Chomp 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "特朗德尔",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "chomp",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-twitch-r-onhit",
       "kind": "derived",
       "question": "图奇 R 能不能触发攻击特效",
@@ -6216,6 +8551,66 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-urgot-w-scaling-note",
+      "kind": "derived",
+      "question": "厄加特 W 的攻击特效按多少比例结算",
+      "normalizedQuestion": "厄加特 w 的攻击特效按多少比例结算",
+      "aliases": [
+        "厄加特 W 攻击特效比例是多少",
+        "厄加特 W on-hit 按多少算",
+        "厄加特 W 特效效率"
+      ],
+      "answerShort": "高置信结论：50% 攻击特效效率。厄加特 W（Purge）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "厄加特 W 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“50% 攻击特效效率”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "厄加特"
+        ],
+        "skills": [
+          "W",
+          "Purge"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "厄加特 的 Purge 在规则页里带有“50% 攻击特效效率”这类攻击特效效率说明。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "厄加特",
+        "w",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "purge",
+        "比例",
+        "效率"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-vayne-q-onhit",
       "kind": "derived",
       "question": "薇恩 Q 能不能触发攻击特效",
@@ -6327,6 +8722,67 @@
         "是普攻还是技能",
         "tumble",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-vayne-q-damage-classification",
+      "kind": "derived",
+      "question": "薇恩 Q 算技能伤害吗",
+      "normalizedQuestion": "薇恩 q 算技能伤害吗",
+      "aliases": [
+        "薇恩 Q 是普攻还是技能",
+        "薇恩 Q 算不算 ability damage",
+        "薇恩 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。薇恩 Q（Tumble）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "薇恩 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "薇恩"
+        ],
+        "skills": [
+          "Q",
+          "Tumble"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "薇恩 的 Tumble 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "薇恩",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "tumble",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -6566,6 +9022,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-volibear-q-damage-classification",
+      "kind": "derived",
+      "question": "沃利贝尔 Q 算技能伤害吗",
+      "normalizedQuestion": "沃利贝尔 q 算技能伤害吗",
+      "aliases": [
+        "沃利贝尔 Q 是普攻还是技能",
+        "沃利贝尔 Q 算不算 ability damage",
+        "沃利贝尔 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。沃利贝尔 Q（Thundering Smash）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "沃利贝尔 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "沃利贝尔"
+        ],
+        "skills": [
+          "Q",
+          "Thundering Smash"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "沃利贝尔 的 Thundering Smash 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "沃利贝尔",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "thundering",
+        "smash",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-volibear-w-onhit",
       "kind": "derived",
       "question": "沃利贝尔 W 能不能触发攻击特效",
@@ -6739,6 +9257,68 @@
         "frenzied",
         "maul",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-volibear-w-damage-classification",
+      "kind": "derived",
+      "question": "沃利贝尔 W 算技能伤害吗",
+      "normalizedQuestion": "沃利贝尔 w 算技能伤害吗",
+      "aliases": [
+        "沃利贝尔 W 是普攻还是技能",
+        "沃利贝尔 W 算不算 ability damage",
+        "沃利贝尔 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。沃利贝尔 W（Frenzied Maul）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "沃利贝尔 W 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "沃利贝尔"
+        ],
+        "skills": [
+          "W",
+          "Frenzied Maul"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "沃利贝尔 的 Frenzied Maul 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "沃利贝尔",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "frenzied",
+        "maul",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -6927,6 +9507,70 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-warwick-q-damage-classification",
+      "kind": "derived",
+      "question": "沃里克 Q 算技能伤害吗",
+      "normalizedQuestion": "沃里克 q 算技能伤害吗",
+      "aliases": [
+        "沃里克 Q 是普攻还是技能",
+        "沃里克 Q 算不算 ability damage",
+        "沃里克 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。沃里克 Q（Jaws of the Beast）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "沃里克 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "沃里克"
+        ],
+        "skills": [
+          "Q",
+          "Jaws of the Beast"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "沃里克 的 Jaws of the Beast 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "沃里克",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "jaws",
+        "of",
+        "the",
+        "beast",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-warwick-r-onhit",
       "kind": "derived",
       "question": "沃里克 R 能不能触发攻击特效",
@@ -7104,6 +9748,68 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-warwick-r-damage-classification",
+      "kind": "derived",
+      "question": "沃里克 R 算技能伤害吗",
+      "normalizedQuestion": "沃里克 r 算技能伤害吗",
+      "aliases": [
+        "沃里克 R 是普攻还是技能",
+        "沃里克 R 算不算 ability damage",
+        "沃里克 R 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。沃里克 R（Infinite Duress）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "沃里克 R 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "沃里克"
+        ],
+        "skills": [
+          "R",
+          "Infinite Duress"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "沃里克 的 Infinite Duress 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "沃里克",
+        "r",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "infinite",
+        "duress",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-wukong-q-onhit",
       "kind": "derived",
       "question": "悟空 Q 能不能触发攻击特效",
@@ -7217,6 +9923,68 @@
         "crushing",
         "blow",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-wukong-q-damage-classification",
+      "kind": "derived",
+      "question": "悟空 Q 算技能伤害吗",
+      "normalizedQuestion": "悟空 q 算技能伤害吗",
+      "aliases": [
+        "悟空 Q 是普攻还是技能",
+        "悟空 Q 算不算 ability damage",
+        "悟空 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。悟空 Q（Crushing Blow）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "悟空 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "悟空"
+        ],
+        "skills": [
+          "Q",
+          "Crushing Blow"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "悟空 的 Crushing Blow 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "悟空",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "crushing",
+        "blow",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1
@@ -7565,6 +10333,68 @@
         "last",
         "rites",
         "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-yorick-q-damage-classification",
+      "kind": "derived",
+      "question": "约里克 Q 算技能伤害吗",
+      "normalizedQuestion": "约里克 q 算技能伤害吗",
+      "aliases": [
+        "约里克 Q 是普攻还是技能",
+        "约里克 Q 算不算 ability damage",
+        "约里克 Q 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。约里克 Q（Last Rites）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "约里克 Q 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "约里克"
+        ],
+        "skills": [
+          "Q",
+          "Last Rites"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "约里克 的 Last Rites 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "约里克",
+        "q",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "last",
+        "rites",
+        "技能伤害",
         "攻击特效"
       ],
       "sourceCount": 1

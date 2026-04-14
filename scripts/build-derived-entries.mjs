@@ -124,6 +124,105 @@ function makeSpellEffectsEntry(meta) {
   };
 }
 
+function getDamageClassification(meta) {
+  if (meta.damageClassification) {
+    return meta.damageClassification;
+  }
+
+  if (meta.spellEffects) {
+    return 'non_ability_damage';
+  }
+
+  return null;
+}
+
+function makeDamageClassificationEntry(meta) {
+  const classification = getDamageClassification(meta);
+  if (!classification) {
+    return null;
+  }
+
+  let answer_short = '';
+  let answer_detail = '';
+
+  if (classification === 'ability_damage') {
+    answer_short = `高置信结论：算技能伤害。${meta.champion} ${meta.slot}（${meta.skill}）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。`;
+    answer_detail = `${meta.champion} ${meta.slot} 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。`;
+  } else if (classification === 'mixed') {
+    answer_short = `高置信结论：混合判定。${meta.champion} ${meta.slot}（${meta.skill}）会施加攻击特效，但其中技能伤害部分仍按技能伤害处理。`;
+    answer_detail = `${meta.champion} ${meta.slot} 不是单纯的普攻复制体。规则页把它列在“会同时触发攻击特效和法术效果”的集合里，并特别提示其伤害中存在按技能伤害处理的部分，所以回答“到底算不算技能伤害”时更适合给出混合判定。`;
+  } else {
+    answer_short = `高置信结论：通常不算传统技能伤害。${meta.champion} ${meta.slot}（${meta.skill}）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。`;
+    answer_detail = `${meta.champion} ${meta.slot} 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。`;
+  }
+
+  return {
+    id: `derived-${meta.key}-damage-classification`,
+    question: `${meta.champion} ${meta.slot} 算技能伤害吗`,
+    aliases: [
+      `${meta.champion} ${meta.slot} 是普攻还是技能`,
+      `${meta.champion} ${meta.slot} 算不算 ability damage`,
+      `${meta.champion} ${meta.slot} 伤害归类`
+    ],
+    answer_short,
+    answer_detail,
+    status: 'high_confidence',
+    confidence: classification === 'mixed' ? 0.8 : 0.83,
+    patch_range: '当前通用机制',
+    conditions: [
+      '这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。',
+      '如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。'
+    ],
+    entities: {
+      champions: [meta.champion],
+      skills: [meta.slot, meta.skill],
+      mechanics: ['技能伤害', 'ability damage', '攻击特效']
+    },
+    sources: [
+      withSummary(
+        attackEffectsSource,
+        `${meta.champion} 的 ${meta.skill} 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。`
+      )
+    ]
+  };
+}
+
+function makeScalingNoteEntry(meta) {
+  if (!meta.note) {
+    return null;
+  }
+
+  return {
+    id: `derived-${meta.key}-scaling-note`,
+    question: `${meta.champion} ${meta.slot} 的攻击特效按多少比例结算`,
+    aliases: [
+      `${meta.champion} ${meta.slot} 攻击特效比例是多少`,
+      `${meta.champion} ${meta.slot} on-hit 按多少算`,
+      `${meta.champion} ${meta.slot} 特效效率`
+    ],
+    answer_short: `高置信结论：${meta.note}。${meta.champion} ${meta.slot}（${meta.skill}）不是按完整普攻 100% 等比结算。`,
+    answer_detail: `${meta.champion} ${meta.slot} 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“${meta.note}”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。`,
+    status: 'high_confidence',
+    confidence: 0.84,
+    patch_range: '当前通用机制',
+    conditions: [
+      '该结论主要解释攻击特效比例，不替代具体伤害计算器。',
+      '如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。'
+    ],
+    entities: {
+      champions: [meta.champion],
+      skills: [meta.slot, meta.skill],
+      mechanics: ['攻击特效', '比例', '效率']
+    },
+    sources: [
+      withSummary(
+        attackEffectsSource,
+        `${meta.champion} 的 ${meta.skill} 在规则页里带有“${meta.note}”这类攻击特效效率说明。`
+      )
+    ]
+  };
+}
+
 function makeAugmentDirectoryEntry(augment) {
   return {
     id: `derived-${augment.id}-augment-directory`,
@@ -204,6 +303,16 @@ export function buildDerivedEntries({
 
     if (meta.spellEffects) {
       entries.push(makeSpellEffectsEntry(meta));
+    }
+
+    const damageClassificationEntry = makeDamageClassificationEntry(meta);
+    if (damageClassificationEntry) {
+      entries.push(damageClassificationEntry);
+    }
+
+    const scalingNoteEntry = makeScalingNoteEntry(meta);
+    if (scalingNoteEntry) {
+      entries.push(scalingNoteEntry);
     }
   }
 
