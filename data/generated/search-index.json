@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T08:43:11.262Z",
+  "generatedAt": "2026-04-14T09:11:47.194Z",
   "entries": [
     {
       "id": "camille-q-spellblade-true-damage",
@@ -885,9 +885,8 @@
         "崔斯特",
         "w",
         "算强化普攻还是技能伤害",
-        "卡牌",
         "是普攻还是技能",
-        "卡牌大师",
+        "崔斯特大师",
         "pick",
         "a",
         "card",
@@ -4787,6 +4786,184 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-ivern-r-onhit",
+      "kind": "derived",
+      "question": "艾翁 R 能不能触发攻击特效",
+      "normalizedQuestion": "艾翁 r 触发 攻击特效",
+      "aliases": [
+        "艾翁 R 会不会触发攻击特效",
+        "艾翁 R 吃不吃 on-hit",
+        "Ivern R on-hit",
+        "小菊 R on-hit"
+      ],
+      "answerShort": "高置信结论：能。艾翁 R（Daisy!）被攻击特效规则页列为会施加 on-hit 的技能。",
+      "answerDetail": "艾翁 R（Daisy!）可按“会施加攻击特效”的技能理解。另外，规则页还把它列为会同时触发法术效果的混合技能。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "艾翁"
+        ],
+        "skills": [
+          "R",
+          "Daisy!"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Ivern - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Ivern",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Ivern 页面明确写到 Daisy 的普攻会施加艾翁自己的 on-hit effects。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "艾翁",
+        "r",
+        "触发",
+        "攻击特效",
+        "ivern",
+        "daisy"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-ivern-r-spell-effects",
+      "kind": "derived",
+      "question": "艾翁 R 会不会同时触发法术效果",
+      "normalizedQuestion": "艾翁 r 触发同时触发法术效果",
+      "aliases": [
+        "艾翁 R 算不算混合法术效果",
+        "艾翁 R 会不会触发 spell effects",
+        "艾翁 R 是普攻还是技能"
+      ],
+      "answerShort": "高置信结论：会。艾翁 R（Daisy!）被规则页列为会同时施加攻击特效和法术效果的技能。",
+      "answerDetail": "艾翁 R 不适合被简单归成“纯普攻”或“纯技能”。规则页把它放进“同时触发 on-hit 与 spell effects”的混合技能集合，因此海克斯或装备如果分别判断攻击效果与法术效果，通常都要把这两条链路考虑进去。",
+      "confidence": 0.85,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这类结论更适合回答“会不会同时触发法术效果”。",
+        "如果要判断某个效果是按普攻收益还是按技能收益结算，还要继续看单个效果文本。"
+      ],
+      "entities": {
+        "champions": [
+          "艾翁"
+        ],
+        "skills": [
+          "R",
+          "Daisy!"
+        ],
+        "mechanics": [
+          "法术效果",
+          "spell effects",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Ivern - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Ivern",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Ivern 页面同时写到 Daisy 的普攻会以 area damage 形式施加 spell effects。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "艾翁",
+        "r",
+        "触发同时触发法术效果",
+        "算不算混合法术效果",
+        "触发",
+        "spell",
+        "effects",
+        "是普攻还是技能",
+        "daisy",
+        "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-ivern-r-damage-classification",
+      "kind": "derived",
+      "question": "艾翁 R 算技能伤害吗",
+      "normalizedQuestion": "艾翁 r 算技能伤害吗",
+      "aliases": [
+        "艾翁 R 是普攻还是技能",
+        "艾翁 R 算不算 ability damage",
+        "艾翁 R 伤害归类"
+      ],
+      "answerShort": "高置信结论：通常不算传统技能伤害。艾翁 R（Daisy!）虽然会触发法术效果，但规则页说明这类技能的伤害本体通常不按 ability damage 归类。",
+      "answerDetail": "艾翁 R 属于“会同时触发攻击特效和法术效果”的混合技能。规则页特别说明，这一类技能大多不会把伤害本体记作 ability damage，因此玩家常说的“它算技能还是平A”更接近“强化攻击载体，而不是普通技能伤害”。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "艾翁"
+        ],
+        "skills": [
+          "R",
+          "Daisy!"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Ivern - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Ivern",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "艾翁 的 Daisy! 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "艾翁",
+        "r",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "daisy",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-jax-w-onhit",
       "kind": "derived",
       "question": "贾克斯 W 能不能触发攻击特效",
@@ -6164,6 +6341,186 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-kled-w-onhit",
+      "kind": "derived",
+      "question": "克烈 W 能不能触发攻击特效",
+      "normalizedQuestion": "克烈 w 触发 攻击特效",
+      "aliases": [
+        "克烈 W 会不会触发攻击特效",
+        "克烈 W 吃不吃 on-hit",
+        "Kled W on-hit"
+      ],
+      "answerShort": "高置信结论：能。克烈 W（Violent Tendencies）被攻击特效规则页列为会施加 on-hit 的技能。",
+      "answerDetail": "克烈 W（Violent Tendencies）可按“会施加攻击特效”的技能理解。另外，规则页还把它列为会同时触发法术效果的混合技能。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "克烈"
+        ],
+        "skills": [
+          "W",
+          "Violent Tendencies"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Kled - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Kled/LoL",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.82,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Kled 页面说明 Violent Tendencies 的第 4 下仍是基础攻击命中，因此会带出攻击特效。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "克烈",
+        "w",
+        "触发",
+        "攻击特效",
+        "kled",
+        "violent",
+        "tendencies"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-kled-w-spell-effects",
+      "kind": "derived",
+      "question": "克烈 W 会不会同时触发法术效果",
+      "normalizedQuestion": "克烈 w 触发同时触发法术效果",
+      "aliases": [
+        "克烈 W 算不算混合法术效果",
+        "克烈 W 会不会触发 spell effects",
+        "克烈 W 是普攻还是技能"
+      ],
+      "answerShort": "高置信结论：会。克烈 W（Violent Tendencies）被规则页列为会同时施加攻击特效和法术效果的技能。",
+      "answerDetail": "克烈 W 不适合被简单归成“纯普攻”或“纯技能”。规则页把它放进“同时触发 on-hit 与 spell effects”的混合技能集合，因此海克斯或装备如果分别判断攻击效果与法术效果，通常都要把这两条链路考虑进去。",
+      "confidence": 0.85,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这类结论更适合回答“会不会同时触发法术效果”。",
+        "如果要判断某个效果是按普攻收益还是按技能收益结算，还要继续看单个效果文本。"
+      ],
+      "entities": {
+        "champions": [
+          "克烈"
+        ],
+        "skills": [
+          "W",
+          "Violent Tendencies"
+        ],
+        "mechanics": [
+          "法术效果",
+          "spell effects",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Kled - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Kled/LoL",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.82,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Violent Tendencies 的第 4 下 bonus damage 被标成 basic damage 和 spell damage，因此可触发 spell effects。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "克烈",
+        "w",
+        "触发同时触发法术效果",
+        "算不算混合法术效果",
+        "触发",
+        "spell",
+        "effects",
+        "是普攻还是技能",
+        "violent",
+        "tendencies",
+        "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-kled-w-damage-classification",
+      "kind": "derived",
+      "question": "克烈 W 算技能伤害吗",
+      "normalizedQuestion": "克烈 w 算技能伤害吗",
+      "aliases": [
+        "克烈 W 是普攻还是技能",
+        "克烈 W 算不算 ability damage",
+        "克烈 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：混合判定。克烈 W（Violent Tendencies）会施加攻击特效，但其中技能伤害部分仍按技能伤害处理。",
+      "answerDetail": "克烈 W 不是单纯的普攻复制体。规则页把它列在“会同时触发攻击特效和法术效果”的集合里，并特别提示其伤害中存在按技能伤害处理的部分，所以回答“到底算不算技能伤害”时更适合给出混合判定。",
+      "confidence": 0.8,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "克烈"
+        ],
+        "skills": [
+          "W",
+          "Violent Tendencies"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Kled - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Kled/LoL",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.82,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Violent Tendencies 的第 4 下同时保留基础攻击载体和额外技能伤害，更适合按混合判定理解。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "克烈",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "violent",
+        "tendencies",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-lucian-passive-onhit",
       "kind": "derived",
       "question": "卢锡安 被动 能不能触发攻击特效",
@@ -7185,6 +7542,63 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-nautilus-passive-onhit",
+      "kind": "derived",
+      "question": "诺提勒斯 被动 能不能触发攻击特效",
+      "normalizedQuestion": "诺提勒斯 被动 触发 攻击特效",
+      "aliases": [
+        "诺提勒斯 被动 会不会触发攻击特效",
+        "诺提勒斯 被动 吃不吃 on-hit",
+        "Nautilus 被动 on-hit",
+        "泰坦 被动 on-hit"
+      ],
+      "answerShort": "高置信结论：能。诺提勒斯 被动（Staggering Blow）被攻击特效规则页列为会施加 on-hit 的技能。",
+      "answerDetail": "诺提勒斯 被动（Staggering Blow）可按“会施加攻击特效”的技能理解。",
+      "confidence": 0.8,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "诺提勒斯"
+        ],
+        "skills": [
+          "被动",
+          "Staggering Blow"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Template:Data Nautilus/Staggering Blow - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Template%3AData_Nautilus/Staggering_Blow",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.82,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Staggering Blow 被描述为强化后的基础攻击命中，并附带 proc damage 与禁锢。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "诺提勒斯",
+        "被动",
+        "触发",
+        "攻击特效",
+        "nautilus",
+        "staggering",
+        "blow"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-nasus-q-onhit",
       "kind": "derived",
       "question": "内瑟斯 Q 能不能触发攻击特效",
@@ -7544,6 +7958,124 @@
         "takedown",
         "技能伤害",
         "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-nocturne-passive-onhit",
+      "kind": "derived",
+      "question": "魔腾 被动 能不能触发攻击特效",
+      "normalizedQuestion": "魔腾 被动 触发 攻击特效",
+      "aliases": [
+        "魔腾 被动 会不会触发攻击特效",
+        "魔腾 被动 吃不吃 on-hit",
+        "Nocturne 被动 on-hit",
+        "梦魇 被动 on-hit"
+      ],
+      "answerShort": "高置信结论：能。魔腾 被动（Umbra Blades）被攻击特效规则页列为会施加 on-hit 的技能，并带有次级目标会以 100% 攻击特效效率施加 on-hit。",
+      "answerDetail": "魔腾 被动（Umbra Blades）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 次级目标会以 100% 攻击特效效率施加 on-hit。",
+      "confidence": 0.8,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "魔腾"
+        ],
+        "skills": [
+          "被动",
+          "Umbra Blades"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Nocturne - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Nocturne",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Umbra Blades 的强化攻击会对目标及周围单位结算攻击路径。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "魔腾",
+        "被动",
+        "触发",
+        "攻击特效",
+        "nocturne",
+        "umbra",
+        "blades"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-nocturne-passive-scaling-note",
+      "kind": "derived",
+      "question": "魔腾 被动 的攻击特效按多少比例结算",
+      "normalizedQuestion": "魔腾 被动 的攻击特效按多少比例结算",
+      "aliases": [
+        "魔腾 被动 攻击特效比例是多少",
+        "魔腾 被动 on-hit 按多少算",
+        "魔腾 被动 特效效率"
+      ],
+      "answerShort": "高置信结论：次级目标会以 100% 攻击特效效率施加 on-hit。魔腾 被动（Umbra Blades）不是按完整普攻 100% 等比结算。",
+      "answerDetail": "魔腾 被动 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“次级目标会以 100% 攻击特效效率施加 on-hit”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "魔腾"
+        ],
+        "skills": [
+          "被动",
+          "Umbra Blades"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Nocturne - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Nocturne",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Nocturne 页面明确写到 Umbra Blades 会对所有目标以 100% 效率施加 on-hit。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "魔腾",
+        "被动",
+        "的攻击特效按多少比例结算",
+        "攻击特效比例是多少",
+        "攻击特效",
+        "按多少算",
+        "特效效率",
+        "umbra",
+        "blades",
+        "比例",
+        "效率"
       ],
       "sourceCount": 1
     },
@@ -8379,6 +8911,191 @@
       "sourceCount": 1
     },
     {
+      "id": "derived-twisted-fate-w-onhit",
+      "kind": "derived",
+      "question": "崔斯特 W 能不能触发攻击特效",
+      "normalizedQuestion": "崔斯特 w 触发 攻击特效",
+      "aliases": [
+        "崔斯特 W 会不会触发攻击特效",
+        "崔斯特 W 吃不吃 on-hit",
+        "Twisted Fate W on-hit",
+        "卡牌 W on-hit"
+      ],
+      "answerShort": "高置信结论：能。崔斯特 W（Pick a Card）被攻击特效规则页列为会施加 on-hit 的技能。",
+      "answerDetail": "崔斯特 W（Pick a Card）可按“会施加攻击特效”的技能理解。另外，规则页还把它列为会同时触发法术效果的混合技能。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "崔斯特"
+        ],
+        "skills": [
+          "W",
+          "Pick a Card"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Twisted Fate - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Pick a Card 会强化下一次基础攻击，因此该命中仍沿用基础攻击载体并能带出攻击特效。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "崔斯特",
+        "w",
+        "触发",
+        "攻击特效",
+        "twisted",
+        "fate",
+        "pick",
+        "a",
+        "card"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-twisted-fate-w-spell-effects",
+      "kind": "derived",
+      "question": "崔斯特 W 会不会同时触发法术效果",
+      "normalizedQuestion": "崔斯特 w 触发同时触发法术效果",
+      "aliases": [
+        "崔斯特 W 算不算混合法术效果",
+        "崔斯特 W 会不会触发 spell effects",
+        "崔斯特 W 是普攻还是技能"
+      ],
+      "answerShort": "高置信结论：会。崔斯特 W（Pick a Card）被规则页列为会同时施加攻击特效和法术效果的技能。",
+      "answerDetail": "崔斯特 W 不适合被简单归成“纯普攻”或“纯技能”。规则页把它放进“同时触发 on-hit 与 spell effects”的混合技能集合，因此海克斯或装备如果分别判断攻击效果与法术效果，通常都要把这两条链路考虑进去。",
+      "confidence": 0.85,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这类结论更适合回答“会不会同时触发法术效果”。",
+        "如果要判断某个效果是按普攻收益还是按技能收益结算，还要继续看单个效果文本。"
+      ],
+      "entities": {
+        "champions": [
+          "崔斯特"
+        ],
+        "skills": [
+          "W",
+          "Pick a Card"
+        ],
+        "mechanics": [
+          "法术效果",
+          "spell effects",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Twisted Fate - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Pick a Card 的额外伤害被记录为 spell damage，可视作会同时走技能效果链路。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "崔斯特",
+        "w",
+        "触发同时触发法术效果",
+        "算不算混合法术效果",
+        "触发",
+        "spell",
+        "effects",
+        "是普攻还是技能",
+        "pick",
+        "a",
+        "card",
+        "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-twisted-fate-w-damage-classification",
+      "kind": "derived",
+      "question": "崔斯特 W 算技能伤害吗",
+      "normalizedQuestion": "崔斯特 w 算技能伤害吗",
+      "aliases": [
+        "崔斯特 W 是普攻还是技能",
+        "崔斯特 W 算不算 ability damage",
+        "崔斯特 W 伤害归类"
+      ],
+      "answerShort": "高置信结论：算技能伤害。崔斯特 W（Pick a Card）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。",
+      "answerDetail": "崔斯特 W 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。",
+      "confidence": 0.83,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "崔斯特"
+        ],
+        "skills": [
+          "W",
+          "Pick a Card"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Twisted Fate - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Twisted_Fate",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Pick a Card 的伤害分类明确写为 spell damage。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "崔斯特",
+        "w",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "pick",
+        "a",
+        "card",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
       "id": "derived-twitch-r-onhit",
       "kind": "derived",
       "question": "图奇 R 能不能触发攻击特效",
@@ -8782,6 +9499,186 @@
         "damage",
         "伤害归类",
         "tumble",
+        "技能伤害",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-vi-e-onhit",
+      "kind": "derived",
+      "question": "蔚 E 能不能触发攻击特效",
+      "normalizedQuestion": "蔚 e 触发 攻击特效",
+      "aliases": [
+        "蔚 E 会不会触发攻击特效",
+        "蔚 E 吃不吃 on-hit",
+        "Vi E on-hit"
+      ],
+      "answerShort": "高置信结论：能。蔚 E（Relentless Force）被攻击特效规则页列为会施加 on-hit 的技能。",
+      "answerDetail": "蔚 E（Relentless Force）可按“会施加攻击特效”的技能理解。另外，规则页还把它列为会同时触发法术效果的混合技能。",
+      "confidence": 0.84,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "蔚"
+        ],
+        "skills": [
+          "E",
+          "Relentless Force"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Vi - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Vi",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Relentless Force 的主目标会施加基础攻击所需效果，因此会带出 on-hit。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "蔚",
+        "e",
+        "触发",
+        "攻击特效",
+        "vi",
+        "relentless",
+        "force"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-vi-e-spell-effects",
+      "kind": "derived",
+      "question": "蔚 E 会不会同时触发法术效果",
+      "normalizedQuestion": "蔚 e 触发同时触发法术效果",
+      "aliases": [
+        "蔚 E 算不算混合法术效果",
+        "蔚 E 会不会触发 spell effects",
+        "蔚 E 是普攻还是技能"
+      ],
+      "answerShort": "高置信结论：会。蔚 E（Relentless Force）被规则页列为会同时施加攻击特效和法术效果的技能。",
+      "answerDetail": "蔚 E 不适合被简单归成“纯普攻”或“纯技能”。规则页把它放进“同时触发 on-hit 与 spell effects”的混合技能集合，因此海克斯或装备如果分别判断攻击效果与法术效果，通常都要把这两条链路考虑进去。",
+      "confidence": 0.85,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这类结论更适合回答“会不会同时触发法术效果”。",
+        "如果要判断某个效果是按普攻收益还是按技能收益结算，还要继续看单个效果文本。"
+      ],
+      "entities": {
+        "champions": [
+          "蔚"
+        ],
+        "skills": [
+          "E",
+          "Relentless Force"
+        ],
+        "mechanics": [
+          "法术效果",
+          "spell effects",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Vi - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Vi",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Relentless Force 说明里明确写到主目标会施加 spell damage。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "蔚",
+        "e",
+        "触发同时触发法术效果",
+        "算不算混合法术效果",
+        "触发",
+        "spell",
+        "effects",
+        "是普攻还是技能",
+        "relentless",
+        "force",
+        "法术效果",
+        "攻击特效"
+      ],
+      "sourceCount": 1
+    },
+    {
+      "id": "derived-vi-e-damage-classification",
+      "kind": "derived",
+      "question": "蔚 E 算技能伤害吗",
+      "normalizedQuestion": "蔚 e 算技能伤害吗",
+      "aliases": [
+        "蔚 E 是普攻还是技能",
+        "蔚 E 算不算 ability damage",
+        "蔚 E 伤害归类"
+      ],
+      "answerShort": "高置信结论：混合判定。蔚 E（Relentless Force）会施加攻击特效，但其中技能伤害部分仍按技能伤害处理。",
+      "answerDetail": "蔚 E 不是单纯的普攻复制体。规则页把它列在“会同时触发攻击特效和法术效果”的集合里，并特别提示其伤害中存在按技能伤害处理的部分，所以回答“到底算不算技能伤害”时更适合给出混合判定。",
+      "confidence": 0.8,
+      "status": "high_confidence",
+      "patchRange": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "蔚"
+        ],
+        "skills": [
+          "E",
+          "Relentless Force"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Vi - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Vi",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "Relentless Force 同时包含主目标的 basic-damage-required effects 与 spell damage，属于混合判定。"
+        }
+      ],
+      "conflicts": [],
+      "tokens": [
+        "蔚",
+        "e",
+        "算技能伤害吗",
+        "是普攻还是技能",
+        "算不算",
+        "ability",
+        "damage",
+        "伤害归类",
+        "relentless",
+        "force",
         "技能伤害",
         "攻击特效"
       ],

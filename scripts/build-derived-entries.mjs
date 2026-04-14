@@ -28,8 +28,17 @@ function withSummary(source, evidence_summary) {
   return { ...source, evidence_summary };
 }
 
+function getAbilitySource(meta) {
+  return meta.source ?? attackEffectsSource;
+}
+
+function getAbilityEvidence(meta, key, fallback) {
+  return meta.evidence?.[key] ?? fallback;
+}
+
 function makeOnHitEntry(meta) {
   const aliasText = meta.aliases.slice(0, 2);
+  const source = getAbilitySource(meta);
   return {
     id: `derived-${meta.key}-onhit`,
     question: `${meta.champion} ${meta.slot} 能不能触发攻击特效`,
@@ -54,14 +63,19 @@ function makeOnHitEntry(meta) {
     },
     sources: [
       withSummary(
-        attackEffectsSource,
-        `${meta.champion} 的 ${meta.skill} 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。`
+        source,
+        getAbilityEvidence(
+          meta,
+          'onHit',
+          `${meta.champion} 的 ${meta.skill} 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。`
+        )
       )
     ]
   };
 }
 
 function makeOnAttackEntry(meta) {
+  const source = getAbilitySource(meta);
   return {
     id: `derived-${meta.key}-onattack`,
     question: `${meta.champion} ${meta.slot} 会不会触发 on-attack 效果`,
@@ -86,14 +100,19 @@ function makeOnAttackEntry(meta) {
     },
     sources: [
       withSummary(
-        attackEffectsSource,
-        `${meta.champion} 的 ${meta.skill} 被列在“Applying on-attack effects”技能清单中。`
+        source,
+        getAbilityEvidence(
+          meta,
+          'onAttack',
+          `${meta.champion} 的 ${meta.skill} 被列在“Applying on-attack effects”技能清单中。`
+        )
       )
     ]
   };
 }
 
 function makeSpellEffectsEntry(meta) {
+  const source = getAbilitySource(meta);
   return {
     id: `derived-${meta.key}-spell-effects`,
     question: `${meta.champion} ${meta.slot} 会不会同时触发法术效果`,
@@ -118,8 +137,12 @@ function makeSpellEffectsEntry(meta) {
     },
     sources: [
       withSummary(
-        attackEffectsSource,
-        `${meta.champion} 的 ${meta.skill} 被列在“同时触发 on-hit effects 与 spell effects”的技能清单中。`
+        source,
+        getAbilityEvidence(
+          meta,
+          'spellEffects',
+          `${meta.champion} 的 ${meta.skill} 被列在“同时触发 on-hit effects 与 spell effects”的技能清单中。`
+        )
       )
     ]
   };
@@ -142,6 +165,7 @@ function makeDamageClassificationEntry(meta) {
   if (!classification) {
     return null;
   }
+  const source = getAbilitySource(meta);
 
   let answer_short = '';
   let answer_detail = '';
@@ -181,8 +205,12 @@ function makeDamageClassificationEntry(meta) {
     },
     sources: [
       withSummary(
-        attackEffectsSource,
-        `${meta.champion} 的 ${meta.skill} 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。`
+        source,
+        getAbilityEvidence(
+          meta,
+          'damageClassification',
+          `${meta.champion} 的 ${meta.skill} 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。`
+        )
       )
     ]
   };
@@ -192,6 +220,7 @@ function makeScalingNoteEntry(meta) {
   if (!meta.note) {
     return null;
   }
+  const source = getAbilitySource(meta);
 
   return {
     id: `derived-${meta.key}-scaling-note`,
@@ -217,8 +246,12 @@ function makeScalingNoteEntry(meta) {
     },
     sources: [
       withSummary(
-        attackEffectsSource,
-        `${meta.champion} 的 ${meta.skill} 在规则页里带有“${meta.note}”这类攻击特效效率说明。`
+        source,
+        getAbilityEvidence(
+          meta,
+          'scalingNote',
+          `${meta.champion} 的 ${meta.skill} 在规则页里带有“${meta.note}”这类攻击特效效率说明。`
+        )
       )
     ]
   };

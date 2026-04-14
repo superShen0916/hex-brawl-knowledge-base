@@ -70,6 +70,37 @@ function validateSource(source, file) {
   return errors;
 }
 
+function validateConflictCandidate(conflict, file, index) {
+  const errors = [];
+  const prefix = `${file}: conflict_set[${index}]`;
+
+  if (!isNonEmptyString(conflict.candidate_answer)) {
+    errors.push(`${prefix}.candidate_answer must be a non-empty string`);
+  }
+
+  if (
+    typeof conflict.candidate_confidence !== 'number' ||
+    conflict.candidate_confidence < 0 ||
+    conflict.candidate_confidence > 1
+  ) {
+    errors.push(`${prefix}.candidate_confidence must be a number between 0 and 1`);
+  }
+
+  if (!isNonEmptyString(conflict.why_it_differs)) {
+    errors.push(`${prefix}.why_it_differs must be a non-empty string`);
+  }
+
+  if (!Array.isArray(conflict.sources) || conflict.sources.length === 0) {
+    errors.push(`${prefix}.sources must be a non-empty array`);
+  } else {
+    for (const source of conflict.sources) {
+      errors.push(...validateSource(source, prefix));
+    }
+  }
+
+  return errors;
+}
+
 export function validateEntry(entry, file = '<entry>') {
   const errors = [];
 
@@ -127,6 +158,16 @@ export function validateEntry(entry, file = '<entry>') {
 
   if (entry.conflict_set !== undefined && !Array.isArray(entry.conflict_set)) {
     errors.push(`${file}: conflict_set must be an array when provided`);
+  }
+
+  if (entry.status === 'conflicted' && (!Array.isArray(entry.conflict_set) || entry.conflict_set.length === 0)) {
+    errors.push(`${file}: conflicted entries must include a non-empty conflict_set`);
+  }
+
+  if (Array.isArray(entry.conflict_set)) {
+    for (const [index, conflict] of entry.conflict_set.entries()) {
+      errors.push(...validateConflictCandidate(conflict, file, index));
+    }
   }
 
   return errors;

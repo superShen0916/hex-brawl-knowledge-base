@@ -47,6 +47,66 @@ test('validateEntries accepts well-formed knowledge entries', () => {
   assert.deepEqual(result.errors, []);
 });
 
+test('validateEntries accepts conflicted entries with structured conflict candidates', () => {
+  rmSync(fixtureDir, { recursive: true, force: true });
+  mkdirSync(fixtureDir, { recursive: true });
+
+  writeFileSync(
+    join(fixtureDir, 'conflicted-entry.json'),
+    JSON.stringify({
+      id: 'twisted-fate-w-conflict-shape',
+      question: '崔斯特 W 算强化普攻还是技能伤害',
+      aliases: ['卡牌 W 是平A还是技能'],
+      answer_short: '当前记录为冲突词条：不同来源对载体和伤害身份的描述重点不同。',
+      answer_detail: '这个测试只验证冲突词条的数据结构是否合格。',
+      status: 'conflicted',
+      confidence: 0.61,
+      patch_range: '通用机制',
+      conditions: ['测试条件'],
+      entities: {
+        champions: ['崔斯特'],
+        skills: ['W'],
+        mechanics: ['强化普攻', '技能伤害']
+      },
+      sources: [
+        {
+          source_type: 'wiki',
+          title: 'Twisted Fate - League of Legends Wiki',
+          url: 'https://wiki.leagueoflegends.com/en-us/Twisted_Fate',
+          publisher: 'League of Legends Wiki',
+          retrieved_at: '2026-04-14',
+          source_confidence: 0.84,
+          evidence_summary: 'Pick a Card 会强化下一次基础攻击。',
+          patch_hint: '当前通用机制'
+        }
+      ],
+      conflict_set: [
+        {
+          candidate_answer: '另一种说法：它更像强化普攻，因为载体是下一次基础攻击。',
+          candidate_confidence: 0.52,
+          why_it_differs: '分歧点在于有人更看重攻击载体，有人更看重伤害身份。',
+          sources: [
+            {
+              source_type: 'forum',
+              title: 'Community discussion',
+              url: 'https://example.com/community-twisted-fate-discussion',
+              publisher: 'Community',
+              retrieved_at: '2026-04-14',
+              source_confidence: 0.35,
+              evidence_summary: '社区讨论更偏向按强化普攻理解。',
+              patch_hint: '玩家讨论'
+            }
+          ]
+        }
+      ]
+    })
+  );
+
+  const result = validateEntries({ entriesDir: fixtureDir });
+  assert.equal(result.entryCount, 1);
+  assert.deepEqual(result.errors, []);
+});
+
 test('validateEntries rejects malformed entries with actionable errors', () => {
   rmSync(fixtureDir, { recursive: true, force: true });
   mkdirSync(fixtureDir, { recursive: true });
@@ -80,5 +140,51 @@ test('validateEntries rejects malformed entries with actionable errors', () => {
   assert.throws(
     () => validateEntries({ entriesDir: fixtureDir }),
     /broken-entry\.json/
+  );
+});
+
+test('validateEntries rejects malformed conflict_set candidates', () => {
+  rmSync(fixtureDir, { recursive: true, force: true });
+  mkdirSync(fixtureDir, { recursive: true });
+
+  writeFileSync(
+    join(fixtureDir, 'broken-conflict-entry.json'),
+    JSON.stringify({
+      id: 'broken-conflict-entry',
+      question: '这条冲突数据有问题吗',
+      aliases: [],
+      answer_short: '测试冲突校验',
+      answer_detail: '测试冲突校验',
+      status: 'conflicted',
+      confidence: 0.42,
+      patch_range: '通用机制',
+      conditions: [],
+      entities: {},
+      sources: [
+        {
+          source_type: 'wiki',
+          title: 'Test Source',
+          url: 'https://example.com/source',
+          publisher: 'Example',
+          retrieved_at: '2026-04-14',
+          source_confidence: 0.7,
+          evidence_summary: '测试来源',
+          patch_hint: '测试'
+        }
+      ],
+      conflict_set: [
+        {
+          candidate_answer: '',
+          candidate_confidence: 3,
+          why_it_differs: '',
+          sources: []
+        }
+      ]
+    })
+  );
+
+  assert.throws(
+    () => validateEntries({ entriesDir: fixtureDir }),
+    /conflict_set/
   );
 });

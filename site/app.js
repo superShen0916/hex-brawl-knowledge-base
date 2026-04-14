@@ -1,3 +1,4 @@
+import { buildFilterSections, filterEntries, hasActiveFilters } from './filters.js';
 import { confidenceLabel, rankEntries } from './search.js';
 
 const root = document.querySelector('#app');
@@ -8,6 +9,13 @@ const state = {
   query: '',
   selectedId: '',
   statusText: '正在加载知识索引...',
+  filters: {
+    status: '',
+    kind: '',
+    champion: '',
+    augment: '',
+    mechanic: '',
+  },
 };
 
 const suggestedQueries = [
@@ -30,12 +38,22 @@ function escapeHtml(input) {
     .replaceAll("'", '&#39;');
 }
 
-function resultSummary(entries) {
+function resultSummary(rankedEntries, filteredEntries) {
+  const filtersEnabled = hasActiveFilters(state.filters);
+
   if (!state.query) {
+    if (filtersEnabled) {
+      return `已收录 ${state.entries.length} 条交互问答，已跟踪 ${state.augmentCount} 个海克斯；当前筛选后展示 ${filteredEntries.length} / ${rankedEntries.length} 条。`;
+    }
+
     return `已收录 ${state.entries.length} 条交互问答，已跟踪 ${state.augmentCount} 个海克斯，默认按置信度排序。`;
   }
 
-  return `当前问题“${state.query}”命中 ${entries.length} 条记录。`;
+  if (filtersEnabled) {
+    return `当前问题“${state.query}”先命中 ${rankedEntries.length} 条记录，筛选后保留 ${filteredEntries.length} 条。`;
+  }
+
+  return `当前问题“${state.query}”命中 ${filteredEntries.length} 条记录。`;
 }
 
 function renderSources(sources = []) {
@@ -79,6 +97,24 @@ function renderConflicts(conflicts = []) {
               <strong>${escapeHtml(conflict.candidate_answer)}</strong>
               <div class="source-meta">候选置信度 ${formatConfidence(conflict.candidate_confidence)}</div>
               <div class="source-meta">${escapeHtml(conflict.why_it_differs ?? '来源结论存在明显分歧。')}</div>
+              ${
+                conflict.sources?.length
+                  ? `
+                    <div class="mini-source-list">
+                      ${conflict.sources
+                        .slice(0, 2)
+                        .map(
+                          (source) => `
+                            <a class="mini-source" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">
+                              ${escapeHtml(source.title)}
+                            </a>
+                          `
+                        )
+                        .join('')}
+                    </div>
+                  `
+                  : ''
+              }
             </li>
           `
         )
@@ -87,8 +123,65 @@ function renderConflicts(conflicts = []) {
   `;
 }
 
-function renderResults(entries) {
+function renderFilters(sections) {
+  if (!sections.length) {
+    return '';
+  }
+
+  return `
+    <section class="filter-panel">
+      <div class="filter-head">
+        <h3>快速筛选</h3>
+        ${
+          hasActiveFilters(state.filters)
+            ? '<button type="button" class="ghost-button" data-reset-filters="true">清空筛选</button>'
+            : '<span class="status-line">按状态、收录方式、英雄、海克斯或机制缩小范围</span>'
+        }
+      </div>
+      <div class="filter-groups">
+        ${sections
+          .map(
+            (section) => `
+              <div class="filter-group">
+                <span class="filter-label">${escapeHtml(section.label)}</span>
+                <div class="filter-chip-row">
+                  ${section.options
+                    .map((option) => {
+                      const active = state.filters[section.key] === option.value;
+                      return `
+                        <button
+                          type="button"
+                          class="filter-chip ${active ? 'active' : ''}"
+                          data-filter-key="${escapeHtml(section.key)}"
+                          data-filter-value="${escapeHtml(option.value)}"
+                          aria-pressed="${active ? 'true' : 'false'}"
+                        >
+                          ${escapeHtml(option.label)}
+                          <span class="filter-count">${escapeHtml(String(option.count))}</span>
+                        </button>
+                      `;
+                    })
+                    .join('')}
+                </div>
+              </div>
+            `
+          )
+          .join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderResults(entries, { filteredFrom = 0 } = {}) {
   if (!entries.length) {
+    if (hasActiveFilters(state.filters) && filteredFrom > 0) {
+      return `
+        <div class="empty-state">
+          当前查询本来能命中 ${filteredFrom} 条记录，但被筛选条件全部排掉了。你可以清空部分筛选后再看。
+        </div>
+      `;
+    }
+
     return `
       <div class="empty-state">
         没有找到可直接复用的高可信答案。你可以换一种问法，或者改成“英雄 + 技能 + 交互类型”的形式继续搜。
@@ -170,7 +263,7 @@ function renderDetail(entry) {
 }
 
 function getRankedEntries() {
-  return rankEntries(state.query, state.entries).slice(0, 12);
+  return rankEntries(state.query, state.entries);
 }
 
 function syncSelected(rankedEntries) {
@@ -191,8 +284,11 @@ function paint() {
   }
 
   const rankedEntries = getRankedEntries();
-  syncSelected(rankedEntries);
-  const activeEntry = rankedEntries.find((entry) => entry.id === state.selectedId);
+  const filterSections = buildFilterSections(rankedEntries);
+  const filteredEntries = filterEntries(rankedEntries, state.filters);
+  const visibleEntries = filteredEntries.slice(0, 12);
+  syncSelected(visibleEntries);
+  const activeEntry = visibleEntries.find((entry) => entry.id === state.selectedId);
 
   root.innerHTML = `
     <main class="shell">
@@ -238,10 +334,11 @@ function paint() {
         <section class="result-panel">
           <div class="result-head">
             <h2>搜索结果</h2>
-            <p class="result-summary">${escapeHtml(resultSummary(rankedEntries))}</p>
+            <p class="result-summary">${escapeHtml(resultSummary(rankedEntries, filteredEntries))}</p>
           </div>
+          ${renderFilters(filterSections)}
           <div id="results" class="results">
-            ${renderResults(rankedEntries)}
+            ${renderResults(visibleEntries, { filteredFrom: rankedEntries.length })}
           </div>
         </section>
         ${renderDetail(activeEntry)}
@@ -322,6 +419,36 @@ document.addEventListener('click', (event) => {
   const chip = target.closest('[data-suggested-query]');
   if (chip instanceof HTMLElement) {
     updateQuery(chip.dataset.suggestedQuery ?? '');
+    return;
+  }
+
+  const resetFiltersButton = target.closest('[data-reset-filters]');
+  if (resetFiltersButton instanceof HTMLElement) {
+    state.filters = {
+      status: '',
+      kind: '',
+      champion: '',
+      augment: '',
+      mechanic: '',
+    };
+    paint();
+    return;
+  }
+
+  const filterChip = target.closest('[data-filter-key]');
+  if (filterChip instanceof HTMLElement) {
+    const filterKey = filterChip.dataset.filterKey;
+    const filterValue = filterChip.dataset.filterValue ?? '';
+
+    if (
+      filterKey &&
+      Object.prototype.hasOwnProperty.call(state.filters, filterKey)
+    ) {
+      state.filters[filterKey] =
+        state.filters[filterKey] === filterValue ? '' : filterValue;
+      paint();
+    }
+
     return;
   }
 

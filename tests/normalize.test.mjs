@@ -7,6 +7,11 @@ test('normalizeQuestion merges common Hex Brawl aliases', () => {
     normalizeQuestion('螃蟹W 吃不吃 on-hit？'),
     '厄加特 w 触发 攻击特效'
   );
+
+  assert.equal(
+    normalizeQuestion('卡牌W 算不算技能伤害？'),
+    '崔斯特 w 算不算技能伤害'
+  );
 });
 
 test('extractTokens keeps meaningful tokens for search recall', () => {
