@@ -156,6 +156,38 @@ function makeAugmentDirectoryEntry(augment) {
   };
 }
 
+function makeAugmentRarityEntry(augment) {
+  return {
+    id: `derived-${augment.id}-augment-rarity`,
+    question: `${augment.name} 是什么级别的海克斯`,
+    aliases: [
+      `${augment.name} 是银海克斯还是金海克斯`,
+      `${augment.name} 是棱彩海克斯吗`,
+      `${augment.name} 几级海克斯`
+    ],
+    answer_short: `目录信息：${augment.name} 属于 ${augment.rarity} 海克斯。`,
+    answer_detail: `${augment.name} 在当前目录中被标记为 ${augment.rarity} 海克斯。这个条目适合回答“它属于银 / 金 / 棱彩哪一档”这类问题。`,
+    status: 'high_confidence',
+    confidence: 0.8,
+    patch_range: augment.sourcePatch,
+    conditions: [
+      '该条目主要回答稀有度与档位，不直接解释完整效果。',
+      '如果问题是具体效果，需要继续补效果型海克斯词条。'
+    ],
+    entities: {
+      augments: [augment.name],
+      rarities: [augment.rarity],
+      mechanics: ['海克斯', '稀有度']
+    },
+    sources: [
+      withSummary(
+        augmentCatalogSource,
+        `${augment.name} 在 Augments 目录里被归为 ${augment.rarity} 海克斯。`
+      )
+    ]
+  };
+}
+
 export function buildDerivedEntries({
   augmentCatalogFile = join(process.cwd(), 'data/generated/augment-catalog.json'),
   outputFile = join(process.cwd(), 'data/generated/derived-entries.json'),
@@ -177,6 +209,7 @@ export function buildDerivedEntries({
 
   for (const augment of augmentCatalog.catalog ?? []) {
     entries.push(makeAugmentDirectoryEntry(augment));
+    entries.push(makeAugmentRarityEntry(augment));
   }
 
   const validationErrors = entries.flatMap((entry) => validateEntry(entry, `${entry.id}.generated`));
