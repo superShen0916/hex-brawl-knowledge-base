@@ -20,6 +20,7 @@ const state = {
     augment: "",
     mechanic: "",
   },
+  filterCollapsed: false,
 };
 
 const suggestedQueries = [
@@ -167,12 +168,21 @@ function renderFilters(sections) {
     <section class="filter-panel">
       <div class="filter-head">
         <h3>快速筛选</h3>
-        ${
-          hasActiveFilters(state.filters)
-            ? '<button type="button" class="ghost-button" data-reset-filters="true">清空筛选</button>'
-            : '<span class="status-line">按状态、收录方式、英雄、海克斯或机制缩小范围</span>'
-        }
+        <div class="filter-head-actions">
+          ${
+            hasActiveFilters(state.filters)
+              ? '<button type="button" class="ghost-button" data-reset-filters="true">清空筛选</button>'
+              : ''
+          }
+          <button type="button" class="ghost-button" data-toggle-filter-collapse>
+            ${state.filterCollapsed ? '展开' : '收起'}
+          </button>
+        </div>
       </div>
+      ${
+        state.filterCollapsed
+          ? ''
+          : `
       <div class="filter-groups">
         ${sections
           .map(
@@ -479,6 +489,9 @@ function paint() {
               <span class="hint-pill">交互问答 ${escapeHtml(String(state.entries.length))} 条</span>
               <span class="hint-pill">海克斯目录 ${escapeHtml(String(state.augmentCount))} 个</span>
             </div>
+            ${
+              !state.query
+                ? `
             <div class="chip-row">
               ${suggestedQueries
                 .map(
@@ -493,6 +506,9 @@ function paint() {
                 🎲 随机问题
               </button>
             </div>
+            `
+                : ""
+            }
           </div>
         </section>
       </section>
@@ -591,6 +607,13 @@ document.addEventListener("click", (event) => {
       input.value = "";
       input.focus();
     }
+    return;
+  }
+
+  const toggleFilterButton = target.closest("[data-toggle-filter-collapse]");
+  if (toggleFilterButton instanceof HTMLElement) {
+    state.filterCollapsed = !state.filterCollapsed;
+    paint();
     return;
   }
 

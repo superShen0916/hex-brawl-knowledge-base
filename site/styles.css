@@ -111,7 +111,7 @@ a {
   position: relative;
   z-index: 1;
   margin: 0;
-  max-width: 11ch;
+  max-width: 15ch;
   font-size: clamp(2.8rem, 8vw, 5.6rem);
   line-height: 0.92;
 }
@@ -275,6 +275,12 @@ a {
   letter-spacing: 0.08em;
   color: var(--accent-deep);
   text-transform: uppercase;
+}
+
+.filter-head-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .filter-groups {
