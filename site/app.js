@@ -164,25 +164,9 @@ function renderFilters(sections) {
     return "";
   }
 
-  return `
-    <section class="filter-panel">
-      <div class="filter-head">
-        <h3>快速筛选</h3>
-        <div class="filter-head-actions">
-          ${
-            hasActiveFilters(state.filters)
-              ? '<button type="button" class="ghost-button" data-reset-filters="true">清空筛选</button>'
-              : ''
-          }
-          <button type="button" class="ghost-button" data-toggle-filter-collapse>
-            ${state.filterCollapsed ? '展开' : '收起'}
-          </button>
-        </div>
-      </div>
-      ${
-        state.filterCollapsed
-          ? ''
-          : `
+  let filterGroupsHtml = "";
+  if (!state.filterCollapsed) {
+    filterGroupsHtml = `
       <div class="filter-groups">
         ${sections
           .map(
@@ -214,6 +198,25 @@ function renderFilters(sections) {
           )
           .join("")}
       </div>
+    `;
+  }
+
+  return `
+    <section class="filter-panel">
+      <div class="filter-head">
+        <h3>快速筛选</h3>
+        <div class="filter-head-actions">
+          ${
+            hasActiveFilters(state.filters)
+              ? '<button type="button" class="ghost-button" data-reset-filters="true">清空筛选</button>'
+              : ""
+          }
+          <button type="button" class="ghost-button" data-toggle-filter-collapse>
+            ${state.filterCollapsed ? "展开" : "收起"}
+          </button>
+        </div>
+      </div>
+      ${filterGroupsHtml}
     </section>
   `;
 }
