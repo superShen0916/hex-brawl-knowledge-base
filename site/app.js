@@ -1,28 +1,36 @@
-import { buildFilterSections, filterEntries, hasActiveFilters } from './filters.js';
-import { confidenceLabel, rankEntries } from './search.js';
+import {
+  buildFilterSections,
+  filterEntries,
+  hasActiveFilters,
+} from "./filters.js";
+import { confidenceLabel, rankEntries } from "./search.js";
 
-const root = document.querySelector('#app');
+const root = document.querySelector("#app");
 
 const state = {
   entries: [],
   augmentCount: 0,
-  query: '',
-  selectedId: '',
-  statusText: '正在加载知识索引...',
+  query: "",
+  selectedId: "",
+  statusText: "正在加载知识索引...",
   filters: {
-    status: '',
-    kind: '',
-    champion: '',
-    augment: '',
-    mechanic: '',
+    status: "",
+    kind: "",
+    champion: "",
+    augment: "",
+    mechanic: "",
   },
 };
 
 const suggestedQueries = [
-  '厄加特 W 能不能触发攻击特效',
-  '伊泽瑞尔 Q 会不会触发法术刃',
-  '莎弥拉 R 能吃攻击特效吗',
-  '技能算普攻还是技能伤害',
+  "厄加特 W 能不能触发攻击特效",
+  "伊泽瑞尔 Q 会不会触发法术刃",
+  "莎弥拉 R 能吃攻击特效吗",
+  "蛮王 E 能触发攻击特效吗",
+  "船长 Q 触发哪些特效",
+  "韦鲁斯 W 伤害分类",
+  "卡蜜尔 Q 二段是什么伤害",
+  "哪些海克斯增加攻击特效",
 ];
 
 function formatConfidence(value) {
@@ -31,11 +39,38 @@ function formatConfidence(value) {
 
 function escapeHtml(input) {
   return String(input)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function highlightMatchingKeywords(text, query) {
+  const trimmedQuery = (query || "").trim().toLowerCase();
+  if (!trimmedQuery) {
+    return escapeHtml(text);
+  }
+
+  const queryTokens = trimmedQuery
+    .split(/\s+/)
+    .filter((token) => token.length >= 2)
+    .map((token) => token.toLowerCase());
+
+  if (!queryTokens.length) {
+    return escapeHtml(text);
+  }
+
+  let result = escapeHtml(text);
+  for (const token of queryTokens) {
+    const regex = new RegExp(`(${escapeRegExp(token)})`, "gi");
+    result = result.replace(regex, '<mark class="highlight">$1</mark>');
+  }
+  return result;
+}
+
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
 function resultSummary(rankedEntries, filteredEntries) {
@@ -72,13 +107,13 @@ function renderSources(sources = []) {
                 ${escapeHtml(source.title)}
               </a>
               <div class="source-meta">
-                ${escapeHtml(source.publisher ?? '未知来源')} · ${escapeHtml(source.patch_hint ?? '版本未标注')} · 来源置信度 ${formatConfidence(source.source_confidence)}
+                ${escapeHtml(source.publisher ?? "未知来源")} · ${escapeHtml(source.patch_hint ?? "版本未标注")} · 来源置信度 ${formatConfidence(source.source_confidence)}
               </div>
-              <div class="source-meta">${escapeHtml(source.evidence_summary ?? '')}</div>
+              <div class="source-meta">${escapeHtml(source.evidence_summary ?? "")}</div>
             </li>
-          `
+          `,
         )
-        .join('')}
+        .join("")}
     </ul>
   `;
 }
@@ -96,7 +131,7 @@ function renderConflicts(conflicts = []) {
             <li class="conflict-item">
               <strong>${escapeHtml(conflict.candidate_answer)}</strong>
               <div class="source-meta">候选置信度 ${formatConfidence(conflict.candidate_confidence)}</div>
-              <div class="source-meta">${escapeHtml(conflict.why_it_differs ?? '来源结论存在明显分歧。')}</div>
+              <div class="source-meta">${escapeHtml(conflict.why_it_differs ?? "来源结论存在明显分歧。")}</div>
               ${
                 conflict.sources?.length
                   ? `
@@ -108,24 +143,24 @@ function renderConflicts(conflicts = []) {
                             <a class="mini-source" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">
                               ${escapeHtml(source.title)}
                             </a>
-                          `
+                          `,
                         )
-                        .join('')}
+                        .join("")}
                     </div>
                   `
-                  : ''
+                  : ""
               }
             </li>
-          `
+          `,
         )
-        .join('')}
+        .join("")}
     </ul>
   `;
 }
 
 function renderFilters(sections) {
   if (!sections.length) {
-    return '';
+    return "";
   }
 
   return `
@@ -147,29 +182,62 @@ function renderFilters(sections) {
                 <div class="filter-chip-row">
                   ${section.options
                     .map((option) => {
-                      const active = state.filters[section.key] === option.value;
+                      const active =
+                        state.filters[section.key] === option.value;
                       return `
                         <button
                           type="button"
-                          class="filter-chip ${active ? 'active' : ''}"
+                          class="filter-chip ${active ? "active" : ""}"
                           data-filter-key="${escapeHtml(section.key)}"
                           data-filter-value="${escapeHtml(option.value)}"
-                          aria-pressed="${active ? 'true' : 'false'}"
+                          aria-pressed="${active ? "true" : "false"}"
                         >
                           ${escapeHtml(option.label)}
                           <span class="filter-count">${escapeHtml(String(option.count))}</span>
                         </button>
                       `;
                     })
-                    .join('')}
+                    .join("")}
                 </div>
               </div>
-            `
+            `,
           )
-          .join('')}
+          .join("")}
       </div>
     </section>
   `;
+}
+
+function findSimilarQueries(query, limit = 4) {
+  if (!query || !state.entries.length) return [];
+
+  const queryTokens = query
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((t) => t.length >= 2);
+  if (!queryTokens.length) return [];
+
+  const scored = state.entries
+    .map((entry) => {
+      let score = 0;
+      const entryText = (
+        entry.question +
+        " " +
+        (entry.answerShort || "")
+      ).toLowerCase();
+      for (const token of queryTokens) {
+        if (entryText.includes(token)) {
+          score += 1;
+        }
+      }
+      return { entry, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.entry);
+
+  return scored;
 }
 
 function renderResults(entries, { filteredFrom = 0 } = {}) {
@@ -182,27 +250,49 @@ function renderResults(entries, { filteredFrom = 0 } = {}) {
       `;
     }
 
+    const similar = findSimilarQueries(state.query, 4);
+    let similarHtml = "";
+    if (similar.length > 0) {
+      similarHtml = `
+        <div class="similar-suggestions">
+          <p class="similar-label">你是不是想找：</p>
+          <div class="similar-list">
+            ${similar
+              .map(
+                (entry) => `
+                <button class="similar-item" data-similar-id="${escapeHtml(entry.id)}">
+                  ${escapeHtml(entry.question)}
+                </button>
+              `,
+              )
+              .join("")}
+          </div>
+        </div>
+      `;
+    }
+
     return `
       <div class="empty-state">
         没有找到可直接复用的高可信答案。你可以换一种问法，或者改成“英雄 + 技能 + 交互类型”的形式继续搜。
+        ${similarHtml}
       </div>
     `;
   }
 
   return entries
     .map((entry) => {
-      const activeClass = entry.id === state.selectedId ? 'active' : '';
+      const activeClass = entry.id === state.selectedId ? "active" : "";
       const topSource = entry.sources?.[0];
 
       return `
         <article class="result-card ${activeClass}" data-entry-id="${escapeHtml(entry.id)}" tabindex="0">
           <div class="result-meta">
             <span class="badge">${escapeHtml(confidenceLabel(entry.confidence ?? 0))}</span>
-            <span class="badge">${escapeHtml(entry.patchRange ?? '版本未知')}</span>
-            <span class="badge">${escapeHtml(entry.status ?? 'high_confidence')}</span>
+            <span class="badge">${escapeHtml(entry.patchRange ?? "版本未知")}</span>
+            <span class="badge">${escapeHtml(entry.status ?? "high_confidence")}</span>
           </div>
-          <h2>${escapeHtml(entry.question)}</h2>
-          <p class="result-answer">${escapeHtml(entry.answerShort ?? '')}</p>
+          <h2>${highlightMatchingKeywords(entry.question, state.query)}</h2>
+          <p class="result-answer">${highlightMatchingKeywords(entry.answerShort ?? "", state.query)}</p>
           <div class="meta-grid">
             <div class="meta-item">
               <span class="meta-label">置信度</span>
@@ -210,16 +300,77 @@ function renderResults(entries, { filteredFrom = 0 } = {}) {
             </div>
             <div class="meta-item">
               <span class="meta-label">关键来源</span>
-              <strong>${escapeHtml(topSource?.title ?? '暂无来源')}</strong>
+              <strong>${escapeHtml(topSource?.title ?? "暂无来源")}</strong>
             </div>
           </div>
         </article>
       `;
     })
-    .join('');
+    .join("");
 }
 
-function renderDetail(entry) {
+function findRelatedEntries(entry, allEntries, limit = 4) {
+  if (!entry.entities) return [];
+
+  const related = allEntries
+    .filter((candidate) => candidate.id !== entry.id)
+    .map((candidate) => {
+      let score = 0;
+      // 相同英雄加分
+      if (entry.entities.champions && candidate.entities?.champions) {
+        const common = entry.entities.champions.filter((c) =>
+          candidate.entities.champions.includes(c),
+        );
+        score += common.length * 10;
+      }
+      // 相同机制加分
+      if (entry.entities.mechanics && candidate.entities?.mechanics) {
+        const common = entry.entities.mechanics.filter((m) =>
+          candidate.entities.mechanics.includes(m),
+        );
+        score += common.length * 5;
+      }
+      // 相同海克斯加分
+      if (entry.entities.augments && candidate.entities?.augments) {
+        const common = entry.entities.augments.filter((a) =>
+          candidate.entities.augments.includes(a),
+        );
+        score += common.length * 8;
+      }
+      return { entry: candidate, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((item) => item.entry);
+
+  return related;
+}
+
+function renderRelated(related) {
+  if (!related.length) {
+    return "";
+  }
+
+  return `
+    <section class="detail-block">
+      <h3>相关问题</h3>
+      <div class="related-list">
+        ${related
+          .map(
+            (entry) => `
+              <button class="related-item" data-related-id="${escapeHtml(entry.id)}">
+                ${escapeHtml(entry.question)}
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderDetail(entry, allEntries) {
   if (!entry) {
     return `
       <aside class="detail-panel">
@@ -231,21 +382,27 @@ function renderDetail(entry) {
     `;
   }
 
+  const related = findRelatedEntries(entry, allEntries);
+  const currentUrl = window.location.href;
+
   return `
     <aside class="detail-panel">
       <div class="result-meta">
         <span class="badge">${escapeHtml(confidenceLabel(entry.confidence ?? 0))}</span>
-        <span class="badge">${escapeHtml(entry.patchRange ?? '版本未知')}</span>
+        <span class="badge">${escapeHtml(entry.patchRange ?? "版本未知")}</span>
+        <button type="button" class="copy-link-button" data-copy-link="${escapeHtml(currentUrl)}" title="复制当前问题链接">
+          🔗 复制链接
+        </button>
       </div>
       <h2>${escapeHtml(entry.question)}</h2>
-      <p class="detail-intro">${escapeHtml(entry.answerDetail || entry.answerShort || '')}</p>
+      <p class="detail-intro">${escapeHtml(entry.answerDetail || entry.answerShort || "")}</p>
 
       <section class="detail-block">
         <h3>适用条件</h3>
         <ul class="detail-list">
-          ${(entry.conditions?.length ? entry.conditions : ['暂无额外条件说明'])
+          ${(entry.conditions?.length ? entry.conditions : ["暂无额外条件说明"])
             .map((condition) => `<li>${escapeHtml(condition)}</li>`)
-            .join('')}
+            .join("")}
         </ul>
       </section>
 
@@ -258,6 +415,8 @@ function renderDetail(entry) {
         <h3>冲突记录</h3>
         ${renderConflicts(entry.conflicts)}
       </section>
+
+      ${renderRelated(related)}
     </aside>
   `;
 }
@@ -268,11 +427,13 @@ function getRankedEntries() {
 
 function syncSelected(rankedEntries) {
   if (!rankedEntries.length) {
-    state.selectedId = '';
+    state.selectedId = "";
     return;
   }
 
-  const stillExists = rankedEntries.some((entry) => entry.id === state.selectedId);
+  const stillExists = rankedEntries.some(
+    (entry) => entry.id === state.selectedId,
+  );
   if (!stillExists) {
     state.selectedId = rankedEntries[0].id;
   }
@@ -288,7 +449,9 @@ function paint() {
   const filteredEntries = filterEntries(rankedEntries, state.filters);
   const visibleEntries = filteredEntries.slice(0, 12);
   syncSelected(visibleEntries);
-  const activeEntry = visibleEntries.find((entry) => entry.id === state.selectedId);
+  const activeEntry = visibleEntries.find(
+    (entry) => entry.id === state.selectedId,
+  );
 
   root.innerHTML = `
     <main class="shell">
@@ -309,6 +472,7 @@ function paint() {
                 value="${escapeHtml(state.query)}"
               />
               <button type="submit">搜索</button>
+              ${state.query ? '<button type="button" id="clear-search" class="ghost-button">清空</button>' : ""}
             </form>
             <div class="hint-row">
               <span class="hint-pill">${escapeHtml(state.statusText)}</span>
@@ -322,9 +486,12 @@ function paint() {
                     <button type="button" class="chip" data-suggested-query="${escapeHtml(query)}">
                       ${escapeHtml(query)}
                     </button>
-                  `
+                  `,
                 )
-                .join('')}
+                .join("")}
+              <button type="button" class="chip random-chip" id="random-question">
+                🎲 随机问题
+              </button>
             </div>
           </div>
         </section>
@@ -341,7 +508,7 @@ function paint() {
             ${renderResults(visibleEntries, { filteredFrom: rankedEntries.length })}
           </div>
         </section>
-        ${renderDetail(activeEntry)}
+        ${renderDetail(activeEntry, state.entries)}
       </section>
     </main>
   `;
@@ -353,11 +520,11 @@ function updateQuery(query, { pushHistory = true } = {}) {
   if (pushHistory) {
     const url = new URL(window.location.href);
     if (state.query) {
-      url.searchParams.set('q', state.query);
+      url.searchParams.set("q", state.query);
     } else {
-      url.searchParams.delete('q');
+      url.searchParams.delete("q");
     }
-    window.history.replaceState({}, '', url);
+    window.history.replaceState({}, "", url);
   }
 
   paint();
@@ -366,8 +533,8 @@ function updateQuery(query, { pushHistory = true } = {}) {
 async function loadEntries() {
   try {
     const [searchResponse, augmentResponse] = await Promise.all([
-      fetch(new URL('../data/generated/search-index.json', import.meta.url)),
-      fetch(new URL('../data/generated/augment-catalog.json', import.meta.url)),
+      fetch(new URL("../data/generated/search-index.json", import.meta.url)),
+      fetch(new URL("../data/generated/augment-catalog.json", import.meta.url)),
     ]);
 
     if (!searchResponse.ok) {
@@ -385,24 +552,24 @@ async function loadEntries() {
 
     state.entries = searchPayload.entries ?? [];
     state.augmentCount = augmentPayload.catalog?.length ?? 0;
-    state.statusText = `索引构建于 ${new Date(searchPayload.generatedAt).toLocaleString('zh-CN')}`;
+    state.statusText = `索引构建于 ${new Date(searchPayload.generatedAt).toLocaleString("zh-CN")}`;
   } catch (error) {
     state.entries = [];
     state.augmentCount = 0;
-    state.statusText = `知识索引加载失败：${error instanceof Error ? error.message : '未知错误'}`;
+    state.statusText = `知识索引加载失败：${error instanceof Error ? error.message : "未知错误"}`;
   }
 
   updateQuery(state.query, { pushHistory: false });
 }
 
-document.addEventListener('submit', (event) => {
+document.addEventListener("submit", (event) => {
   const form = event.target;
-  if (!(form instanceof HTMLFormElement) || form.id !== 'search-form') {
+  if (!(form instanceof HTMLFormElement) || form.id !== "search-form") {
     return;
   }
 
   event.preventDefault();
-  const input = form.querySelector('#search-input');
+  const input = form.querySelector("#search-input");
   if (!(input instanceof HTMLInputElement)) {
     return;
   }
@@ -410,61 +577,191 @@ document.addEventListener('submit', (event) => {
   updateQuery(input.value);
 });
 
-document.addEventListener('click', (event) => {
+document.addEventListener("click", (event) => {
   const target = event.target;
   if (!(target instanceof HTMLElement)) {
     return;
   }
 
-  const chip = target.closest('[data-suggested-query]');
-  if (chip instanceof HTMLElement) {
-    updateQuery(chip.dataset.suggestedQuery ?? '');
+  const clearButton = target.closest("#clear-search");
+  if (clearButton instanceof HTMLElement) {
+    updateQuery("");
+    const input = document.querySelector("#search-input");
+    if (input instanceof HTMLInputElement) {
+      input.value = "";
+      input.focus();
+    }
     return;
   }
 
-  const resetFiltersButton = target.closest('[data-reset-filters]');
+  const randomButton = target.closest("#random-question");
+  if (randomButton instanceof HTMLElement) {
+    if (state.entries.length === 0) return;
+    const randomIndex = Math.floor(Math.random() * state.entries.length);
+    const randomEntry = state.entries[randomIndex];
+    updateQuery(randomEntry.question);
+    return;
+  }
+
+  const similarItem = target.closest("[data-similar-id]");
+  if (similarItem instanceof HTMLElement) {
+    const similarId = similarItem.dataset.similarId;
+    if (similarId) {
+      const entry = state.entries.find((e) => e.id === similarId);
+      if (entry) {
+        updateQuery(entry.question);
+        state.selectedId = entry.id;
+      }
+    }
+    return;
+  }
+
+  const chip = target.closest("[data-suggested-query]");
+  if (chip instanceof HTMLElement) {
+    updateQuery(chip.dataset.suggestedQuery ?? "");
+    return;
+  }
+
+  const resetFiltersButton = target.closest("[data-reset-filters]");
   if (resetFiltersButton instanceof HTMLElement) {
     state.filters = {
-      status: '',
-      kind: '',
-      champion: '',
-      augment: '',
-      mechanic: '',
+      status: "",
+      kind: "",
+      champion: "",
+      augment: "",
+      mechanic: "",
     };
     paint();
     return;
   }
 
-  const filterChip = target.closest('[data-filter-key]');
+  const filterChip = target.closest("[data-filter-key]");
   if (filterChip instanceof HTMLElement) {
     const filterKey = filterChip.dataset.filterKey;
-    const filterValue = filterChip.dataset.filterValue ?? '';
+    const filterValue = filterChip.dataset.filterValue ?? "";
 
     if (
       filterKey &&
       Object.prototype.hasOwnProperty.call(state.filters, filterKey)
     ) {
       state.filters[filterKey] =
-        state.filters[filterKey] === filterValue ? '' : filterValue;
+        state.filters[filterKey] === filterValue ? "" : filterValue;
       paint();
     }
 
     return;
   }
 
-  const card = target.closest('[data-entry-id]');
+  const copyLinkButton = target.closest("[data-copy-link]");
+  if (copyLinkButton instanceof HTMLElement) {
+    const url = copyLinkButton.dataset.copyLink;
+    if (url && navigator.clipboard) {
+      navigator.clipboard
+        .writeText(url)
+        .then(() => {
+          // Could show a toast, but no UX for now - just copy silently
+        })
+        .catch(() => {
+          // Fallback if clipboard API fails
+        });
+    }
+    return;
+  }
+
+  const relatedItem = target.closest("[data-related-id]");
+  if (relatedItem instanceof HTMLElement) {
+    const relatedId = relatedItem.dataset.relatedId;
+    if (relatedId) {
+      state.selectedId = relatedId;
+      paint();
+    }
+    return;
+  }
+
+  const card = target.closest("[data-entry-id]");
   if (card instanceof HTMLElement) {
-    state.selectedId = card.dataset.entryId ?? '';
+    state.selectedId = card.dataset.entryId ?? "";
     paint();
   }
 });
 
-window.addEventListener('popstate', () => {
+window.addEventListener("popstate", () => {
   const url = new URL(window.location.href);
-  updateQuery(url.searchParams.get('q') ?? '', { pushHistory: false });
+  updateQuery(url.searchParams.get("q") ?? "", { pushHistory: false });
 });
 
 const initialUrl = new URL(window.location.href);
-state.query = initialUrl.searchParams.get('q') ?? '';
+state.query = initialUrl.searchParams.get("q") ?? "";
 paint();
 void loadEntries();
+
+// Keyboard shortcuts
+document.addEventListener("keydown", (event) => {
+  const activeElement = document.activeElement;
+  const isInputFocused =
+    activeElement instanceof HTMLInputElement ||
+    activeElement instanceof HTMLTextAreaElement;
+
+  // Slash key focuses search input when not already typing
+  if (event.key === "/" && !isInputFocused) {
+    event.preventDefault();
+    const input = document.querySelector("#search-input");
+    if (input instanceof HTMLInputElement) {
+      input.focus();
+      input.select();
+    }
+    return;
+  }
+
+  // Escape key clears search and focuses input
+  if (event.key === "Escape" && state.query) {
+    event.preventDefault();
+    updateQuery("");
+    const input = document.querySelector("#search-input");
+    if (input instanceof HTMLInputElement) {
+      input.value = "";
+      input.focus();
+    }
+    return;
+  }
+
+  // Arrow keys navigate search results
+  const rankedEntries = getRankedEntries();
+  const filteredEntries = filterEntries(rankedEntries, state.filters);
+  const visibleEntries = filteredEntries.slice(0, 12);
+
+  if (visibleEntries.length === 0) return;
+
+  const currentIndex = visibleEntries.findIndex(
+    (entry) => entry.id === state.selectedId,
+  );
+
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    const nextIndex =
+      currentIndex >= visibleEntries.length - 1 ? 0 : currentIndex + 1;
+    state.selectedId = visibleEntries[nextIndex].id;
+    paint();
+    scrollSelectedIntoView();
+    return;
+  }
+
+  if (event.key === "ArrowUp") {
+    event.preventDefault();
+    const prevIndex =
+      currentIndex <= 0 ? visibleEntries.length - 1 : currentIndex - 1;
+    state.selectedId = visibleEntries[prevIndex].id;
+    paint();
+    scrollSelectedIntoView();
+    return;
+  }
+});
+
+function scrollSelectedIntoView() {
+  setTimeout(() => {
+    const selected = document.querySelector(".result-card.active");
+    if (selected instanceof HTMLElement) {
+      selected.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+  }, 0);
+}

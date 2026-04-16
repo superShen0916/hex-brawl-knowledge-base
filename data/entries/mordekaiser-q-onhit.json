@@ -1,0 +1,28 @@
+{
+  "id": "mordekaiser-q-onhit",
+  "question": "莫德凯撒 Q 能触发攻击特效吗",
+  "aliases": ["铁男 Q 能不能触发攻击特效", "莫德凯撒 q 触发 on-hit"],
+  "answer_short": "能触发，Q 是强化普攻，但是伤害本身算作技能伤害。",
+  "answer_detail": "莫德凯撒 Q  Ruination 会强化下一次普攻，这次普攻命中能够触发攻击特效。但 Q 的额外伤害本身归类为技能伤害，所以触发比例按技能触发攻击特效规则处理。",
+  "status": "high_confidence",
+  "confidence": 0.87,
+  "patch_range": "重做后通用机制",
+  "conditions": ["强化普攻命中能触发", "额外伤害部分属于技能伤害"],
+  "entities": {
+    "champions": ["莫德凯撒", "铁男"],
+    "skills": ["Q", "Ruination", "莫德凯撒Q"],
+    "mechanics": ["攻击特效", "on-hit", "强化普攻", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Mordekaiser - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Mordekaiser",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.84,
+      "evidence_summary": "技能机制描述为强化下一次基础攻击，附带额外技能伤害",
+      "patch_hint": "S10+ 当前机制"
+    }
+  ]
+}

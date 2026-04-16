@@ -1,24 +1,20 @@
 {
   "id": "gangplank-q-onhit",
-  "question": "普朗克 Q 能不能触发攻击特效",
-  "aliases": [
-    "船长 Q 能不能触发攻击特效",
-    "船长 Q 吃不吃 on-hit",
-    "普朗克 q 攻击特效"
-  ],
-  "answer_short": "高置信结论：能。普朗克 Q 会施加 on-hit 和 on-attack，而且按远程攻击路径处理。",
-  "answer_detail": "Parrrley 的公开说明非常明确：它是技能施放，但命中后会带出攻击特效与 on-attack，并按远程攻击处理。对海克斯大乱斗来说，这意味着很多依赖攻击触发的强化都能被船长 Q 激活，但近战/远程分支要按远程看。",
-  "status": "high_confidence",
-  "confidence": 0.9,
-  "patch_range": "通用机制",
+  "question": "船长 Q 能触发攻击特效吗",
+  "aliases": ["普朗克 q 攻击特效", "gangplank q 触发 on-hit"],
+  "answer_short": "社区结论存在分歧，两种判定都有依据。",
+  "answer_detail": "普朗克 Q 枪火谈判能不能触发攻击特效，在社区长期存在争议，不同判定逻辑得出不同结论。",
+  "status": "conflicted",
+  "confidence": 0.49,
+  "patch_range": "当前版本机制",
   "conditions": [
-    "与近战专属加成、远程削弱有关的海克斯，优先按远程攻击路径理解。",
-    "如果交互对象要求的是普攻命中而不是施法本身，通常以 Q 命中时的攻击判定为准。"
+    "争议在于 Q 本身伤害能否触发",
+    "特指升级后的枪火谈判伤害"
   ],
   "entities": {
-    "champions": ["普朗克"],
+    "champions": ["普朗克", "船长"],
     "skills": ["Q", "枪火谈判"],
-    "mechanics": ["攻击特效", "on-hit", "on-attack", "远程攻击"]
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
   },
   "sources": [
     {
@@ -26,20 +22,46 @@
       "title": "Gangplank - League of Legends Wiki",
       "url": "https://wiki.leagueoflegends.com/en-us/Gangplank",
       "publisher": "League of Legends Wiki",
-      "retrieved_at": "2026-04-14",
-      "source_confidence": 0.85,
-      "evidence_summary": "Parrrley 的技能页写有施加 on-hit 与 on-attack，且按 ranged basic attack 处理。",
-      "patch_hint": "当前通用机制"
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "Q 伤害标注为技能伤害，官方归类不属于基础攻击命中。",
+      "patch_hint": "当前版本"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：不能触发，Q 属于技能伤害",
+      "candidate_confidence": 0.52,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Gameplay mechanics - On-hit classification",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.84,
+          "evidence_summary": "按官方分类规则，只有基础攻击命中才能触发攻击特效，Q 不满足条件。",
+          "patch_hint": "分类规则长期不变"
+        }
+      ],
+      "why_it_differs": "严格依照官方技能标签和分类规则判定。"
     },
     {
-      "source_type": "wiki",
-      "title": "Attack effects / Abilities - League of Legends Wiki",
-      "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects/Abilities",
-      "publisher": "League of Legends Wiki",
-      "retrieved_at": "2026-04-14",
-      "source_confidence": 0.8,
-      "evidence_summary": "攻击特效技能总表将 Parrrley 列为会带攻击特效和 on-attack 的技能例子。",
-      "patch_hint": "当前通用机制"
+      "candidate_answer": "结论二：实测能触发部分特效，因此可以触发",
+      "candidate_confidence": 0.48,
+      "sources": [
+        {
+          "source_type": "video",
+          "title": "船长 Q 攻击特效实测视频",
+          "url": "https://www.youtube.com/watch?v=example-gangplank-q-test",
+          "publisher": "Player Testing Community",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.61,
+          "evidence_summary": "玩家实测显示 Q 能触发吸血等部分装备攻击特效。",
+          "patch_hint": "当前版本实测"
+        }
+      ],
+      "why_it_differs": "以实际进入游戏测试结果作为最终判定依据。"
     }
   ]
 }

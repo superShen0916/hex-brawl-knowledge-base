@@ -1,0 +1,28 @@
+{
+  "id": "ahri-q-onhit",
+  "question": "阿狸 Q 能触发攻击特效吗",
+  "aliases": ["九尾妖狐 q 攻击特效", "阿狸 q 触发 on-hit"],
+  "answer_short": "不能触发，阿狸 Q 宝珠是纯粹技能伤害。",
+  "answer_detail": "阿狸 Q 欺诈宝珠纯粹技能伤害，宝珠来回都不触发攻击特效，只有普攻能正常触发。",
+  "status": "confirmed",
+  "confidence": 0.92,
+  "patch_range": "通用机制",
+  "conditions": ["去和回两段都不触发攻击特效"],
+  "entities": {
+    "champions": ["阿狸", "九尾妖狐"],
+    "skills": ["Q", "欺诈宝珠"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Ahri - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Ahri",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "Q伤害明确归类为技能伤害，不触发攻击特效",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

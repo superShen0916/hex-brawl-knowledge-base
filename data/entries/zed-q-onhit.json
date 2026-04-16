@@ -1,0 +1,28 @@
+{
+  "id": "zed-q-onhit",
+  "question": "劫 Q 能触发攻击特效吗",
+  "aliases": ["劫 q 攻击特效", "影流之主 q 触发 on-hit"],
+  "answer_short": "不能触发，劫 Q 飞镖是纯粹技能伤害。",
+  "answer_detail": "劫 Q 影奥义！苦无纯粹技能伤害，不绑定普攻命中，因此不能触发攻击特效。",
+  "status": "confirmed",
+  "confidence": 0.92,
+  "patch_range": "通用机制",
+  "conditions": ["两段Q伤害都不能触发攻击特效"],
+  "entities": {
+    "champions": ["劫", "影流之主"],
+    "skills": ["Q", "影奥义！苦无"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Zed - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Zed",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "Q伤害明确归类为技能伤害，不属于基础攻击命中",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

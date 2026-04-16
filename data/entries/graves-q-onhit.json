@@ -1,0 +1,28 @@
+{
+  "id": "graves-q-onhit",
+  "question": "男枪 Q 能触发攻击特效吗",
+  "aliases": ["格雷福斯 Q 吃不吃攻击特效", "男枪快速射击触发 on-hit吗"],
+  "answer_short": "男枪 Q 两段伤害都不能触发攻击特效，Q本身是纯技能伤害。",
+  "answer_detail": "男枪的快速射击(Q)虽然是霰弹喷射伤害，但技能整体归类为纯粹技能伤害，不触发攻击特效。男枪的攻击特效只由他的普攻出发，每次普攻最多命中第一个敌人完整触发。",
+  "status": "confirmed",
+  "confidence": 0.91,
+  "patch_range": "通用机制",
+  "conditions": ["Q 两段喷射伤害都不触发", "只有正常普攻能触发攻击特效"],
+  "entities": {
+    "champions": ["格雷福斯", "男枪"],
+    "skills": ["Q", "快速射击"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Graves - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Graves",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.85,
+      "evidence_summary": "技能机制明确说明 Q 不属于基础攻击判定",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

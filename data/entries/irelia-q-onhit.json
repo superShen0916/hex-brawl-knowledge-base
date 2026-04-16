@@ -1,0 +1,28 @@
+{
+  "id": "irelia-q-onhit",
+  "question": "艾瑞莉娅 Q 能触发攻击特效吗",
+  "aliases": ["刀妹 q 攻击特效", "艾瑞莉娅 q 触发 on-hit"],
+  "answer_short": "艾瑞莉娅 Q 不能触发攻击特效，属于纯粹技能伤害。",
+  "answer_detail": "艾瑞莉娅 Q 利刃冲锋是技能伤害突进，本身不算作普攻命中，因此不能触发攻击特效。但是 Q 杀死目标后会重置冷却，可以马上接普攻，普攻那一下能正常触发。",
+  "status": "confirmed",
+  "confidence": 0.91,
+  "patch_range": "重做后通用机制",
+  "conditions": ["Q 突进本身不触发", "Q 击杀重置普攻后，普攻正常触发"],
+  "entities": {
+    "champions": ["艾瑞莉娅", "刀妹"],
+    "skills": ["Q", "利刃冲锋"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Irelia - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Irelia",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "利刃冲锋伤害明确归类为技能伤害，没有标注为基础攻击命中",
+      "patch_hint": "重做后"
+    }
+  ]
+}

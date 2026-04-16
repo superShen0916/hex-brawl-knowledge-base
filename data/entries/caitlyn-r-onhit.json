@@ -1,0 +1,28 @@
+{
+  "id": "caitlyn-r-onhit",
+  "question": "凯特琳 R 能触发攻击特效吗",
+  "aliases": ["女警 大招 攻击特效", "caitlyn r 触发 on-hit"],
+  "answer_short": "不能触发，凯特琳 R 是纯粹技能伤害。",
+  "answer_detail": "凯特琳 R 让子弹飞是纯粹技能伤害，不绑定普攻命中，因此不能触发攻击特效。",
+  "status": "confirmed",
+  "confidence": 0.92,
+  "patch_range": "通用机制",
+  "conditions": ["狙击一枪伤害都是技能伤害", "不触发攻击特效"],
+  "entities": {
+    "champions": ["凯特琳", "女警"],
+    "skills": ["R", "让子弹飞"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Caitlyn - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Caitlyn",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "大招伤害明确归类为技能伤害，不属于基础攻击命中",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

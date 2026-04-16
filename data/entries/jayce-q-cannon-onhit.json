@@ -1,0 +1,28 @@
+{
+  "id": "jayce-q-cannon-onhit",
+  "question": "杰斯炮形态 Q 能触发攻击特效吗",
+  "aliases": ["杰斯 Q 能不能触发攻击特效", "炮形态 Q 吃不吃 on-hit"],
+  "answer_short": "不能触发攻击特效，炮形态 Q 本身是纯粹技能伤害。",
+  "answer_detail": "杰斯炮形态的电能震荡炮弹本身属于纯技能伤害，不绑定基础攻击命中判定，因此不能触发攻击特效。但杰斯炮形态 Q 命中后会立刻重置普攻，完整连招通常是 Q 接普攻，所以普攻那一下仍然可以正常触发攻击特效。",
+  "status": "confirmed",
+  "confidence": 0.92,
+  "patch_range": "通用机制",
+  "conditions": ["Q 炮弹本身不能触发", "Q 命中后重置普攻，普攻那一下正常触发"],
+  "entities": {
+    "champions": ["杰斯"],
+    "skills": ["Q", "电能震荡"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Jayce - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Jayce",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.88,
+      "evidence_summary": "技能伤害分类明确标注 Q 炮弹为魔法伤害，不属于基础攻击判定",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

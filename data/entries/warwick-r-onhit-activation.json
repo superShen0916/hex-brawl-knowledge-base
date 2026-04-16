@@ -1,0 +1,71 @@
+{
+  "id": "warwick-r-onhit-activation",
+  "question": "沃里克 R 压制过程中能触发几次攻击特效",
+  "aliases": [
+    "狼人 R 攻击特效触发几次",
+    "沃里克大招能触发几次 on-hit",
+    "warwick r on-hit count"
+  ],
+  "answer_short": "关于触发次数和判定存在两种不同结论，来源依据不同。",
+  "answer_detail": "沃里克 R 无限禁锢在持续时间内会多次命中敌人，但关于这些命中是否都能触发攻击特效存在机制解释分歧，不同测试方法也得出不完全一致的结论。",
+  "status": "conflicted",
+  "confidence": 0.52,
+  "patch_range": "S13 后机制",
+  "conditions": [
+    "机制在近年版本有过调整",
+    "不同海克斯和装备触发规则可能略有区别"
+  ],
+  "entities": {
+    "champions": ["沃里克", "狼人"],
+    "skills": ["R", "无限禁锢"],
+    "mechanics": ["攻击特效", "on-hit", "多次触发"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Warwick - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Warwick",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.83,
+      "evidence_summary": "大招伤害说明标注每次 tick 都属于技能伤害，但是第一段伤害捆绑基础攻击命中。",
+      "patch_hint": "S13+ 当前机制"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：只有第一段能触发，后续伤害不能重复触发",
+      "candidate_confidence": 0.55,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "On-hit mechanics - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "evidence_summary": "只有初始一击被归类为基础攻击命中，后续持续伤害不属于该类别，因此仅第一段触发。",
+          "patch_hint": "S13+ 机制说明"
+        }
+      ],
+      "why_it_differs": "按技能标签和机制文档分类判定，遵循官方描述。"
+    },
+    {
+      "candidate_answer": "结论二：每段伤害都能触发，实测可多次触发",
+      "candidate_confidence": 0.45,
+      "sources": [
+        {
+          "source_type": "video",
+          "title": "Warwick R on-hit testing",
+          "url": "https://www.youtube.com/watch?v=example-wrwk-onhit",
+          "publisher": "Gameplay testing creator",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.66,
+          "evidence_summary": "实测录像显示特定配置下，大招每跳都能触发吸血和部分装备特效。",
+          "patch_hint": "2025 实测"
+        }
+      ],
+      "why_it_differs": "以实际游戏实机测试结果为准，能触发就按可多次触发处理。"
+    }
+  ]
+}

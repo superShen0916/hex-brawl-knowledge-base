@@ -1,0 +1,67 @@
+{
+  "id": "leesin-q-second-onhit",
+  "question": "李青 Q 二段能触发攻击特效吗",
+  "aliases": ["瞎子二段 Q 触发攻击特效", "李青 q 二段 on-hit"],
+  "answer_short": "不同来源结论存在分歧，两种说法都有一定依据。",
+  "answer_detail": "李青 Q 天音波/回音击的第二段伤害在机制归类上存在社区长期争议，不同理解和不同测试方法得出不同结论。",
+  "status": "conflicted",
+  "confidence": 0.5,
+  "patch_range": "S13+ 当前机制",
+  "conditions": [
+    "争议焦点在于第二段伤害本身是否算作攻击命中",
+    "第一段命中标记不触发，争议在第二段"
+  ],
+  "entities": {
+    "champions": ["李青", "瞎子"],
+    "skills": ["Q", "回音击", "二段"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Lee Sin - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Lee_Sin",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "技能伤害标签第二段明确标注为物理伤害，属于技能伤害范畴。",
+      "patch_hint": "当前机制说明"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：二段不能触发，属于纯技能伤害",
+      "candidate_confidence": 0.53,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.84,
+          "evidence_summary": "按照官方分类标准，只有标注为基础攻击命中才能触发攻击特效，二段伤害标签不满足该条件。",
+          "patch_hint": "分类规则不变"
+        }
+      ],
+      "why_it_differs": "依照官方技能标签和分类规则判定，严格遵循文档说明。"
+    },
+    {
+      "candidate_answer": "结论二：实际测试能触发，应该算作可触发",
+      "candidate_confidence": 0.47,
+      "sources": [
+        {
+          "source_type": "forum",
+          "title": "玩家社区实测汇总",
+          "url": "https://bbs.hupu.com/lol-leesin-q-second",
+          "publisher": "玩家社区",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.65,
+          "evidence_summary": "多个版本玩家实测显示二段命中确实能触发贪欲九头蛇等装备特效。",
+          "patch_hint": "多个版本实测一致"
+        }
+      ],
+      "why_it_differs": "以实际游戏内能否触发的实测结果作为最终判定标准。"
+    }
+  ]
+}

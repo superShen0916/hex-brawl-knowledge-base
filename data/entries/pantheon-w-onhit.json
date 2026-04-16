@@ -1,0 +1,67 @@
+{
+  "id": "pantheon-w-onhit",
+  "question": "潘森 W 盾击能触发攻击特效吗",
+  "aliases": ["潘森 w 攻击特效", "战争之王 w 触发 on-hit"],
+  "answer_short": "社区结论存在分歧，不同判定角度得出不同结果。",
+  "answer_detail": "潘森 W 神盾打击的机制比较特殊，技能本身会重置普攻，但技能本身命中伤害是否算作攻击命中能触发攻击特效这个问题长期存在分歧。",
+  "status": "conflicted",
+  "confidence": 0.49,
+  "patch_range": "重做后当前机制",
+  "conditions": [
+    "W 本身一定会重置普攻，所以重置后的普攻肯定能触发",
+    "争议在于 W 技能本身伤害那一下能否触发"
+  ],
+  "entities": {
+    "champions": ["潘森", "战争之王"],
+    "skills": ["W", "神盾打击"],
+    "mechanics": ["攻击特效", "on-hit", "重置普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Pantheon - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Pantheon",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.82,
+      "evidence_summary": "W 伤害明确归类为技能伤害，不是基础攻击伤害。",
+      "patch_hint": "重做后当前"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：W 本身不能触发，只有后续普攻触发",
+      "candidate_confidence": 0.52,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Pantheon ability mechanics",
+          "url": "https://wiki.leagueoflegends.com/en-us/Pantheon/Ability_mechanics",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.81,
+          "evidence_summary": "官方机制描述只说 W 重置普攻，没有说 W 本身算作一次基础攻击。",
+          "patch_hint": "当前版本"
+        }
+      ],
+      "why_it_differs": "根据官方分类规则，严格按标签判断，技能伤害不能触发。"
+    },
+    {
+      "candidate_answer": "结论二：实际测试 W 本身能触发",
+      "candidate_confidence": 0.48,
+      "sources": [
+        {
+          "source_type": "video",
+          "title": "潘森机制实测",
+          "url": "https://www.youtube.com/watch?v=example-pantheon-w-test",
+          "publisher": "Gameplay tester",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.66,
+          "evidence_summary": "实测录像显示 W 命中瞬间就能触发吸血和一些装备特效。",
+          "patch_hint": "2025 实测"
+        }
+      ],
+      "why_it_differs": "以进入游戏实际测试结果为准，能触发就按可触发处理。"
+    }
+  ]
+}

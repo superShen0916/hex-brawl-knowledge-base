@@ -1,0 +1,31 @@
+{
+  "id": "morde-r-damage-type",
+  "question": "莫德凯撒 R 领域伤害是什么伤害类型",
+  "aliases": ["铁男大招伤害类型", "莫德凯撒 R 伤害分类"],
+  "answer_short": "莫德凯撒 R 领域持续伤害算作技能伤害，不是普攻伤害。",
+  "answer_detail": "莫德凯撒 R 轮回绝境领域内的持续伤害属于技能伤害，不能触发攻击特效，也不遵循普攻伤害规则。",
+  "status": "confirmed",
+  "confidence": 0.9,
+  "patch_range": "重做后通用机制",
+  "conditions": [
+    "只有领域持续伤害算作技能伤害",
+    "Q 本身强化普攻部分能触发攻击特效"
+  ],
+  "entities": {
+    "champions": ["莫德凯撒", "铁男"],
+    "skills": ["R", "轮回绝境"],
+    "mechanics": ["伤害分类", "技能伤害"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Mordekaiser - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Mordekaiser",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "技能伤害明确归类为持续技能伤害，不属于普攻命中不算",
+      "patch_hint": "重做后"
+    }
+  ]
+}

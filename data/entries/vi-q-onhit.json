@@ -1,0 +1,28 @@
+{
+  "id": "vi-q-onhit",
+  "question": "蔚 Q 能触发攻击特效吗",
+  "aliases": ["蔚 q 攻击特效", "皮城执法官 q 触发 on-hit"],
+  "answer_short": "蔚 Q 满力冲拳能触发攻击特效，伤害类型是混合判定。",
+  "answer_detail": "蔚 Q 透体重拳满力冲击命中主目标时，该次命中算作基础攻击命中，因此能触发攻击特效，但 Q 的额外伤害归类为技能伤害，所以整体属于混合伤害判定。",
+  "status": "confirmed",
+  "confidence": 0.88,
+  "patch_range": "当前通用机制",
+  "conditions": ["只有满力直接冲拳命中才能触发", "偏斜伤害不触发"],
+  "entities": {
+    "champions": ["蔚", "皮城执法官"],
+    "skills": ["Q", "透体重拳"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Vi - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Vi",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "技能机制明确记载满力冲击主目标算作基础攻击命中",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

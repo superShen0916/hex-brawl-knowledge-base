@@ -1,0 +1,31 @@
+{
+  "id": "sett-w-onhit",
+  "question": "瑟提 W 能触发攻击特效吗",
+  "aliases": ["瑟提 w 攻击特效", "劲夫 w 触发 on-hit"],
+  "answer_short": "瑟提 W 蓄意轰拳不能触发攻击特效，属于纯技能伤害。",
+  "answer_detail": "瑟提 W 蓄意轰拳是纯粹技能伤害，范围横扫不算作普攻命中，因此不能触发攻击特效。",
+  "status": "confirmed",
+  "confidence": 0.9,
+  "patch_range": "通用机制",
+  "conditions": [
+    "只有范围伤害部分，没有普攻命中判定",
+    "瑟提 Q 是强化普攻能触发，W 不能"
+  ],
+  "entities": {
+    "champions": ["瑟提", "劲夫"],
+    "skills": ["W", "蓄意轰拳"],
+    "mechanics": ["攻击特效", "on-hit", "范围伤害"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Sett - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Sett",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "W 伤害明确归类为技能伤害，不包含基础攻击命中成分",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

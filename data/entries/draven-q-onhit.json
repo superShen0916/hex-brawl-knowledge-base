@@ -1,0 +1,28 @@
+{
+  "id": "draven-q-onhit",
+  "question": "德莱文 Q 能触发攻击特效吗",
+  "aliases": ["德莱文旋转斧子触发攻击特效", "德莱文 Q 吃不吃 on-hit"],
+  "answer_short": "能，德莱文 Q 是强化普攻，完全正常触发攻击特效。",
+  "answer_detail": "德莱文 Q 旋转飞斧属于强化下一次普攻，因此这一次普攻仍然算作基础攻击命中，可以完整触发攻击特效、法术刃和各种装备效果，触发效率就是正常普攻的 100%。",
+  "status": "confirmed",
+  "confidence": 0.94,
+  "patch_range": "通用机制",
+  "conditions": ["Q 强化的那一下普攻完整触发所有攻击特效", "没有伤害比例缩减"],
+  "entities": {
+    "champions": ["德莱文"],
+    "skills": ["Q", "旋转飞斧"],
+    "mechanics": ["攻击特效", "on-hit", "强化普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Draven - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Draven",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.86,
+      "evidence_summary": "明确说明 Q 强化下一次基础攻击，保留所有基础攻击特性",
+      "patch_hint": "当前通用机制"
+    }
+  ]
+}

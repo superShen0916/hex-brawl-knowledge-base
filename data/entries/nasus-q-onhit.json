@@ -1,0 +1,31 @@
+{
+  "id": "nasus-q-onhit",
+  "question": "狗头 Q 能触发攻击特效吗",
+  "aliases": ["内瑟斯 q 攻击特效", "狗头 q 触发 on-hit"],
+  "answer_short": "能触发，狗头 Q 是强化普攻，可以正常触发攻击特效。",
+  "answer_detail": "狗头 Q 汲魂痛击是强化下一次普攻，因此这次普攻命中能完整触发所有攻击特效，额外伤害部分算作技能伤害但不影响触发判定。",
+  "status": "confirmed",
+  "confidence": 0.94,
+  "patch_range": "通用机制",
+  "conditions": [
+    "强化的那一次普攻完整触发攻击特效",
+    "Q 叠加被动不影响触发规则"
+  ],
+  "entities": {
+    "champions": ["内瑟斯", "狗头"],
+    "skills": ["Q", "汲魂痛击"],
+    "mechanics": ["攻击特效", "on-hit", "强化普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Nasus - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Nasus",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.86,
+      "evidence_summary": "明确描述为强化下一次基础攻击，保留基础攻击所有特性",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

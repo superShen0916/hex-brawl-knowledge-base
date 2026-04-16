@@ -1,0 +1,28 @@
+{
+  "id": "kaisa-q-onhit",
+  "question": "卡莎 Q 能触发攻击特效吗",
+  "aliases": ["卡莎 q 攻击特效", "卡莎 q 触发 on-hit"],
+  "answer_short": "卡莎 Q 艾卡西亚暴雨不能触发攻击特效，弹幕每一发都是技能伤害。",
+  "answer_detail": "卡莎 Q 艾卡西亚暴雨多发弹幕每一发都算作技能伤害，不能触发攻击特效，只有卡莎普攻能正常触发。",
+  "status": "confirmed",
+  "confidence": 0.91,
+  "patch_range": "通用机制",
+  "conditions": ["Q 弹幕每一发都不触发攻击特效", "普攻正常触发"],
+  "entities": {
+    "champions": ["卡莎", "凯莎"],
+    "skills": ["Q", "艾卡西亚暴雨"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Kai'Sa - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Kai%27Sa",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "Q 弹幕所有子弹伤害明确标注为技能伤害",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

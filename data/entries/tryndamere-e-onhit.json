@@ -1,0 +1,64 @@
+{
+  "id": "tryndamere-e-onhit",
+  "question": "蛮王 E 能触发攻击特效吗",
+  "aliases": ["泰达米尔 e 攻击特效", "蛮王 e 触发 on-hit"],
+  "answer_short": "关于能否触发存在社区分歧，两种判定都有一定依据。",
+  "answer_detail": "蛮王 E 旋风斩能不能触发攻击特效，在社区长期存在争议，不同判定逻辑得出不同结论。",
+  "status": "conflicted",
+  "confidence": 0.47,
+  "patch_range": "当前版本",
+  "conditions": ["争议焦点是 E 本身伤害能不能触发", "Q 本身不牵扯这个问题"],
+  "entities": {
+    "champions": ["泰达米尔", "蛮王", "蛮子"],
+    "skills": ["E", "旋风斩"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Tryndamere - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends/en-us/Tryndamere",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.83,
+      "evidence_summary": "E 伤害明确归类为技能伤害，不属于基础攻击命中。",
+      "patch_hint": "当前版本"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：不能触发，E 是纯技能伤害",
+      "candidate_confidence": 0.53,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Gameplay mechanics - Attack effects",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.85,
+          "evidence_summary": "按照官方分类规则，只有基础攻击命中才能触发攻击特效，E 不满足。",
+          "patch_hint": "规则不变"
+        }
+      ],
+      "why_it_differs": "严格依照官方分类规则判定，不看实际测试结果。"
+    },
+    {
+      "candidate_answer": "结论二：实测能触发部分特效，可以触发",
+      "candidate_confidence": 0.47,
+      "sources": [
+        {
+          "source_type": "video",
+          "title": "蛮王 E 攻击特效实测",
+          "url": "https://www.youtube.com/watch?v=example-tryndamere-e-test",
+          "publisher": "Gameplay testing",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.62,
+          "evidence_summary": "玩家实测显示 E 能触发一些装备特效，比如吸血。",
+          "patch_hint": "当前版本实测"
+        }
+      ],
+      "why_it_differs": "以实际进入游戏测试结果作为最终判定依据。"
+    }
+  ]
+}

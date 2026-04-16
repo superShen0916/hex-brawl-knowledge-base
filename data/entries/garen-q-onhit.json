@@ -1,0 +1,28 @@
+{
+  "id": "garen-q-onhit",
+  "question": "盖伦 Q 能触发攻击特效吗",
+  "aliases": ["盖伦 q 攻击特效", "德玛西亚 Q 触发 on-hit"],
+  "answer_short": "能触发，盖伦 Q 是强化普攻，可以正常触发攻击特效。",
+  "answer_detail": "盖伦 Q 致命一击属于强化下一次普攻，因此这次普攻命中能正常触发所有攻击特效和法术效果，额外伤害部分算作技能伤害但不影响触发判定。",
+  "status": "confirmed",
+  "confidence": 0.93,
+  "patch_range": "通用机制",
+  "conditions": ["强化的那一记普攻完整触发所有攻击特效"],
+  "entities": {
+    "champions": ["盖伦", "德玛西亚"],
+    "skills": ["Q", "致命一击"],
+    "mechanics": ["攻击特效", "on-hit", "强化普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Garen - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Garen",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.85,
+      "evidence_summary": "明确描述为强化下一次基础攻击，保留基础攻击所有特性",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

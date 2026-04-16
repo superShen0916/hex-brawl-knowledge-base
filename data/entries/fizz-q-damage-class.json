@@ -1,0 +1,71 @@
+{
+  "id": "fizz-q-damage-class",
+  "question": "菲兹 Q 伤害算普攻还是技能伤害",
+  "aliases": [
+    "小鱼人 Q 能触发攻击特效吗",
+    "fizz q damage type",
+    "菲兹穿刺触发攻击特效"
+  ],
+  "answer_short": "不同理解得出不同结论，两种说法都有一定依据。",
+  "answer_detail": "菲兹 Q 海石三叉穿刺命中敌人时，技能机制本身同时包含基础攻击重置和额外技能伤害两个部分，这导致社区对整体伤害如何分类长期存在分歧。",
+  "status": "conflicted",
+  "confidence": 0.48,
+  "patch_range": "通用机制",
+  "conditions": [
+    "Q 本身会重置普攻，所以完整连招是 Q+自动普攻",
+    "争议焦点是 Q 本身的那一下伤害如何分类"
+  ],
+  "entities": {
+    "champions": ["菲兹", "小鱼人"],
+    "skills": ["Q", "海石三叉穿刺"],
+    "mechanics": ["伤害分类", "攻击特效", "重置普攻"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Fizz - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Fizz",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.82,
+      "evidence_summary": "技能伤害标签明确标注为魔法伤害，属于技能伤害范畴。",
+      "patch_hint": "当前通用机制"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：Q 本身命中是技能伤害，不能单独触发攻击特效",
+      "candidate_confidence": 0.52,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Fizz ability mechanics",
+          "url": "https://wiki.leagueoflegends.com/en-us/Fizz/Ability_mechanics",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.83,
+          "evidence_summary": "Q 技能本身不被归类为基础攻击，只是会重置你的普攻计时器。",
+          "patch_hint": "当前版本"
+        }
+      ],
+      "why_it_differs": "依照官方技能分类判定，不把重置普攻等同于普攻本身。"
+    },
+    {
+      "candidate_answer": "结论二：Q 本身就能触发，实际测试可触发",
+      "candidate_confidence": 0.48,
+      "sources": [
+        {
+          "source_type": "forum",
+          "title": "Chinese player community testing thread",
+          "url": "https://bbs.nga.cn/read.php?tid=example-fizz-q",
+          "publisher": "NGA Player Community",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.62,
+          "evidence_summary": "不少玩家实测显示特定装备确实能在 Q 命中时直接触发特效。",
+          "patch_hint": "多版本测试"
+        }
+      ],
+      "why_it_differs": "以实际游戏中能否触发的测试结果作为最终判定标准。"
+    }
+  ]
+}

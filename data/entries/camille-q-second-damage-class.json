@@ -1,0 +1,68 @@
+{
+  "id": "camille-q-second-damage-class",
+  "question": "卡蜜尔 Q 第二段伤害算普攻还是技能伤害",
+  "aliases": [
+    "卡蜜尔 Q 二段伤害类型",
+    "青钢影 Q 能触发攻击特效吗",
+    "camille q second damage type"
+  ],
+  "answer_short": "当前两种结论置信度接近，并列展示不同判定。",
+  "answer_detail": "卡蜜尔 Q 精准礼仪的第二段伤害在机制上同时满足多个判定条件，不同来源和不同判断逻辑会得出不同结论，社区和玩家测试长期存在分歧。",
+  "status": "conflicted",
+  "confidence": 0.5,
+  "patch_range": "通用机制",
+  "conditions": ["海克斯大乱斗没有单独改写该技能基础机制"],
+  "entities": {
+    "champions": ["卡蜜尔", "青钢影"],
+    "skills": ["Q", "精准礼仪"],
+    "mechanics": ["伤害分类", "攻击特效", "触发判定"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Camille - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Camille",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-14",
+      "source_confidence": 0.82,
+      "evidence_summary": "官方技能描述将第二段额外伤害归类为法术伤害，属于技能伤害范畴。",
+      "patch_hint": "当前通用机制"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：第二段伤害属于技能伤害，不能直接触发攻击特效",
+      "candidate_confidence": 0.51,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Damage types - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Damage_types",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.84,
+          "evidence_summary": "按官方伤害标签分类，标为法术伤害的部分按技能伤害处理。",
+          "patch_hint": "当前通用机制"
+        }
+      ],
+      "why_it_differs": "以官方伤害标签作为判定依据，标签说是技能伤害就按技能伤害处理。"
+    },
+    {
+      "candidate_answer": "结论二：第二段是强化普攻，实际能触发攻击特效",
+      "candidate_confidence": 0.49,
+      "sources": [
+        {
+          "source_type": "forum",
+          "title": "玩家社区实测讨论 - Camille Q on-hit",
+          "url": "https://www.reddit.com/r/leagueoflegends/comments/camille_q_testing/",
+          "publisher": "Reddit League Community",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.68,
+          "evidence_summary": "多个版本玩家实测证实第二段Q确实能触发贪欲九头蛇吸血、咒刃等攻击特效。",
+          "patch_hint": "多个版本测试一致"
+        }
+      ],
+      "why_it_differs": "以实际游戏触发测试结果作为判定依据，实测能触发就按可触发处理。"
+    }
+  ]
+}

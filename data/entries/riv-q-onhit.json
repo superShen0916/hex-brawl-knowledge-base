@@ -1,0 +1,28 @@
+{
+  "id": "riv-q-onhit",
+  "question": "锐雯 Q 能触发攻击特效吗",
+  "aliases": ["锐雯 q 攻击特效", "瑞文 q 触发 on-hit"],
+  "answer_short": "不能触发，锐雯 Q 每一段都是纯粹技能伤害。",
+  "answer_detail": "锐雯 Q 折翼之舞每一段都属于纯粹技能伤害，不算作普攻命中，因此不能触发攻击特效。Q本身不会重置普攻，正确连招顺序是 Q 穿插普攻，普攻那一下能正常触发。",
+  "status": "confirmed",
+  "confidence": 0.92,
+  "patch_range": "通用机制",
+  "conditions": ["Q 本身各段都不触发攻击特效", "连招中的普攻可以正常触发"],
+  "entities": {
+    "champions": ["锐雯", "瑞文"],
+    "skills": ["Q", "折翼之舞"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Riven - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Riven",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.84,
+      "evidence_summary": "所有 Q 段伤害明确标注为技能伤害，不属于基础攻击命中",
+      "patch_hint": "当前版本"
+    }
+  ]
+}

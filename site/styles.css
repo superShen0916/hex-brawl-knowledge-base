@@ -202,6 +202,18 @@ a {
   transform: translateY(-1px);
 }
 
+.random-chip {
+  background: rgba(204, 125, 79, 0.15);
+  border-color: rgba(178, 93, 51, 0.35);
+  color: var(--accent-deep);
+}
+
+.random-chip:hover,
+.random-chip:focus-visible {
+  background: rgba(204, 125, 79, 0.25);
+  border-color: rgba(178, 93, 51, 0.5);
+}
+
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.9fr);
@@ -530,4 +542,103 @@ a {
   .meta-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.related-list {
+  display: grid;
+  gap: 8px;
+}
+
+.related-item {
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid rgba(94, 46, 29, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 248, 239, 0.85);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.related-item:hover,
+.related-item:focus-visible {
+  border-color: rgba(178, 93, 51, 0.38);
+  background: rgba(255, 248, 239, 0.96);
+  transform: translateY(-1px);
+}
+
+.copy-link-button {
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid rgba(94, 46, 29, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 248, 239, 0.9);
+  color: var(--accent-deep);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 600;
+  transition: all 180ms ease;
+  min-height: 32px;
+  min-width: 80px;
+}
+
+.copy-link-button:hover,
+.copy-link-button:focus-visible {
+  border-color: rgba(178, 93, 51, 0.42);
+  background: rgba(204, 125, 79, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Empty state similar suggestions */
+.similar-suggestions {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.similar-label {
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.similar-list {
+  display: grid;
+  gap: 8px;
+}
+
+.similar-item {
+  text-align: left;
+  padding: 10px 14px;
+  border: 1px solid rgba(94, 46, 29, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 248, 239, 0.7);
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.similar-item:hover,
+.similar-item:focus-visible {
+  border-color: rgba(178, 93, 51, 0.35);
+  background: rgba(255, 248, 239, 0.95);
+  transform: translateY(-1px);
+}
+
+/* Improve mobile touch targets */
+.filter-chip,
+.chip,
+.related-item,
+.copy-link-button {
+  min-height: 36px;
+  min-width: 48px;
+}
+
+/* Search keyword highlight */
+mark.highlight {
+  background: rgba(204, 125, 79, 0.35);
+  color: var(--accent-deep);
+  border-radius: 4px;
+  padding: 0 4px;
+  margin: 0 -2px;
 }

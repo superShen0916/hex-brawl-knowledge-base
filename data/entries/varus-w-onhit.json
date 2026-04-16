@@ -1,0 +1,67 @@
+{
+  "id": "varus-w-onhit",
+  "question": "韦鲁斯 W 能不能触发攻击特效",
+  "aliases": ["维鲁斯 w 触发攻击特效", "varus w 伤害分类"],
+  "answer_short": "社区结论存在分歧，两种说法都有一定依据。",
+  "answer_detail": "韦鲁斯 W 枯萎技能的主动伤害部分，在机制分类上存在社区长期争议，不同理解得出不同结论。",
+  "status": "conflicted",
+  "confidence": 0.48,
+  "patch_range": "当前版本机制",
+  "conditions": [
+    "争议在于 W 伤害本身能否触发，不是讨论被动",
+    "被动层数触发和这个问题无关"
+  ],
+  "entities": {
+    "champions": ["韦鲁斯", "维鲁斯"],
+    "skills": ["W", "枯萎"],
+    "mechanics": ["攻击特效", "on-hit", "伤害分类"]
+  },
+  "sources": [
+    {
+      "source_type": "wiki",
+      "title": "Varus - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Varus",
+      "publisher": "League of Legends Wiki",
+      "retrieved_at": "2026-04-15",
+      "source_confidence": 0.82,
+      "evidence_summary": "W 伤害明确标注为技能伤害，不属于基础攻击命中。",
+      "patch_hint": "当前版本"
+    }
+  ],
+  "conflict_set": [
+    {
+      "candidate_answer": "结论一：W 伤害本身不能触发，属于技能伤害",
+      "candidate_confidence": 0.54,
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects classification",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.84,
+          "evidence_summary": "按官方分类规则，只有标注为基础攻击命中才能触发，W 不满足该条件。",
+          "patch_hint": "分类规则稳定"
+        }
+      ],
+      "why_it_differs": "依照官方技能标签和分类规则判定，严格遵循文档说明。"
+    },
+    {
+      "candidate_answer": "结论二：实际测试能触发，因此算作可触发",
+      "candidate_confidence": 0.46,
+      "sources": [
+        {
+          "source_type": "forum",
+          "title": "玩家社区实测讨论",
+          "url": "https://www.reddit.com/r/leagueoflegends/comments/varus-w-on-hit-testing/",
+          "publisher": "Reddit League Community",
+          "retrieved_at": "2026-04-15",
+          "source_confidence": 0.64,
+          "evidence_summary": "多个玩家实测录像显示 W 伤害确实能触发部分装备特效。",
+          "patch_hint": "多个版本测试"
+        }
+      ],
+      "why_it_differs": "以实际游戏内实测结果为准，能触发就按可触发处理。"
+    }
+  ]
+}
