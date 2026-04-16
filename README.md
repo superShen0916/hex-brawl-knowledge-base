@@ -1,47 +1,47 @@
-# Hex Brawl Knowledge Base
+# 海克斯大乱斗交互知识库
 
-> A search-first static knowledge base for League of Legends Hex Brawl interaction questions. **Built with Claude Code agentic workflow.**
+> 英雄联盟「海克斯大乱斗」模式交互问答知识库，**基于 Claude Code 代理式开发构建**。
 
-Search-first static knowledge site for Hex Brawl (海克斯大乱斗) interaction Q&A. Curated structured data, deterministic browser-side search, explicit confidence scoring and conflict resolution for community-disputed questions.
+搜索优先的静态知识站点，针对「英雄技能 × 海克斯 × 攻击特效 × 装备交互」类问题做结构化整理。LLM 辅助整理知识，人工确认结构，浏览器端直接搜索，无需后端。对社区存在争议的问题，明确记录冲突双方结论和依据。
 
-Powered by: Claude Code • LLM-assisted curation • Agent-driven development • Offline-first static architecture
+Powered by: Claude Code • LLM 辅助整理 • 代理式开发 • 离线优先静态架构
 
-## Features
+## 功能特性
 
-- 🔍 **Instant search** - No backend required, all search runs in your browser
-- 📊 **Confidence scoring** - Know how reliable each answer is
-- ⚖️ **Conflict-aware** - Explicitly tracks when community splits on a question
-- 🏷️ **Entity filtering** - Filter by champion, augment, mechanic, confidence
-- ⌨️ **Keyboard-first** - `/` focus, `Esc` clear, arrow keys navigate
-- 🔗 **Share-friendly** - Copy direct link to any question, OG tags for微信群 sharing
-- 📦 **100% static** - Zero infrastructure, deploy anywhere
+- 🔍 **秒级搜索** - 无需后端，所有搜索在浏览器本地完成
+- 📊 **置信度标记** - 每个结论都标注置信度，知道答案有多可靠
+- ⚖️ **冲突记录** - 社区真分歧不和稀泥，明确记录两种结论各自的来源和逻辑
+- 🏷️ **实体筛选** - 按英雄/海克斯/机制/状态筛选，缩小范围
+- ⌨️ **键盘友好** - `/` 快速聚焦搜索框，`Esc` 清空，方向键导航结果
+- 🔗 **分享友好** - 每个问题都能复制直接链接，微信群分享带 OG 标签
+- 📦 **纯静态零成本** - 不用服务器，随便部署到 GitHub Pages 就能用
 
-## Curated Coverage
+## 收录覆盖
 
-- **195/195** - Full coverage of all Hex Brawl augments with curated effect summaries
-- **1100+** - Searchable question/answer records
-- **42** - Hand-curated high-frequency questions
-- **8** - Structured community conflict records
+- **195 / 195** - 全量覆盖所有海克斯，每个都有 curated 效果摘要
+- **1100+** - 可搜索问答记录
+- **42** - 高频问题人工精修
+- **8** - 社区真实冲突结构化记录
 
-## Handoff
+## 开发交接
 
-- [Current handoff note](docs/handoff-2026-04-14.md)
+- [开发交接说明](docs/handoff-2026-04-14.md)
 
-## Commands
+## 常用命令
 
-- `npm test`
-- `npm run validate:data`
-- `npm run build`
-- `npm run serve`
+- `npm test` - 运行所有测试
+- `npm run validate:data` - 验证数据格式
+- `npm run build` - 重新构建搜索索引
+- `npm run serve` - 本地预览
 
-## Local Preview
+## 本地预览
 
-1. Run `npm run build`
-2. Run `npm run serve`
-3. Open `http://localhost:4173/`
+1. 运行 `npm run build`
+2. 运行 `npm run serve`
+3. 打开 `http://localhost:4173/`
 
-## Project Philosophy
+## 项目理念
 
-This project explores a hybrid approach: **LLM curates the knowledge, humans approve the structure, code delivers deterministic answers**. No real-time LLM inference needed — just fast, reliable search from curated data.
+这个项目探索一种混合工作流：**大模型整理知识，人工确认结构，代码给出确定性答案**。不需要实时 LLM 推理，只需要从整理好的结构化数据里快速搜索，更快更稳定。
 
-Built as an experiment in agentic software development where an AI Claude Code builds out the feature set incrementally from a high-level product spec.
+从高阶产品需求开始，全程由 Claude Code AI 代理增量构建功能，验证了代理式软件开发的可行性。
