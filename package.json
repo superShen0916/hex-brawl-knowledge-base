@@ -10,6 +10,10 @@
     "build:derived": "node scripts/build-derived-entries.mjs",
     "build:index": "node scripts/build-search-index.mjs",
     "build": "npm run validate:data && npm run build:augments && npm run build:derived && npm run build:index",
-    "serve": "python3 -m http.server 4173"
+    "serve": "python3 -m http.server 4173",
+    "fetch:patch": "node scripts/fetch-patch-notes.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
   }
 }
