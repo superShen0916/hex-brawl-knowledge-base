@@ -20,7 +20,7 @@ const state = {
     augment: "",
     mechanic: "",
   },
-  filterCollapsed: false,
+  filterCollapsed: true,
 };
 
 const suggestedQueries = [
@@ -385,14 +385,7 @@ function renderRelated(related) {
 
 function renderDetail(entry, allEntries) {
   if (!entry) {
-    return `
-      <aside class="detail-panel">
-        <h2>查看详情</h2>
-        <p class="detail-intro">
-          点击左侧结果卡片后，这里会显示详细说明、适用条件、来源和冲突记录。
-        </p>
-      </aside>
-    `;
+    return "";
   }
 
   const related = findRelatedEntries(entry, allEntries);
@@ -708,6 +701,13 @@ document.addEventListener("click", (event) => {
   if (card instanceof HTMLElement) {
     state.selectedId = card.dataset.entryId ?? "";
     paint();
+    // 点击后平滑滚动到详情区域
+    requestAnimationFrame(() => {
+      const detail = document.querySelector(".detail-panel");
+      if (detail) {
+        detail.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   }
 });
 

@@ -41,6 +41,7 @@ function normalizeSpacing(text) {
 }
 
 export function normalizeQuestion(input) {
+  if (!input) return '';
   let text = input.toLowerCase().replace(/[？?。！!，,；;：:]/g, ' ').trim();
 
   for (const [alias, canonical] of championAliases) {

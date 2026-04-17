@@ -216,21 +216,24 @@ a {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.9fr);
+  grid-template-columns: 1fr;
   gap: 22px;
   margin-top: 24px;
 }
 
-.result-panel,
+.result-panel {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--panel-strong);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
 .detail-panel {
   border: 1px solid var(--line);
   border-radius: 24px;
   background: var(--panel-strong);
   box-shadow: var(--shadow);
-}
-
-.result-panel {
-  padding: 24px;
 }
 
 .result-head {
@@ -428,9 +431,6 @@ a {
 }
 
 .detail-panel {
-  position: sticky;
-  top: 20px;
-  align-self: start;
   padding: 26px;
 }
 
