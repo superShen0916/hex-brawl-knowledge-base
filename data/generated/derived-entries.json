@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T09:56:59.057Z",
+  "generatedAt": "2026-04-17T10:20:20.715Z",
   "entries": [
     {
       "id": "derived-abaddon-q-onhit",
@@ -9215,6 +9215,662 @@
           "source_confidence": 0.9,
           "patch_hint": "当前通用机制",
           "evidence_summary": "婕拉 的 Grasping Roots 在规则页里带有“官方维基记录该技能不触发攻击特效”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-graves-passive-onhit",
+      "question": "格雷福斯 被动 能不能触发攻击特效",
+      "aliases": [
+        "格雷福斯 被动 会不会触发攻击特效",
+        "格雷福斯 被动 吃不吃 on-hit",
+        "Graves 被动 on-hit",
+        "男枪 被动 on-hit"
+      ],
+      "answer_short": "高置信结论：能。格雷福斯 被动（New Destiny）被攻击特效规则页列为会施加 on-hit 的技能，并带有被动暴击每一发都触发攻击特效。",
+      "answer_detail": "格雷福斯 被动（New Destiny）可按“会施加攻击特效”的技能理解。同时它也会触发 on-attack 类效果。当前公开规则页还补充了 被动暴击每一发都触发攻击特效。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "格雷福斯"
+        ],
+        "skills": [
+          "被动",
+          "New Destiny"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects/Abilities",
+          "url": "https://leagueoflegends.fandom.com/wiki/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.9,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "格雷福斯 的 New Destiny 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-graves-passive-onattack",
+      "question": "格雷福斯 被动 会不会触发 on-attack 效果",
+      "aliases": [
+        "格雷福斯 被动 会不会触发攻击前触发类效果",
+        "格雷福斯 被动 on-attack",
+        "格雷福斯 被动 触发 on-attack 吗"
+      ],
+      "answer_short": "高置信结论：会。格雷福斯 被动（New Destiny）被规则页列为会触发 on-attack 的技能。",
+      "answer_detail": "这类技能不只会在命中时结算 on-hit，还会走 on-attack 那条触发链路。判断海克斯或装备时，如果文本区分 on-hit 和 on-attack，格雷福斯 被动 需要两边分别看。当前规则页还补充了 被动暴击每一发都触发攻击特效。",
+      "status": "high_confidence",
+      "confidence": 0.82,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "只回答是否触发 on-attack，不代表所有 on-attack 效果收益完全相同。",
+        "若文本限制首个目标或首次命中，应优先按技能原文说明理解。"
+      ],
+      "entities": {
+        "champions": [
+          "格雷福斯"
+        ],
+        "skills": [
+          "被动",
+          "New Destiny"
+        ],
+        "mechanics": [
+          "on-attack",
+          "攻击前触发"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects/Abilities",
+          "url": "https://leagueoflegends.fandom.com/wiki/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.9,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "格雷福斯 的 New Destiny 被列在“Applying on-attack effects”技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-graves-passive-scaling-note",
+      "question": "格雷福斯 被动 的攻击特效按多少比例结算",
+      "aliases": [
+        "格雷福斯 被动 攻击特效比例是多少",
+        "格雷福斯 被动 on-hit 按多少算",
+        "格雷福斯 被动 特效效率"
+      ],
+      "answer_short": "高置信结论：被动暴击每一发都触发攻击特效。格雷福斯 被动（New Destiny）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "格雷福斯 被动 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“被动暴击每一发都触发攻击特效”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "格雷福斯"
+        ],
+        "skills": [
+          "被动",
+          "New Destiny"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects/Abilities",
+          "url": "https://leagueoflegends.fandom.com/wiki/Attack_effects/Abilities",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.9,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "格雷福斯 的 New Destiny 在规则页里带有“被动暴击每一发都触发攻击特效”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-graves-q-onhit",
+      "question": "格雷福斯 Q 能不能触发攻击特效",
+      "aliases": [
+        "格雷福斯 Q 会不会触发攻击特效",
+        "格雷福斯 Q 吃不吃 on-hit",
+        "Graves Q on-hit",
+        "男枪 Q on-hit"
+      ],
+      "answer_short": "高置信结论：能。格雷福斯 Q（Broadside）被攻击特效规则页列为会施加 on-hit 的技能，并带有每发弹片触发攻击特效，多弹片命中同一个目标会多重触发。",
+      "answer_detail": "格雷福斯 Q（Broadside）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 每发弹片触发攻击特效，多弹片命中同一个目标会多重触发。",
+      "status": "high_confidence",
+      "confidence": 0.8,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "格雷福斯"
+        ],
+        "skills": [
+          "Q",
+          "Broadside"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "格雷福斯 的 Broadside 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-graves-q-scaling-note",
+      "question": "格雷福斯 Q 的攻击特效按多少比例结算",
+      "aliases": [
+        "格雷福斯 Q 攻击特效比例是多少",
+        "格雷福斯 Q on-hit 按多少算",
+        "格雷福斯 Q 特效效率"
+      ],
+      "answer_short": "高置信结论：每发弹片触发攻击特效，多弹片命中同一个目标会多重触发。格雷福斯 Q（Broadside）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "格雷福斯 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“每发弹片触发攻击特效，多弹片命中同一个目标会多重触发”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "格雷福斯"
+        ],
+        "skills": [
+          "Q",
+          "Broadside"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "格雷福斯 的 Broadside 在规则页里带有“每发弹片触发攻击特效，多弹片命中同一个目标会多重触发”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-ryze-q-onhit",
+      "question": "瑞兹 Q 能不能触发攻击特效",
+      "aliases": [
+        "瑞兹 Q 会不会触发攻击特效",
+        "瑞兹 Q 吃不吃 on-hit",
+        "Ryze Q on-hit"
+      ],
+      "answer_short": "高置信结论：能。瑞兹 Q（Overload）被攻击特效规则页列为会施加 on-hit 的技能，并带有Q 技能不触发攻击特效。",
+      "answer_detail": "瑞兹 Q（Overload）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 Q 技能不触发攻击特效。",
+      "status": "high_confidence",
+      "confidence": 0.8,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "瑞兹"
+        ],
+        "skills": [
+          "Q",
+          "Overload"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "瑞兹 的 Overload 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-ryze-q-damage-classification",
+      "question": "瑞兹 Q 算技能伤害吗",
+      "aliases": [
+        "瑞兹 Q 是普攻还是技能",
+        "瑞兹 Q 算不算 ability damage",
+        "瑞兹 Q 伤害归类"
+      ],
+      "answer_short": "高置信结论：算技能伤害。瑞兹 Q（Overload）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。",
+      "answer_detail": "瑞兹 Q 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。",
+      "status": "high_confidence",
+      "confidence": 0.83,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "瑞兹"
+        ],
+        "skills": [
+          "Q",
+          "Overload"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "瑞兹 的 Overload 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ]
+    },
+    {
+      "id": "derived-ryze-q-scaling-note",
+      "question": "瑞兹 Q 的攻击特效按多少比例结算",
+      "aliases": [
+        "瑞兹 Q 攻击特效比例是多少",
+        "瑞兹 Q on-hit 按多少算",
+        "瑞兹 Q 特效效率"
+      ],
+      "answer_short": "高置信结论：Q 技能不触发攻击特效。瑞兹 Q（Overload）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "瑞兹 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“Q 技能不触发攻击特效”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "瑞兹"
+        ],
+        "skills": [
+          "Q",
+          "Overload"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "瑞兹 的 Overload 在规则页里带有“Q 技能不触发攻击特效”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-ryze-w-onhit",
+      "question": "瑞兹 W 能不能触发攻击特效",
+      "aliases": [
+        "瑞兹 W 会不会触发攻击特效",
+        "瑞兹 W 吃不吃 on-hit",
+        "Ryze W on-hit"
+      ],
+      "answer_short": "高置信结论：能。瑞兹 W（Rune Prison）被攻击特效规则页列为会施加 on-hit 的技能，并带有W 禁锢触发攻击特效。",
+      "answer_detail": "瑞兹 W（Rune Prison）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 W 禁锢触发攻击特效。",
+      "status": "high_confidence",
+      "confidence": 0.8,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "瑞兹"
+        ],
+        "skills": [
+          "W",
+          "Rune Prison"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "瑞兹 的 Rune Prison 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-ryze-w-scaling-note",
+      "question": "瑞兹 W 的攻击特效按多少比例结算",
+      "aliases": [
+        "瑞兹 W 攻击特效比例是多少",
+        "瑞兹 W on-hit 按多少算",
+        "瑞兹 W 特效效率"
+      ],
+      "answer_short": "高置信结论：W 禁锢触发攻击特效。瑞兹 W（Rune Prison）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "瑞兹 W 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“W 禁锢触发攻击特效”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "瑞兹"
+        ],
+        "skills": [
+          "W",
+          "Rune Prison"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "瑞兹 的 Rune Prison 在规则页里带有“W 禁锢触发攻击特效”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-yasuo-q-onhit",
+      "question": "亚索 Q 能不能触发攻击特效",
+      "aliases": [
+        "亚索 Q 会不会触发攻击特效",
+        "亚索 Q 吃不吃 on-hit",
+        "Yasuo Q on-hit",
+        "压缩 Q on-hit"
+      ],
+      "answer_short": "高置信结论：能。亚索 Q（Steel Tempest）被攻击特效规则页列为会施加 on-hit 的技能，并带有Q 吹风命中第一个目标触发攻击特效，后续剑风不触发。",
+      "answer_detail": "亚索 Q（Steel Tempest）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 Q 吹风命中第一个目标触发攻击特效，后续剑风不触发。",
+      "status": "high_confidence",
+      "confidence": 0.8,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "Q",
+          "Steel Tempest"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "亚索 的 Steel Tempest 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-yasuo-q-scaling-note",
+      "question": "亚索 Q 的攻击特效按多少比例结算",
+      "aliases": [
+        "亚索 Q 攻击特效比例是多少",
+        "亚索 Q on-hit 按多少算",
+        "亚索 Q 特效效率"
+      ],
+      "answer_short": "高置信结论：Q 吹风命中第一个目标触发攻击特效，后续剑风不触发。亚索 Q（Steel Tempest）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "亚索 Q 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“Q 吹风命中第一个目标触发攻击特效，后续剑风不触发”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "Q",
+          "Steel Tempest"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "亚索 的 Steel Tempest 在规则页里带有“Q 吹风命中第一个目标触发攻击特效，后续剑风不触发”这类攻击特效效率说明。"
+        }
+      ]
+    },
+    {
+      "id": "derived-yasuo-e-onhit",
+      "question": "亚索 E 能不能触发攻击特效",
+      "aliases": [
+        "亚索 E 会不会触发攻击特效",
+        "亚索 E 吃不吃 on-hit",
+        "Yasuo E on-hit"
+      ],
+      "answer_short": "高置信结论：能。亚索 E（Sweeping Blade）被攻击特效规则页列为会施加 on-hit 的技能，并带有E 穿梭每一段都触发攻击特效。",
+      "answer_detail": "亚索 E（Sweeping Blade）可按“会施加攻击特效”的技能理解。当前公开规则页还补充了 E 穿梭每一段都触发攻击特效。",
+      "status": "high_confidence",
+      "confidence": 0.8,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论来自公开规则页的技能分类，适合回答“能不能触发”。",
+        "如果你关心的是具体收益高低，还要结合技能自身的命中次数和攻击特效效率判断。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "E",
+          "Sweeping Blade"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "on-hit"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "亚索 的 Sweeping Blade 被列在“Applying on-hit effects”或“同时触发 on-hit 与 spell effects”的技能清单中。"
+        }
+      ]
+    },
+    {
+      "id": "derived-yasuo-e-damage-classification",
+      "question": "亚索 E 算技能伤害吗",
+      "aliases": [
+        "亚索 E 是普攻还是技能",
+        "亚索 E 算不算 ability damage",
+        "亚索 E 伤害归类"
+      ],
+      "answer_short": "高置信结论：算技能伤害。亚索 E（Sweeping Blade）虽然会和攻击特效联动，但其伤害本体仍按技能伤害理解。",
+      "answer_detail": "亚索 E 被规则页列在“会同时触发攻击特效和法术效果”的技能集合里，而且属于少数明确保留 ability damage 身份的例外。判断海克斯时，既要考虑它能带攻击特效，也要承认它本体仍是技能伤害。",
+      "status": "high_confidence",
+      "confidence": 0.83,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "这个结论解决的是伤害归类，不等于所有装备或海克斯收益都完全一致。",
+        "如果海克斯文本同时区分攻击特效和技能伤害，需要两条链路一起判断。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "E",
+          "Sweeping Blade"
+        ],
+        "mechanics": [
+          "技能伤害",
+          "ability damage",
+          "攻击特效"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "亚索 的 Sweeping Blade 被列在“会同时触发 on-hit 与 spell effects”的集合里，规则页同时说明这类技能大多不按 ability damage 归类，并点名了少数例外。"
+        }
+      ]
+    },
+    {
+      "id": "derived-yasuo-e-scaling-note",
+      "question": "亚索 E 的攻击特效按多少比例结算",
+      "aliases": [
+        "亚索 E 攻击特效比例是多少",
+        "亚索 E on-hit 按多少算",
+        "亚索 E 特效效率"
+      ],
+      "answer_short": "高置信结论：E 穿梭每一段都触发攻击特效。亚索 E（Sweeping Blade）不是按完整普攻 100% 等比结算。",
+      "answer_detail": "亚索 E 的攻击特效联动需要特别看技能注记。公开规则页对该技能补充了“E 穿梭每一段都触发攻击特效”这类说明，因此评价装备、海克斯或符文收益时，不能把它直接当作一次完整平A处理。",
+      "status": "high_confidence",
+      "confidence": 0.84,
+      "patch_range": "当前通用机制",
+      "conditions": [
+        "该结论主要解释攻击特效比例，不替代具体伤害计算器。",
+        "如果技能还有主目标 / 重复命中 / 首个目标等限制，需要和原技能逻辑一起看。"
+      ],
+      "entities": {
+        "champions": [
+          "亚索"
+        ],
+        "skills": [
+          "E",
+          "Sweeping Blade"
+        ],
+        "mechanics": [
+          "攻击特效",
+          "比例",
+          "效率"
+        ]
+      },
+      "sources": [
+        {
+          "source_type": "wiki",
+          "title": "Attack effects - League of Legends Wiki",
+          "url": "https://wiki.leagueoflegends.com/en-us/Attack_effects",
+          "publisher": "League of Legends Wiki",
+          "retrieved_at": "2026-04-14",
+          "source_confidence": 0.81,
+          "patch_hint": "当前通用机制",
+          "evidence_summary": "亚索 的 Sweeping Blade 在规则页里带有“E 穿梭每一段都触发攻击特效”这类攻击特效效率说明。"
         }
       ]
     },

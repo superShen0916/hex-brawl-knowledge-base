@@ -286,7 +286,10 @@ function renderResults(entries, { filteredFrom = 0 } = {}) {
 
     return `
       <div class="empty-state">
-        没有找到可直接复用的高可信答案。你可以换一种问法，或者改成“英雄 + 技能 + 交互类型”的形式继续搜。
+        <div class="empty-state-icon">🔍</div>
+        <h3>没有找到匹配的问答</h3>
+        <p>试试这样提问：<strong>"厄加特 W 能不能触发攻击特效"</strong></p>
+        <p>格式：<strong>英雄名 + 技能 + 问题</strong>，更容易命中</p>
         ${similarHtml}
       </div>
     `;
